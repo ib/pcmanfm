@@ -66,6 +66,12 @@ const ArchiveHandler handlers[]=
             NULL,
             "unrar -o- e",
             ".rar", TRUE
+        },
+        {
+            "application/x-arj",
+            NULL,
+            "unarj e",
+            ".arj", TRUE
         }
     };
 
