@@ -2,6 +2,7 @@
 Version=1.0
 Encoding=UTF-8
 Name=Search for Files or Folders
+Name[de]=Nach Dateien suchen
 Name[ru]=Поиск Файлов или Папок
 Name[fi]=Etsi tiedostoja ja kansioita
 Name[et]=Failide ja kaustade otsimine
@@ -15,6 +16,7 @@ Type=Application
 Terminal=false
 MimeType=x-directory/normal;inode/directory;
 Comment=Search for files and folders in disks
+Comment[de]=Nach Dateien und Ordnern auf der Festplatte suchen
 Comment[ru]=Поиск Файлов или Папок на дисках
 Comment[zh_TW]=在磁碟中尋找檔案或資料夾
 Comment[fi]=Etsi tiedostoja ja kansioita levyiltä
