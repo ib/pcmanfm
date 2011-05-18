@@ -361,7 +361,7 @@ static void get_file_perm_string( char* perm, mode_t mode )
     perm[ 6 ] = ( mode & S_IXGRP ) ? 'x' : '-';
     perm[ 7 ] = ( mode & S_IROTH ) ? 'r' : '-';
     perm[ 8 ] = ( mode & S_IWOTH ) ? 'w' : '-';
-    perm[ 9 ] = ( mode & S_IXOTH ) ? 'x' : '-';
+    perm[ 9 ] = ( mode & S_IXOTH ) ? (mode & S_ISVTX ? 't' : 'x') : '-';
     perm[ 10 ] = '\0';
 }
 
