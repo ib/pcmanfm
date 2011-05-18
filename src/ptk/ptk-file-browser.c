@@ -2440,6 +2440,7 @@ void ptk_file_browser_open_terminal( PtkFileBrowser* file_browser )
     VFSFileInfo* file;
     char* full_path;
     char* dir;
+    int was_file = 0;
 
     if ( sel_files )
     {
@@ -2457,8 +2458,11 @@ void ptk_file_browser_open_terminal( PtkFileBrowser* file_browser )
                 dir = g_path_get_dirname( full_path );
                 g_signal_emit( file_browser, signals[ OPEN_ITEM_SIGNAL ], 0, dir, PTK_OPEN_TERMINAL );
                 g_free( dir );
+                was_file = 1;
             }
             g_free( full_path );
+
+            if (was_file) break;
         }
         g_list_foreach( sel_files, ( GFunc ) vfs_file_info_unref, NULL );
         g_list_free( sel_files );
