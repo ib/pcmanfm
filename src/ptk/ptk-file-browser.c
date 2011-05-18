@@ -1250,14 +1250,34 @@ on_folder_view_button_press_event ( GtkWidget *widget,
         /* middle button */
         if ( event->button == 2 && file_path ) /* middle click on a item */
         {
-            /* open in new tab if its a folder */
             if ( G_LIKELY( file_path ) )
             {
                 if ( g_file_test( file_path, G_FILE_TEST_IS_DIR ) )
                 {
                     g_signal_emit( file_browser, signals[ OPEN_ITEM_SIGNAL ], 0,
-                                   file_path, PTK_OPEN_NEW_TAB );
+                                   file_path, PTK_OPEN_DIR );
                 }
+                else if ( g_file_test( file_path, G_FILE_TEST_IS_REGULAR ) )
+                {
+                  /* select the item if it's not selected */
+                  if ( file_browser->view_mode == PTK_FB_ICON_VIEW || file_browser->view_mode == PTK_FB_COMPACT_VIEW )
+                  {
+                    if ( tree_path && !exo_icon_view_path_is_selected ( EXO_ICON_VIEW( widget ), tree_path ) )
+                    {
+                      exo_icon_view_unselect_all ( EXO_ICON_VIEW( widget ) );
+                      exo_icon_view_select_path( EXO_ICON_VIEW( widget ), tree_path );
+                    }
+                  }
+                  else if( file_browser->view_mode == PTK_FB_LIST_VIEW )
+                  {
+                    if ( tree_path && !gtk_tree_selection_path_is_selected( tree_sel, tree_path ) )
+                    {
+                      gtk_tree_selection_unselect_all( tree_sel );
+                      gtk_tree_selection_select_path( tree_sel, tree_path );
+                    }
+                  }
+                }
+                ptk_file_browser_open_selected_files(file_browser);
             }
             ret = TRUE;
         }
