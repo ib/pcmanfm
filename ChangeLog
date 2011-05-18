@@ -1,0 +1,5 @@
+2009-01-26 Og Maciel <ogmaciel@gnome.org>
+
+	* data/ui/about-dlg.glade: Fixed typo fixes SF.net #2490464.
+	* src/ptk/ptk-file-task.c: Grammar issue fixes SF.net #2485704.
+	* src/ptk/ptk-file-misc.c: Grammar issue fixes SF.net #2485704.

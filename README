@@ -1,0 +1,172 @@
+Here are some detailed IMPORTANT notes and FAQs for users and packagers.
+
+Please read this carefully before you make package for PCManFM.
+** Suggestions to the packagers:
+
+1. Add these two commands in your post-inst scripts, or some things won't work:
+  update-mime-database /usr/share/mime
+  update-desktop-database
+
+2. Never turn on --enable-inotify configure option. It's currently broken.
+
+3. Use gamin instead of fam, whenever possible.
+
+4. Use hal >= 0.5, or volume management won't work properly.
+  If there is no hal on your system, turn this off with --disable-hal option.
+
+5. Check /usr/share/pcmanfm/mount.rules to see if any modification
+  is required on your distro.
+
+** Detailed explanation for every issues related to PCManFM:
+
+Mime Type Handling:
+
+1. Running update-mime-database /usr/share/mime as root after installation
+  is needed because PCManFM adds some new mime-type definitions
+  to the system to speed up the recognition of some well-known Windows files.
+  (This also improve other programs using the same shared mime database)
+  So, regenerating the the cache of the database is required since it's changed.
+
+  * To packagers: Don't forget to do this in your post-inst scripts.
+
+2. Default application is specified in ~/.local/share/applications/defaults.list
+  If default application is not found in this file, system-wide settings will
+  be used. The system-wised settings are in /usr/share/applications/defaults
+  and /usr/local/share/applications.
+
+  NOTE: There is currently no standard for this. To maximize compatibility, and
+  decrease the users' problems, we use the same mechanism with Gnome and XFCE.
+  Our own mechanism, which I think is better, is dropped in PCManFM 0.3.5 and later.
+
+  * Besides, running update-desktop-database as root is required after
+  installation since all applications for all mime-types are cached on
+  the system according to the freedesktop.org specs to improve performance.
+  Without this cache, PCManFM won't work properly.
+
+  * To packagers: Don't forget to do this in your post-inst scripts.
+
+
+Volume Management (Mounting devices):
+
+  Mounting and unmounting the disks are supported through HAL.
+  If you compile PCManFM with --disable-hal, volume management won't be available.
+  Besides, please use the latest version of HAL available on your systems because
+  incompatibilities exist among different versions of HAL. The older versions
+  lack something important, and their configuration are different, too.
+  Generally HAL >= 0.5 might be OK. Our development environment uses version 0.5.9.
+
+  If a device is defined in /etc/fstab, PCManFM will call mount/umount directly.
+  Otherwise, HAL will be called to mount the devices. This is usually the case of
+  removable devices such as usb disks or SD cards which are not described in fstab.
+  Default options to mount various file systems on these devices can be changed
+  via editing /usr/share/pcmanfm/mount.rules. The file format is easy to understand.
+  Newer versions of HAL force applications to handle these options themselves.
+  (http://www.linuxfromscratch.org/blfs/view/svn/general/hal.html)
+
+  * To packagers: If these default options shipped with PCManFM are not suitable for
+    your distro, please patch them before packaging, or things won't work on your distro.
+    For example, Debian doesn't support 'usefree' option for vfat while Ubuntu uses this.
+    Don't forget to adjust these options, if things don't work on your distro.
+
+
+Switch To Root Problems:
+
+  In "Tool" menu of PCManFM there is an option for you to switch to super user.
+  By default PCManFM calls 'gksudo', and if it doesn't exists, it calls 'gksu'.
+  If both of them don't exist, PCManFM will call 'kdesu'.
+  In some distros, 'gksudo' is disabled by default. Instead, you can assign your
+  preferable program during configuration, and the option is
+  "--with-preferable-sudo=PROG"
+
+  * To packagers: For the sake of consistency, you might use proper argument passed
+  to option "--with-preferable-sudo" before packaging,
+
+
+File Alteration Monitor (fam or gamin?):
+
+  File alteration monitor is an important part of file managers.
+  Without this, file managers won't reflect changes of files done by other
+  applications or under consoles.
+  Historically FAM is used for this, but it has some performance and security
+  problems.  So it's gradually replaced by gamin in modern distros.
+  FAM and gamin are compatible in most of the cases.
+
+  * To packagers: Using gamin with PCManFM is more recommended.
+
+Inotify support:
+
+  * To packagers: Please leave this configure option off as its default and
+    don't try to turn it on.  It's currently broken.
+
+  We use gamin instead of using inotify directly since inotify can only monitor
+  part of the file systems, and requires much additional complicated processing by
+  applications themselves.  So, let gamin do these dirty works for us.
+
+
+Warnings while running PCManFM as root?
+
+  Running applications as root is really dangerous and discouraged on UNIX-like
+  systems.  To protect users from accidentally break the system, we show a warning
+  bar on the window if they run PCManFM as root.  This cannot be turned off because
+  we have the responsibility to let the user know they are at risk.
+
+  However, under some circumstances, you'll need to run PCManFM as root all the time.
+  This is a common case in live CDs.  So, if you are the author of a live CD, and you
+  really need to turn this off, configure with the option "--disable-superuser-checks".
+
+
+Icons of Files are missing?:
+
+  You might get error message when you start PCManFM telling you that your
+  icon theme is not properly set. Normally gtk+ gets icon theme settings via
+  XSETTINGS daemons. Under Gnome and XFCE, they run their setting daemons
+  so you have no problem. However, under other desktop environments, gtk+
+  reads settings from "~/.gtkrc-2.0". The format of this file is poorly
+  documented by gtk+ team.  The only available doc is here:
+  http://library.gnome.org/devel/gtk-tutorial/stable/x2138.html
+  Few people know exactly how to edit this file.  Neither do I, but I know
+  you can set icon theme by adding this:
+  gtk-icon-theme-name="THE NAME OF THE FOLDER CONTAINING ICONS"
+  This name can be found by looking in /usr/share/icons, /usr/local/share/icons,
+  and ~/.local/share/icons.
+  I know this is inconvinient, but that's not my fault, that's the design of gtk+.
+
+  Also, don't use an icon theme designed for KDE, or you'll get no icons.
+  The naming of icons are totally different in Gnome and KDE.
+  Because there is, again, no standard for this. So we use gnome-compatible themes.
+  Personally I recommend using this:
+  http://www.gnome-look.org/content/show.php/nuoveXT+2?content=56625
+
+  If you want to change the ugly look of gtk+ programs, you can add this:
+  gtk-theme-name="THE NAME OF THE GTK+ THEME YOU WANT TO USE"
+  "ClearLooks" is a good gtk+ theme, if you have it installed.
+
+
+Desktop Icon Support:
+
+  PCManFM provides very basic support for desktop icons.
+  Before version 0.3.6.2, using this is strongly discouraged since there are some 
+  performance problems in this part.  In 0.3.6.2 this is partially fixed.
+  Since version 0.3.9, the desktop icon support is completely re-designed and 
+  re-written. The performance problem was solved, and the functionality is already
+  acceptable. Drag and drop support for desktop icons is finally added in 0.4.3.
+  So, upgrading to 0.4 series is strongly encoraged. Don't use the deprecated 0.2.x and 
+  0.3.x series unless you have really good reasons.
+
+  If you only need to set the desktop wallpaper and don't need the icons,
+  the small program 'hsetroot' is for you.
+
+  The feature could be removed during build time via configuration option
+  "--disable-desktop-integration".
+
+
+Where is the "Trash Can"?
+
+  Currently we haven't support this yet. Having a correctly working tash can is 
+  not as easy as you think. It's actually much more complicated than simply moving
+  the files to ~/.Trash. To implement a standard-compliant, correct, and safe 
+  trash can is not an easy task. To see is to believe, read the spec yourself:
+  This is the current proposed Freedesktop.org "Trash Spec"
+  http://www.ramendik.ru/docs/trashspec.html
+  If you think this is easy, please send me a patch and I'll get it applied happily.
+  Why those Freedesktop.org guys always make things more and more complicated?
