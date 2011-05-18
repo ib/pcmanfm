@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-28 13:07+0200\n"
+"POT-Creation-Date: 2009-10-26 16:22+0100\n"
 "PO-Revision-Date: 2009-01-31 21:56+0200\n"
 "Last-Translator: Elias Julkunen <elias.julkunen@gmail.com>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
@@ -127,29 +127,27 @@ msgstr "Siirrä _alas"
 msgid "Move _Up"
 msgstr "Siirrä _ylös"
 
-#. Preparing to do some file operation (Copy, Move, Delete...)
-#: ../data/ui/file_operation.glade.h:2 ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "Valmistellaan..."
-
 #. Processing: <Name of currently proccesed file>
-#. Processing:
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:4 ../src/ptk/ptk-file-task.c:169
-msgid "Processing:"
+#: ../data/ui/file_operation.glade.h:2
+#, fuzzy
+msgid "<b>Processing:</b>"
 msgstr "Käsitellään:"
 
-#. Progress:
-#: ../data/ui/file_operation.glade.h:5 ../src/ptk/ptk-file-task.c:184
-msgid "Progress:"
+#: ../data/ui/file_operation.glade.h:3
+#, fuzzy
+msgid "<b>Progress:</b>"
 msgstr "Edistyminen:"
 
 #. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#. To: <Destination folder>
-#. ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:154
-msgid "To:"
-msgstr "Kansioon:"
+#: ../data/ui/file_operation.glade.h:5
+#, fuzzy
+msgid "<b>To:</b>"
+msgstr "<b>Ryhmä:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:176
+msgid "Preparing..."
+msgstr "Valmistellaan..."
 
 #: ../data/ui/file_properties.glade.h:1
 msgid "<b>File Type:</b>"
@@ -1230,6 +1228,23 @@ msgstr "Linkitetään..."
 #: ../src/ptk/ptk-file-task.c:117
 msgid "Changing Properties"
 msgstr "Muutetaan ominaisuuksia"
+
+#. To: <Destination folder>
+#. ex. Copy file to..., Move file to...etc.
+#: ../src/ptk/ptk-file-task.c:154
+msgid "To:"
+msgstr "Kansioon:"
+
+#. Processing:
+#. Processing: <Name of currently proccesed file>
+#: ../src/ptk/ptk-file-task.c:169
+msgid "Processing:"
+msgstr "Käsitellään:"
+
+#. Progress:
+#: ../src/ptk/ptk-file-task.c:184
+msgid "Progress:"
+msgstr "Edistyminen:"
 
 #: ../src/ptk/ptk-file-task.c:320
 msgid "Cancel the operation?"

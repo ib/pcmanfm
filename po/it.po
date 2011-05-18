@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pcmanfm 0.1.9.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-28 13:07+0200\n"
-"PO-Revision-Date: 2009-04-27 16:54+0200\n"
+"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"PO-Revision-Date: 2009-10-26 18:07+0100\n"
 "Last-Translator: Alessandro Pellizzari <alex@amiran.it>\n"
 "Language-Team: Italian <firetux83@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -146,29 +146,24 @@ msgstr "Sposta _Giù"
 msgid "Move _Up"
 msgstr "Sposta _Su"
 
-#. Preparing to do some file operation (Copy, Move, Delete...)
-#: ../data/ui/file_operation.glade.h:2 ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "Preparazione..."
-
 #. Processing: <Name of currently proccesed file>
-#. Processing:
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:4 ../src/ptk/ptk-file-task.c:169
-msgid "Processing:"
-msgstr "Elaborazione:"
+#: ../data/ui/file_operation.glade.h:2
+msgid "<b>Processing:</b>"
+msgstr "<b>Elaborazione:</b>"
 
-#. Progress:
-#: ../data/ui/file_operation.glade.h:5 ../src/ptk/ptk-file-task.c:184
-msgid "Progress:"
-msgstr "Avanzamento:"
+#: ../data/ui/file_operation.glade.h:3
+msgid "<b>Progress:</b>"
+msgstr "<b>Avanzamento:</b>"
 
 #. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#. To: <Destination folder>
-#. ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:154
-msgid "To:"
-msgstr "A:"
+#: ../data/ui/file_operation.glade.h:5
+msgid "<b>To:</b>"
+msgstr "<b>A:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:176
+msgid "Preparing..."
+msgstr "Preparazione..."
 
 #: ../data/ui/file_properties.glade.h:1
 msgid "<b>File Type:</b>"
@@ -1275,6 +1270,23 @@ msgstr "Collegameto..."
 msgid "Changing Properties"
 msgstr "Cambiamento Proprietà"
 
+#. To: <Destination folder>
+#. ex. Copy file to..., Move file to...etc.
+#: ../src/ptk/ptk-file-task.c:154
+msgid "To:"
+msgstr "A:"
+
+#. Processing:
+#. Processing: <Name of currently proccesed file>
+#: ../src/ptk/ptk-file-task.c:169
+msgid "Processing:"
+msgstr "Elaborazione:"
+
+#. Progress:
+#: ../src/ptk/ptk-file-task.c:184
+msgid "Progress:"
+msgstr "Avanzamento:"
+
 #: ../src/ptk/ptk-file-task.c:320
 msgid "Cancel the operation?"
 msgstr "Annnullare l'operazione?"
@@ -1344,9 +1356,8 @@ msgid "Skip All"
 msgstr "Salta Tutti"
 
 #: ../src/ptk/ptk-file-archiver.c:125
-#, fuzzy
 msgid "Save Compressed Files to..."
-msgstr "Salva File Compresso in..."
+msgstr "Salva File Compressi in..."
 
 #: ../src/ptk/ptk-file-archiver.c:133
 msgid "Format of compressed File:"

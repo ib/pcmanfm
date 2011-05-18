@@ -7,14 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-28 13:07+0200\n"
-"PO-Revision-Date: 2009-09-30 23:08+0200\n"
+"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"PO-Revision-Date: 2009-10-26 17:03+0100\n"
 "Last-Translator: Josep Sanchez <papapep@gmail.com>\n"
 "Language-Team: LXDE Catalan translation group\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../data/ui/about-dlg.glade.h:1
 msgid "Copyright (C) 2005 - 2008"
@@ -43,7 +42,7 @@ msgstr ""
 #. Please replace this line with your own names, one name per line.
 #: ../data/ui/about-dlg.glade.h:9
 msgid "translator-credits"
-msgstr "Josep Sànchez MeseguéOriol Piera"
+msgstr "Josep Sànchez Mesegué - Oriol Piera"
 
 #: ../data/ui/about-dlg.glade.h:10
 msgid ""
@@ -98,7 +97,7 @@ msgstr "Configureu l'aplicació seleccionada amb l'acció predeterminada"
 
 #: ../data/ui/appchooserdlg.glade.h:6
 msgid "_All Applications"
-msgstr "Totes les _\taplicacions"
+msgstr "Totes les _aplicacions"
 
 #: ../data/ui/appchooserdlg.glade.h:7
 msgid "_Browse"
@@ -140,29 +139,24 @@ msgstr "Mou a_vall"
 msgid "Move _Up"
 msgstr "Mou am_unt"
 
-#. Preparing to do some file operation (Copy, Move, Delete...)
-#: ../data/ui/file_operation.glade.h:2 ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "Preparant..."
-
 #. Processing: <Name of currently proccesed file>
-#. Processing:
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:4 ../src/ptk/ptk-file-task.c:169
-msgid "Processing:"
-msgstr "Processant: "
+#: ../data/ui/file_operation.glade.h:2
+msgid "<b>Processing:</b>"
+msgstr "<b>S'està processant:</b>"
 
-#. Progress:
-#: ../data/ui/file_operation.glade.h:5 ../src/ptk/ptk-file-task.c:184
-msgid "Progress:"
-msgstr "Progrés:"
+#: ../data/ui/file_operation.glade.h:3
+msgid "<b>Progress:</b>"
+msgstr "<b>Progrés:</b>"
 
 #. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#. To: <Destination folder>
-#. ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:154
-msgid "To:"
-msgstr "A:"
+#: ../data/ui/file_operation.glade.h:5
+msgid "<b>To:</b>"
+msgstr "<b>A:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:176
+msgid "Preparing..."
+msgstr "S'està preparant..."
 
 #: ../data/ui/file_properties.glade.h:1
 msgid "<b>File Type:</b>"
@@ -301,7 +295,7 @@ msgstr ""
 "Des de fa una setmana\n"
 "Des de fa un mes\n"
 "Des de fa un any\n"
-"Dins el rang de dates seleccionat\n"
+"Dins el rang de dates seleccionat"
 
 #: ../data/ui/find-files.glade.h:15
 msgid "Audio Files (mp3, ogg,...)"
@@ -1122,25 +1116,19 @@ msgid ", Free space: %s (Total: %s )"
 msgstr ", Espai lliure: %s (Total: %s )"
 
 #: ../src/main-window.c:2112
-#, fuzzy, c-format
+#, c-format
 msgid "%d item selected (%s)%s"
-msgid_plural "%d items selected (%s)%s"
-msgstr[0] "%d element seleccionat (%s)"
-msgstr[1] "%d elements seleccionats (%s)"
+msgstr "%d element seleccionat (%s)%s"
 
 #: ../src/main-window.c:2122
 #, c-format
 msgid "%d hidden"
-msgid_plural "%d hidden"
-msgstr[0] "%d hidden"
-msgstr[1] "%d hidden"
+msgstr "%d hidden"
 
 #: ../src/main-window.c:2123
-#, fuzzy, c-format
+#, c-format
 msgid "%d visible item (%s)%s"
-msgid_plural "%d visible items (%s)%s"
-msgstr[0] "%d element visible (%d ocult)"
-msgstr[1] "%d elements visibles (%d ocults)"
+msgstr "%d element visible (%s)%s"
 
 #: ../src/ptk/ptk-file-browser.c:521
 msgid "Directory doesn't exist!"
@@ -1267,6 +1255,23 @@ msgstr "Enllaçant..."
 msgid "Changing Properties"
 msgstr "S'està canviant propietats"
 
+#. To: <Destination folder>
+#. ex. Copy file to..., Move file to...etc.
+#: ../src/ptk/ptk-file-task.c:154
+msgid "To:"
+msgstr "A:"
+
+#. Processing:
+#. Processing: <Name of currently proccesed file>
+#: ../src/ptk/ptk-file-task.c:169
+msgid "Processing:"
+msgstr "Processant: "
+
+#. Progress:
+#: ../src/ptk/ptk-file-task.c:184
+msgid "Progress:"
+msgstr "Progrés:"
+
 #: ../src/ptk/ptk-file-task.c:320
 msgid "Cancel the operation?"
 msgstr "Voleu cancel·lar l'operació?"
@@ -1336,7 +1341,6 @@ msgid "Skip All"
 msgstr "Omet tot"
 
 #: ../src/ptk/ptk-file-archiver.c:125
-#, fuzzy
 msgid "Save Compressed Files to..."
 msgstr "Desa el fitxers comprimits a..."
 
@@ -1829,3 +1833,4 @@ msgstr "Carpeta"
 #: ../src/find-files.c:830
 msgid "Last Modified"
 msgstr "Última modificació"
+

@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PCManFM\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-28 13:07+0200\n"
-"PO-Revision-Date: 2009-04-21 17:31+0200\n"
+"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"PO-Revision-Date: 2009-10-26 21:04+0100\n"
 "Last-Translator: Martin Bagge <brother@bsnet.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -151,29 +151,24 @@ msgstr "Flytta _nedåt"
 msgid "Move _Up"
 msgstr "Flytta _uppåt"
 
-#. Preparing to do some file operation (Copy, Move, Delete...)
-#: ../data/ui/file_operation.glade.h:2 ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "Förbereder..."
-
 #. Processing: <Name of currently proccesed file>
-#. Processing:
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:4 ../src/ptk/ptk-file-task.c:169
-msgid "Processing:"
-msgstr "Bearbetar:"
+#: ../data/ui/file_operation.glade.h:2
+msgid "<b>Processing:</b>"
+msgstr "<b>Bearbetar:</b>"
 
-#. Progress:
-#: ../data/ui/file_operation.glade.h:5 ../src/ptk/ptk-file-task.c:184
-msgid "Progress:"
-msgstr "Förlopp:"
+#: ../data/ui/file_operation.glade.h:3
+msgid "<b>Progress:</b>"
+msgstr "</b>Förlopp:</b>"
 
 #. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#. To: <Destination folder>
-#. ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:154
-msgid "To:"
-msgstr "Till:"
+#: ../data/ui/file_operation.glade.h:5
+msgid "<b>To:</b>"
+msgstr "<b>Till:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:176
+msgid "Preparing..."
+msgstr "Förbereder..."
 
 #: ../data/ui/file_properties.glade.h:1
 msgid "<b>File Type:</b>"
@@ -1280,6 +1275,23 @@ msgstr "Länkar..."
 msgid "Changing Properties"
 msgstr "Ändrar egenskaper"
 
+#. To: <Destination folder>
+#. ex. Copy file to..., Move file to...etc.
+#: ../src/ptk/ptk-file-task.c:154
+msgid "To:"
+msgstr "Till:"
+
+#. Processing:
+#. Processing: <Name of currently proccesed file>
+#: ../src/ptk/ptk-file-task.c:169
+msgid "Processing:"
+msgstr "Bearbetar:"
+
+#. Progress:
+#: ../src/ptk/ptk-file-task.c:184
+msgid "Progress:"
+msgstr "Förlopp:"
+
 #: ../src/ptk/ptk-file-task.c:320
 msgid "Cancel the operation?"
 msgstr "Avbryt åtgärden?"
@@ -1349,9 +1361,8 @@ msgid "Skip All"
 msgstr "Hoppa över alla"
 
 #: ../src/ptk/ptk-file-archiver.c:125
-#, fuzzy
 msgid "Save Compressed Files to..."
-msgstr "Spara komprimerade filer till..."
+msgstr "Spara komprimerade filer i..."
 
 #: ../src/ptk/ptk-file-archiver.c:133
 msgid "Format of compressed File:"

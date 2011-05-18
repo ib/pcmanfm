@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pcmanfm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-28 13:07+0200\n"
+"POT-Creation-Date: 2009-10-26 16:22+0100\n"
 "PO-Revision-Date: 2009-10-23 18:34+0200\n"
 "Last-Translator: Rossen Karpuzov <gustav@cointech.net>\n"
-"Language-Team: Mandriva User Group - Bulgaria <mandriva-bg@googlegroups.com>\n"
+"Language-Team: Mandriva User Group - Bulgaria <mandriva-bg@googlegroups."
+"com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -77,7 +78,6 @@ msgid ""
 "by hand:"
 msgstr ""
 "Моля изберете програма от следния списък или въведете командния ред на ръка: "
-""
 
 #: ../data/ui/appchooserdlg.glade.h:5
 msgid "Set selected application to default action"
@@ -128,33 +128,27 @@ msgstr "Преместване на_долу"
 msgid "Move _Up"
 msgstr "Преместване _нагоре"
 
-#. Preparing to do some file operation (Copy, Move, Delete...)
+#. Processing: <Name of currently proccesed file>
 #: ../data/ui/file_operation.glade.h:2
-#: ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "Подготовка..."
-
-#. Processing: <Name of currently proccesed file>
-#. Processing:
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:4
-#: ../src/ptk/ptk-file-task.c:169
-msgid "Processing:"
+#, fuzzy
+msgid "<b>Processing:</b>"
 msgstr "Обработване:"
 
-#. Progress:
-#: ../data/ui/file_operation.glade.h:5
-#: ../src/ptk/ptk-file-task.c:184
-msgid "Progress:"
+#: ../data/ui/file_operation.glade.h:3
+#, fuzzy
+msgid "<b>Progress:</b>"
 msgstr "Изпълнение:"
 
 #. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#. To: <Destination folder>
-#. ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:7
-#: ../src/ptk/ptk-file-task.c:154
-msgid "To:"
-msgstr "До:"
+#: ../data/ui/file_operation.glade.h:5
+#, fuzzy
+msgid "<b>To:</b>"
+msgstr "<b>Група:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:176
+msgid "Preparing..."
+msgstr "Подготовка..."
 
 #: ../data/ui/file_properties.glade.h:1
 msgid "<b>File Type:</b>"
@@ -240,8 +234,7 @@ msgstr "На всички работни плотове"
 msgid "Write"
 msgstr "Запис"
 
-#: ../data/ui/file_properties.glade.h:24
-#: ../data/ui/prefdlg.glade.h:41
+#: ../data/ui/file_properties.glade.h:24 ../data/ui/prefdlg.glade.h:41
 msgid "_General"
 msgstr "_Общи"
 
@@ -585,7 +578,8 @@ msgstr "Разрешаване на търсене"
 #: ../src/exo/exo-icon-view.c:729
 #, fuzzy
 msgid "View allows user to search through columns interactively"
-msgstr "Изгледът позволява на потребителите да претърсват колоните интерактивно"
+msgstr ""
+"Изгледът позволява на потребителите да претърсват колоните интерактивно"
 
 #: ../src/exo/exo-icon-view.c:746
 #, fuzzy
@@ -696,24 +690,20 @@ msgstr "Начин на избор"
 msgid "The selection mode"
 msgstr "Начинът за избор"
 
-#: ../src/exo/exo-icon-view.c:923
-#: ../src/exo/exo-tree-view.c:201
+#: ../src/exo/exo-icon-view.c:923 ../src/exo/exo-tree-view.c:201
 msgid "Single Click"
 msgstr "Единично натискане"
 
-#: ../src/exo/exo-icon-view.c:924
-#: ../src/exo/exo-tree-view.c:202
+#: ../src/exo/exo-icon-view.c:924 ../src/exo/exo-tree-view.c:202
 msgid "Whether the items in the view can be activated with single clicks"
 msgstr ""
 
-#: ../src/exo/exo-icon-view.c:940
-#: ../src/exo/exo-tree-view.c:218
+#: ../src/exo/exo-icon-view.c:940 ../src/exo/exo-tree-view.c:218
 #, fuzzy
 msgid "Single Click Timeout"
 msgstr "<b>Пауза между две натискания</b>"
 
-#: ../src/exo/exo-icon-view.c:941
-#: ../src/exo/exo-tree-view.c:219
+#: ../src/exo/exo-icon-view.c:941 ../src/exo/exo-tree-view.c:219
 msgid ""
 "The amount of time after which the item under the mouse cursor will be "
 "selected automatically in single click mode"
@@ -870,19 +860,12 @@ msgid ""
 "no standard for this, but it will be solved by freedesktop.org in the future."
 msgstr ""
 
-#: ../src/main.c:678
-#: ../src/main.c:747
-#: ../src/main.c:798
-#: ../src/main-window.c:1704
-#: ../src/main-window.c:1771
-#: ../src/ptk/ptk-file-browser.c:520
-#: ../src/ptk/ptk-file-browser.c:538
-#: ../src/ptk/ptk-file-task.c:332
-#: ../src/ptk/ptk-console-output.c:225
-#: ../src/ptk/ptk-file-misc.c:258
-#: ../src/ptk/ptk-file-misc.c:326
-#: ../src/ptk/ptk-file-misc.c:415
-#: ../src/ptk/ptk-file-properties.c:701
+#: ../src/main.c:678 ../src/main.c:747 ../src/main.c:798
+#: ../src/main-window.c:1704 ../src/main-window.c:1771
+#: ../src/ptk/ptk-file-browser.c:520 ../src/ptk/ptk-file-browser.c:538
+#: ../src/ptk/ptk-file-task.c:332 ../src/ptk/ptk-console-output.c:225
+#: ../src/ptk/ptk-file-misc.c:258 ../src/ptk/ptk-file-misc.c:326
+#: ../src/ptk/ptk-file-misc.c:415 ../src/ptk/ptk-file-properties.c:701
 #: ../src/ptk/ptk-file-properties.c:712
 msgid "Error"
 msgstr "Грешка"
@@ -904,7 +887,6 @@ msgid "Don't know how to open the file"
 msgstr ""
 
 #: ../src/main.c:796
-#, c-format
 #, fuzzy, c-format
 msgid ""
 "Unable to open file:\n"
@@ -912,15 +894,13 @@ msgid ""
 "%s"
 msgstr "Не може да бъде отворен файл."
 
-#: ../src/main-window.c:304
-#: ../src/ptk/ptk-file-menu.c:109
+#: ../src/main-window.c:304 ../src/ptk/ptk-file-menu.c:109
 #: ../src/desktop/desktop-window.c:186
 #, fuzzy
 msgid "_Folder"
 msgstr "Директория"
 
-#: ../src/main-window.c:305
-#: ../src/ptk/ptk-file-menu.c:110
+#: ../src/main-window.c:305 ../src/ptk/ptk-file-menu.c:110
 #: ../src/desktop/desktop-window.c:187
 #, fuzzy
 msgid "_Text File"
@@ -934,8 +914,7 @@ msgstr "Нов _прозорец"
 msgid "New _Tab"
 msgstr "Нов _подпрозорец"
 
-#: ../src/main-window.c:314
-#: ../src/ptk/ptk-file-menu.c:133
+#: ../src/main-window.c:314 ../src/ptk/ptk-file-menu.c:133
 #: ../src/desktop/desktop-window.c:196
 msgid "_Create New"
 msgstr "_Създаване на нов..."
@@ -952,13 +931,11 @@ msgstr "Затваряне на подпрозорец"
 msgid "_Close Window"
 msgstr "Зат_варяне на този прозорец"
 
-#: ../src/main-window.c:327
-#: ../src/ptk/ptk-file-menu.c:128
+#: ../src/main-window.c:327 ../src/ptk/ptk-file-menu.c:128
 msgid "_Delete"
 msgstr "_Изтриване"
 
-#: ../src/main-window.c:328
-#: ../src/ptk/ptk-file-browser.c:1396
+#: ../src/main-window.c:328 ../src/ptk/ptk-file-browser.c:1396
 #: ../src/ptk/ptk-file-menu.c:129
 msgid "_Rename"
 msgstr "П_реименуване"
@@ -989,25 +966,21 @@ msgstr "Преместване в родителската папка"
 msgid "Go _Home"
 msgstr "Домашна директория на потребител"
 
-#: ../src/main-window.c:355
-#: ../src/desktop/desktop-window.c:173
+#: ../src/main-window.c:355 ../src/desktop/desktop-window.c:173
 #, fuzzy
 msgid "Sort by _Name"
 msgstr "Подреждане по _име"
 
-#: ../src/main-window.c:356
-#: ../src/desktop/desktop-window.c:174
+#: ../src/main-window.c:356 ../src/desktop/desktop-window.c:174
 #, fuzzy
 msgid "Sort by _Size"
 msgstr "По размер"
 
-#: ../src/main-window.c:357
-#: ../src/desktop/desktop-window.c:176
+#: ../src/main-window.c:357 ../src/desktop/desktop-window.c:176
 msgid "Sort by _Modification Time"
 msgstr ""
 
-#: ../src/main-window.c:358
-#: ../src/desktop/desktop-window.c:175
+#: ../src/main-window.c:358 ../src/desktop/desktop-window.c:175
 #, fuzzy
 msgid "Sort by _Type"
 msgstr "Търсене по тип"
@@ -1022,13 +995,11 @@ msgstr "Филтър"
 msgid "Sort by _Owner"
 msgstr "четене от собственика"
 
-#: ../src/main-window.c:362
-#: ../src/desktop/desktop-window.c:179
+#: ../src/main-window.c:362 ../src/desktop/desktop-window.c:179
 msgid "Ascending"
 msgstr "Възходящо"
 
-#: ../src/main-window.c:363
-#: ../src/desktop/desktop-window.c:180
+#: ../src/main-window.c:363 ../src/desktop/desktop-window.c:180
 msgid "Descending"
 msgstr "Низходящо"
 
@@ -1180,13 +1151,11 @@ msgid "Loading..."
 msgstr "Зареждане…"
 
 #: ../src/main-window.c:2103
-#, c-format
 #, fuzzy, c-format
 msgid ", Free space: %s (Total: %s )"
 msgstr "Свободно място:"
 
 #: ../src/main-window.c:2112
-#, c-format
 #, fuzzy, c-format
 msgid "%d item selected (%s)%s"
 msgid_plural "%d items selected (%s)%s"
@@ -1194,7 +1163,6 @@ msgstr[0] "Маркиран е %1 елемента"
 msgstr[1] ""
 
 #: ../src/main-window.c:2122
-#, c-format
 #, fuzzy, c-format
 msgid "%d hidden"
 msgid_plural "%d hidden"
@@ -1202,7 +1170,6 @@ msgstr[0] "Скрита"
 msgstr[1] ""
 
 #: ../src/main-window.c:2123
-#, c-format
 #, fuzzy, c-format
 msgid "%d visible item (%s)%s"
 msgid_plural "%d visible items (%s)%s"
@@ -1214,29 +1181,24 @@ msgstr[1] ""
 msgid "Directory doesn't exist!"
 msgstr "Файлът не съществува"
 
-#: ../src/ptk/ptk-file-browser.c:1392
-#: ../src/ptk/ptk-file-menu.c:142
+#: ../src/ptk/ptk-file-browser.c:1392 ../src/ptk/ptk-file-menu.c:142
 msgid "Open in New _Tab"
 msgstr "Отваряне в нов _подпрозорец"
 
-#: ../src/ptk/ptk-file-browser.c:1393
-#: ../src/ptk/ptk-file-menu.c:143
+#: ../src/ptk/ptk-file-browser.c:1393 ../src/ptk/ptk-file-menu.c:143
 msgid "Open in New _Window"
 msgstr "Отваряне в _нов прозорец"
 
-#: ../src/ptk/ptk-file-browser.c:1646
-#: ../src/edit-bookmarks.c:201
+#: ../src/ptk/ptk-file-browser.c:1646 ../src/edit-bookmarks.c:201
 #: ../src/find-files.c:799
 msgid "Name"
 msgstr "Име"
 
-#: ../src/ptk/ptk-file-browser.c:1646
-#: ../src/find-files.c:820
+#: ../src/ptk/ptk-file-browser.c:1646 ../src/find-files.c:820
 msgid "Size"
 msgstr "Размер"
 
-#: ../src/ptk/ptk-file-browser.c:1646
-#: ../src/find-files.c:824
+#: ../src/ptk/ptk-file-browser.c:1646 ../src/find-files.c:824
 msgid "Type"
 msgstr "Тип"
 
@@ -1270,8 +1232,7 @@ msgstr "Кошче"
 msgid "Desktop"
 msgstr "Работен плот"
 
-#: ../src/ptk/ptk-location-view.c:441
-#: ../src/ptk/ptk-location-view.c:635
+#: ../src/ptk/ptk-location-view.c:441 ../src/ptk/ptk-location-view.c:635
 #, fuzzy
 msgid "Unable to mount device"
 msgstr "Не може да се записва в устройство %s"
@@ -1359,6 +1320,23 @@ msgstr ""
 msgid "Changing Properties"
 msgstr "Обща свойства"
 
+#. To: <Destination folder>
+#. ex. Copy file to..., Move file to...etc.
+#: ../src/ptk/ptk-file-task.c:154
+msgid "To:"
+msgstr "До:"
+
+#. Processing:
+#. Processing: <Name of currently proccesed file>
+#: ../src/ptk/ptk-file-task.c:169
+msgid "Processing:"
+msgstr "Обработване:"
+
+#. Progress:
+#: ../src/ptk/ptk-file-task.c:184
+msgid "Progress:"
+msgstr "Изпълнение:"
+
 #: ../src/ptk/ptk-file-task.c:320
 msgid "Cancel the operation?"
 msgstr "Прекъсване на операцията?"
@@ -1383,7 +1361,6 @@ msgstr "Моля, въведете име на новия портфейл:"
 #. Ths first %s is a file name, and the second one represents followed message.
 #. ex: "/home/pcman/some_file" already exists.\n\nDo you want to overwrite existing file?"
 #: ../src/ptk/ptk-file-task.c:427
-#, c-format
 #, fuzzy, c-format
 msgid ""
 "\"%s\" already exists.\n"
@@ -1393,7 +1370,6 @@ msgstr "%s вече съществува\n"
 
 #. Ths first %s is a file name, and the second one represents followed message.
 #: ../src/ptk/ptk-file-task.c:432
-#, c-format
 #, fuzzy, c-format
 msgid ""
 "\"%s\"\n"
@@ -1436,7 +1412,6 @@ msgid "Format of compressed File:"
 msgstr "Файл компресиран с bzip2"
 
 #: ../src/ptk/ptk-file-archiver.c:204
-#, c-format
 #, fuzzy, c-format
 msgid "Creating Compressed File: %s"
 msgstr "Файл компресиран с bzip2"
@@ -1452,7 +1427,6 @@ msgid "Extract File to..."
 msgstr "Файлът \"%1\" не може да бъде извлечен"
 
 #: ../src/ptk/ptk-file-archiver.c:287
-#, c-format
 #, fuzzy, c-format
 msgid "Extracting Files to: %s"
 msgstr "&Файл за вето:"
@@ -1529,8 +1503,7 @@ msgid "_Open with \"%s\""
 msgstr "_Отваряне с \\„%s\\“"
 
 #. delete some confusing menu item if this menu is for current folder
-#: ../src/ptk/ptk-file-menu.c:408
-#: ../src/ptk/ptk-file-menu.c:417
+#: ../src/ptk/ptk-file-menu.c:408 ../src/ptk/ptk-file-menu.c:417
 #: ../src/find-files.c:229
 msgid "_Open"
 msgstr "_Отваряне"
@@ -1548,16 +1521,14 @@ msgstr "Преименувай файл"
 msgid "Please input new file name:"
 msgstr ""
 
-#: ../src/ptk/ptk-file-misc.c:151
-#: ../src/ptk/ptk-file-misc.c:172
+#: ../src/ptk/ptk-file-misc.c:151 ../src/ptk/ptk-file-misc.c:172
 #: ../src/ptk/ptk-file-misc.c:225
 msgid ""
 "The file name you specified already exists.\n"
 "Please input a new one:"
 msgstr ""
 
-#: ../src/ptk/ptk-file-misc.c:195
-#: ../src/ptk/ptk-file-misc.c:197
+#: ../src/ptk/ptk-file-misc.c:195 ../src/ptk/ptk-file-misc.c:197
 msgid "New Folder"
 msgstr "Нова директория"
 
@@ -1565,8 +1536,7 @@ msgstr "Нова директория"
 msgid "Input a name for the new folder:"
 msgstr "Въведете име за новата папка:"
 
-#: ../src/ptk/ptk-file-misc.c:202
-#: ../src/ptk/ptk-file-misc.c:204
+#: ../src/ptk/ptk-file-misc.c:202 ../src/ptk/ptk-file-misc.c:204
 msgid "New File"
 msgstr "Нов файл"
 
@@ -1627,7 +1597,6 @@ msgid "Use drag & drop to sort the items"
 msgstr ""
 
 #: ../src/vfs/vfs-app-desktop.c:445
-#, c-format
 #, fuzzy, c-format
 msgid "Command not found"
 msgstr "Командата не е инсталирана"
@@ -1637,9 +1606,7 @@ msgstr "Командата не е инсталирана"
 msgid "Destination directory \"%1$s\" is contained in source \"%2$s\""
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:475
-#: ../src/vfs/vfs-volume-hal.c:698
-#, c-format
+#: ../src/vfs/vfs-volume-hal.c:475 ../src/vfs/vfs-volume-hal.c:698
 #, fuzzy, c-format
 msgid "%s Volume"
 msgstr "Дял %s"
@@ -1811,7 +1778,6 @@ msgid "Audio Disc"
 msgstr "Аудио диск"
 
 #: ../src/vfs/vfs-volume-hal.c:696
-#, c-format
 #, fuzzy, c-format
 msgid "%s Removable Volume"
 msgstr "Подвижен дял %s"
@@ -1821,14 +1787,12 @@ msgid "Volume"
 msgstr "Сила на звука"
 
 #: ../src/vfs/vfs-volume-hal.c:1100
-#, c-format
 #, fuzzy, c-format
 msgid "Failed to connect to the HAL daemon: %s"
 msgstr "Неуспешно свързване към демона HAL"
 
 #. definitely not a device that we're able to mount, eject or unmount
-#: ../src/vfs/vfs-volume-hal.c:1941
-#: ../src/vfs/vfs-volume-hal.c:1997
+#: ../src/vfs/vfs-volume-hal.c:1941 ../src/vfs/vfs-volume-hal.c:1997
 #, c-format
 msgid "Given device \"%s\" is not a volume or drive"
 msgstr ""
@@ -1873,7 +1837,6 @@ msgid "An application is preventing the volume \"%s\" from being unmounted"
 msgstr ""
 
 #: ../src/vfs/vfs-volume-hal.c:2276
-#, c-format
 #, fuzzy, c-format
 msgid "The volume \"%s\" is not mounted"
 msgstr "%s е празна (не е монтирана?)\n"

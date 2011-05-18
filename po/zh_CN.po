@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PCMan File Manager 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-28 13:07+0200\n"
+"POT-Creation-Date: 2009-10-26 16:22+0100\n"
 "PO-Revision-Date: 2009-06-05 22:57+0800\n"
 "Last-Translator: Careone <zzbusagain@yahoo.com.cn>\n"
 "Language-Team: zh_CN\n"
@@ -129,29 +129,28 @@ msgstr "向下移动(_D)"
 msgid "Move _Up"
 msgstr "向上移动(_U)"
 
-#. Preparing to do some file operation (Copy, Move, Delete...)
-#: ../data/ui/file_operation.glade.h:2 ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "准备中..."
-
 #. Processing: <Name of currently proccesed file>
-#. Processing:
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:4 ../src/ptk/ptk-file-task.c:169
-msgid "Processing:"
+#: ../data/ui/file_operation.glade.h:2
+#, fuzzy
+msgid "<b>Processing:</b>"
 msgstr "正在处理："
 
-#. Progress:
-#: ../data/ui/file_operation.glade.h:5 ../src/ptk/ptk-file-task.c:184
-msgid "Progress:"
+#: ../data/ui/file_operation.glade.h:3
+#, fuzzy
+msgid "<b>Progress:</b>"
 msgstr "进度："
 
+#
 #. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#. To: <Destination folder>
-#. ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:154
-msgid "To:"
-msgstr "到："
+#: ../data/ui/file_operation.glade.h:5
+#, fuzzy
+msgid "<b>To:</b>"
+msgstr "<b>群组：</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:176
+msgid "Preparing..."
+msgstr "准备中..."
 
 #
 #: ../data/ui/file_properties.glade.h:1
@@ -1282,6 +1281,23 @@ msgstr "正在创建链接..."
 #: ../src/ptk/ptk-file-task.c:117
 msgid "Changing Properties"
 msgstr "修改属性"
+
+#. To: <Destination folder>
+#. ex. Copy file to..., Move file to...etc.
+#: ../src/ptk/ptk-file-task.c:154
+msgid "To:"
+msgstr "到："
+
+#. Processing:
+#. Processing: <Name of currently proccesed file>
+#: ../src/ptk/ptk-file-task.c:169
+msgid "Processing:"
+msgstr "正在处理："
+
+#. Progress:
+#: ../src/ptk/ptk-file-task.c:184
+msgid "Progress:"
+msgstr "进度："
 
 #: ../src/ptk/ptk-file-task.c:320
 msgid "Cancel the operation?"

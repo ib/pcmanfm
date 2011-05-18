@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-28 13:07+0200\n"
-"PO-Revision-Date: 2009-10-13 00:18+0200\n"
+"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"PO-Revision-Date: 2009-10-26 19:57+0100\n"
 "Last-Translator: Hugo Florentino <sysadmin@cips.cu>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -150,29 +150,24 @@ msgstr "_Bajar"
 msgid "Move _Up"
 msgstr "S_ubir"
 
-#. Preparing to do some file operation (Copy, Move, Delete...)
-#: ../data/ui/file_operation.glade.h:2 ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "Preparando..."
-
 #. Processing: <Name of currently proccesed file>
-#. Processing:
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:4 ../src/ptk/ptk-file-task.c:169
-msgid "Processing:"
-msgstr "Procesando:"
+#: ../data/ui/file_operation.glade.h:2
+msgid "<b>Processing:</b>"
+msgstr "<b>Procesando:</b>"
 
-#. Progress:
-#: ../data/ui/file_operation.glade.h:5 ../src/ptk/ptk-file-task.c:184
-msgid "Progress:"
-msgstr "Progreso:"
+#: ../data/ui/file_operation.glade.h:3
+msgid "<b>Progress:</b>"
+msgstr "<b>Progreso:</b>"
 
 #. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#. To: <Destination folder>
-#. ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:154
-msgid "To:"
-msgstr "A:"
+#: ../data/ui/file_operation.glade.h:5
+msgid "<b>To:</b>"
+msgstr "<b>Hacia:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:176
+msgid "Preparing..."
+msgstr "Preparando..."
 
 #: ../data/ui/file_properties.glade.h:1
 msgid "<b>File Type:</b>"
@@ -1276,6 +1271,23 @@ msgstr "Enlazando..."
 #: ../src/ptk/ptk-file-task.c:117
 msgid "Changing Properties"
 msgstr "Cambiando las propiedades"
+
+#. To: <Destination folder>
+#. ex. Copy file to..., Move file to...etc.
+#: ../src/ptk/ptk-file-task.c:154
+msgid "To:"
+msgstr "A:"
+
+#. Processing:
+#. Processing: <Name of currently proccesed file>
+#: ../src/ptk/ptk-file-task.c:169
+msgid "Processing:"
+msgstr "Procesando:"
+
+#. Progress:
+#: ../src/ptk/ptk-file-task.c:184
+msgid "Progress:"
+msgstr "Progreso:"
 
 #: ../src/ptk/ptk-file-task.c:320
 msgid "Cancel the operation?"

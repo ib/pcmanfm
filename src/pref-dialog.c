@@ -72,6 +72,7 @@ static const int big_icon_sizes[] = { 96, 72, 64, 48, 36, 32, 24, 20 };
 static const int small_icon_sizes[] = { 48, 36, 32, 24, 20, 16, 12 };
 static const char* terminal_programs[] =
 {
+    "x-terminal-emulator",
     "lxterminal",
     "aterm",
     "urxvt",

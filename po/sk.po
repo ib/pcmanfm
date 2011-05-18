@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pcmanfm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-28 13:07+0200\n"
+"POT-Creation-Date: 2009-10-26 16:22+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -87,11 +87,8 @@ msgid "Opened in Terminal"
 msgstr "Otvára sa v termináli"
 
 #: ../data/ui/appchooserdlg.glade.h:4
-msgid ""
-"Please choose an application from following lists or enter the command line "
-"by hand:"
-msgstr ""
-"Prosím, vyberte aplikáciu z nasledovného zoznamu alebo zadajte príkaz ručne:"
+msgid "Please choose an application from following lists or enter the command line by hand:"
+msgstr "Prosím, vyberte aplikáciu z nasledovného zoznamu alebo zadajte príkaz ručne:"
 
 #: ../data/ui/appchooserdlg.glade.h:5
 msgid "Set selected application to default action"
@@ -141,29 +138,25 @@ msgstr "Presunúť _dolu"
 msgid "Move _Up"
 msgstr "Presunúť _hore"
 
-#. Preparing to do some file operation (Copy, Move, Delete...)
-#: ../data/ui/file_operation.glade.h:2 ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "Pripravuje sa..."
-
 #. Processing: <Name of currently proccesed file>
-#. Processing:
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:4 ../src/ptk/ptk-file-task.c:169
-msgid "Processing:"
-msgstr "Spracúva sa:"
+#: ../data/ui/file_operation.glade.h:2
+msgid "<b>Processing:</b>"
+msgstr "<b>Spracúva sa:</b>"
 
-#. Progress:
-#: ../data/ui/file_operation.glade.h:5 ../src/ptk/ptk-file-task.c:184
-msgid "Progress:"
-msgstr "Priebeh:"
+#: ../data/ui/file_operation.glade.h:3
+msgid "<b>Progress:</b>"
+msgstr "<b>Priebeh:</b>"
 
 #. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#. To: <Destination folder>
-#. ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:154
-msgid "To:"
-msgstr "Kam:"
+#: ../data/ui/file_operation.glade.h:5
+msgid "<b>To:</b>"
+msgstr "<b>Komu:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/file_operation.glade.h:7
+#: ../src/ptk/ptk-file-task.c:176
+msgid "Preparing..."
+msgstr "Pripravuje sa..."
 
 #: ../data/ui/file_properties.glade.h:1
 msgid "<b>File Type:</b>"
@@ -248,7 +241,8 @@ msgstr "lepkavý"
 msgid "Write"
 msgstr "zápis"
 
-#: ../data/ui/file_properties.glade.h:24 ../data/ui/prefdlg.glade.h:41
+#: ../data/ui/file_properties.glade.h:24
+#: ../data/ui/prefdlg.glade.h:41
 msgid "_General"
 msgstr "_Všeobecné"
 
@@ -524,7 +518,7 @@ msgstr "Text:"
 
 #: ../data/ui/prefdlg.glade.h:37
 msgid "Use SI decimal prefixes instead of IEC binary prefixes"
-msgstr ""
+msgstr "Používať desiatkové predpony SI namiesto binárnych predpon IEC"
 
 #: ../data/ui/prefdlg.glade.h:38
 msgid "Wallpaper:"
@@ -611,8 +605,7 @@ msgid "Orientation"
 msgstr "Orientácia"
 
 #: ../src/exo/exo-icon-view.c:829
-msgid ""
-"How the text and icon of each item are positioned relative to each other"
+msgid "How the text and icon of each item are positioned relative to each other"
 msgstr "Ako sú vzájomne postavené text a ikona každej položky"
 
 #: ../src/exo/exo-icon-view.c:845
@@ -655,25 +648,25 @@ msgstr "Režim výberu"
 msgid "The selection mode"
 msgstr "Režim výberu"
 
-#: ../src/exo/exo-icon-view.c:923 ../src/exo/exo-tree-view.c:201
+#: ../src/exo/exo-icon-view.c:923
+#: ../src/exo/exo-tree-view.c:201
 msgid "Single Click"
 msgstr "Jednoduché kliknutie"
 
-#: ../src/exo/exo-icon-view.c:924 ../src/exo/exo-tree-view.c:202
+#: ../src/exo/exo-icon-view.c:924
+#: ../src/exo/exo-tree-view.c:202
 msgid "Whether the items in the view can be activated with single clicks"
 msgstr "Či je možné položky v zobrazení aktivovať jednoduchým kliknutím"
 
-#: ../src/exo/exo-icon-view.c:940 ../src/exo/exo-tree-view.c:218
+#: ../src/exo/exo-icon-view.c:940
+#: ../src/exo/exo-tree-view.c:218
 msgid "Single Click Timeout"
 msgstr "Interval jednoduchého kliknutia"
 
-#: ../src/exo/exo-icon-view.c:941 ../src/exo/exo-tree-view.c:219
-msgid ""
-"The amount of time after which the item under the mouse cursor will be "
-"selected automatically in single click mode"
-msgstr ""
-"Čas po ktorom sa položka pod kurzorom automaticky vyberie v režime "
-"jednoduchého kliknutia"
+#: ../src/exo/exo-icon-view.c:941
+#: ../src/exo/exo-tree-view.c:219
+msgid "The amount of time after which the item under the mouse cursor will be selected automatically in single click mode"
+msgstr "Čas po ktorom sa položka pod kurzorom automaticky vyberie v režime jednoduchého kliknutia"
 
 #: ../src/exo/exo-icon-view.c:956
 msgid "Spacing"
@@ -766,20 +759,12 @@ msgid "Run PCManFM as a daemon"
 msgstr "Spúšťať PCManFM v režime démona"
 
 #: ../src/main.c:94
-msgid ""
-"Open folders in new tabs of the last used window instead of creating new "
-"windows"
-msgstr ""
-"Otvárať priečinky v nových záložkách posledného použitého okna namiesto "
-"tvorby nových okien"
+msgid "Open folders in new tabs of the last used window instead of creating new windows"
+msgstr "Otvárať priečinky v nových záložkách posledného použitého okna namiesto tvorby nových okien"
 
 #: ../src/main.c:95
-msgid ""
-"Open preference dialog. 'n' is the number of page you want to show (1, 2, "
-"3...)."
-msgstr ""
-"Otvoriť dialóg s nastavením. „n“ je počet stránok, ktorý chcete zobraziť (1, "
-"2, 3...)."
+msgid "Open preference dialog. 'n' is the number of page you want to show (1, 2, 3...)."
+msgstr "Otvoriť dialóg s nastavením. „n“ je počet stránok, ktorý chcete zobraziť (1, 2, 3...)."
 
 #: ../src/main.c:96
 msgid "Find Files with PCManFM"
@@ -802,46 +787,41 @@ msgstr "Téma ikon GTK+ nie je správne nastavená"
 msgid ""
 "<big><b>%s</b></big>\n"
 "\n"
-"This usually means you don't have an XSETTINGS manager running.  Desktop "
-"environment like GNOME or XFCE automatically execute their XSETTING managers "
-"like gnome-settings-daemon or xfce-mcs-manager.\n"
+"This usually means you don't have an XSETTINGS manager running.  Desktop environment like GNOME or XFCE automatically execute their XSETTING managers like gnome-settings-daemon or xfce-mcs-manager.\n"
 "\n"
 "<b>If you don't use these desktop environments, you have two choices:\n"
 "1. run an XSETTINGS manager, or\n"
 "2. simply specify an icon theme in ~/.gtkrc-2.0.</b>\n"
 "For example to use the Tango icon theme add a line:\n"
-"<i><b>gtk-icon-theme-name=\"Tango\"</b></i> in your ~/.gtkrc-2.0. (create it "
-"if no such file)\n"
+"<i><b>gtk-icon-theme-name=\"Tango\"</b></i> in your ~/.gtkrc-2.0. (create it if no such file)\n"
 "\n"
-"<b>NOTICE: The icon theme you choose should be compatible with GNOME, or the "
-"file icons cannot be displayed correctly.</b>  Due to the differences in "
-"icon naming of GNOME and KDE, KDE themes cannot be used.  Currently there is "
-"no standard for this, but it will be solved by freedesktop.org in the future."
+"<b>NOTICE: The icon theme you choose should be compatible with GNOME, or the file icons cannot be displayed correctly.</b>  Due to the differences in icon naming of GNOME and KDE, KDE themes cannot be used.  Currently there is no standard for this, but it will be solved by freedesktop.org in the future."
 msgstr ""
 "<big><b>%s</b></big>\n"
 "\n"
-"To zvyčajne znamená, že vám nebeží správca XSETTINGS. Pracovné prostredia "
-"ako GNOME alebo XFCE automaticky spúšťajú svojich správcov XSETTING ako "
-"gnome-settings-daemon či xfce-mcs-manager.\n"
+"To zvyčajne znamená, že vám nebeží správca XSETTINGS. Pracovné prostredia ako GNOME alebo XFCE automaticky spúšťajú svojich správcov XSETTING ako gnome-settings-daemon či xfce-mcs-manager.\n"
 "\n"
 "<b>ak nepoužívate tieto pracovné prostredia, máte dve možnosti:\n"
 "1. spustiť správcu XSETTINGS alebo\n"
 "2. jednoducho uviesť tému ikon v súbore ~/.gtkrc-2.0.</b>\n"
 "Napríklad ak chcete použiť tému ikon Tango pridajte riadok:\n"
-"<i><b>gtk-icon-theme-name=\"Tango\"</b></i> do svojho súboru ~/.gtkrc-2.0. "
-"(ak neexistuje vytvorte ho)\n"
+"<i><b>gtk-icon-theme-name=\"Tango\"</b></i> do svojho súboru ~/.gtkrc-2.0. (ak neexistuje vytvorte ho)\n"
 "\n"
-"<b>POZN.: Téma ikon, ktorú vyberiete by mala byť kompatibilná s GNOME inak "
-"nebude možné správne zobraziť ikony súborov.</b>  Kvôli rozdielom v "
-"pomenovaní ikon GNOME a KDE nie je možné použiť témy KDE. Momentálne na to "
-"neexistuje žiadny štandard, ale freedesktop.org to v budúcnosti vyrieši."
+"<b>POZN.: Téma ikon, ktorú vyberiete by mala byť kompatibilná s GNOME inak nebude možné správne zobraziť ikony súborov.</b>  Kvôli rozdielom v pomenovaní ikon GNOME a KDE nie je možné použiť témy KDE. Momentálne na to neexistuje žiadny štandard, ale freedesktop.org to v budúcnosti vyrieši."
 
-#: ../src/main.c:678 ../src/main.c:747 ../src/main.c:798
-#: ../src/main-window.c:1704 ../src/main-window.c:1771
-#: ../src/ptk/ptk-file-browser.c:520 ../src/ptk/ptk-file-browser.c:538
-#: ../src/ptk/ptk-file-task.c:332 ../src/ptk/ptk-console-output.c:225
-#: ../src/ptk/ptk-file-misc.c:258 ../src/ptk/ptk-file-misc.c:326
-#: ../src/ptk/ptk-file-misc.c:415 ../src/ptk/ptk-file-properties.c:701
+#: ../src/main.c:678
+#: ../src/main.c:747
+#: ../src/main.c:798
+#: ../src/main-window.c:1704
+#: ../src/main-window.c:1771
+#: ../src/ptk/ptk-file-browser.c:520
+#: ../src/ptk/ptk-file-browser.c:538
+#: ../src/ptk/ptk-file-task.c:332
+#: ../src/ptk/ptk-console-output.c:225
+#: ../src/ptk/ptk-file-misc.c:258
+#: ../src/ptk/ptk-file-misc.c:326
+#: ../src/ptk/ptk-file-misc.c:415
+#: ../src/ptk/ptk-file-properties.c:701
 #: ../src/ptk/ptk-file-properties.c:712
 msgid "Error"
 msgstr "Chyba"
@@ -875,12 +855,14 @@ msgstr ""
 "„%s“\n"
 "%s"
 
-#: ../src/main-window.c:304 ../src/ptk/ptk-file-menu.c:109
+#: ../src/main-window.c:304
+#: ../src/ptk/ptk-file-menu.c:109
 #: ../src/desktop/desktop-window.c:186
 msgid "_Folder"
 msgstr "_Priečinok"
 
-#: ../src/main-window.c:305 ../src/ptk/ptk-file-menu.c:110
+#: ../src/main-window.c:305
+#: ../src/ptk/ptk-file-menu.c:110
 #: ../src/desktop/desktop-window.c:187
 msgid "_Text File"
 msgstr "_Textový súbor"
@@ -893,7 +875,8 @@ msgstr "Nové _okno"
 msgid "New _Tab"
 msgstr "Nová kar_ta"
 
-#: ../src/main-window.c:314 ../src/ptk/ptk-file-menu.c:133
+#: ../src/main-window.c:314
+#: ../src/ptk/ptk-file-menu.c:133
 #: ../src/desktop/desktop-window.c:196
 msgid "_Create New"
 msgstr "_Vytvoriť nové"
@@ -910,11 +893,13 @@ msgstr "Zatvoriť kartu"
 msgid "_Close Window"
 msgstr "_Zatvoriť okno"
 
-#: ../src/main-window.c:327 ../src/ptk/ptk-file-menu.c:128
+#: ../src/main-window.c:327
+#: ../src/ptk/ptk-file-menu.c:128
 msgid "_Delete"
 msgstr "_Zmazať"
 
-#: ../src/main-window.c:328 ../src/ptk/ptk-file-browser.c:1396
+#: ../src/main-window.c:328
+#: ../src/ptk/ptk-file-browser.c:1396
 #: ../src/ptk/ptk-file-menu.c:129
 msgid "_Rename"
 msgstr "P_remenovať"
@@ -943,19 +928,23 @@ msgstr "Prejsť do nadradeného _priečinka"
 msgid "Go _Home"
 msgstr "Prejsť _domov"
 
-#: ../src/main-window.c:355 ../src/desktop/desktop-window.c:173
+#: ../src/main-window.c:355
+#: ../src/desktop/desktop-window.c:173
 msgid "Sort by _Name"
 msgstr "Zoradiť podľa _názvu"
 
-#: ../src/main-window.c:356 ../src/desktop/desktop-window.c:174
+#: ../src/main-window.c:356
+#: ../src/desktop/desktop-window.c:174
 msgid "Sort by _Size"
 msgstr "Zoradiť podľa veľko_sti"
 
-#: ../src/main-window.c:357 ../src/desktop/desktop-window.c:176
+#: ../src/main-window.c:357
+#: ../src/desktop/desktop-window.c:176
 msgid "Sort by _Modification Time"
 msgstr "Zoradiť podľa času poslednej z_meny"
 
-#: ../src/main-window.c:358 ../src/desktop/desktop-window.c:175
+#: ../src/main-window.c:358
+#: ../src/desktop/desktop-window.c:175
 msgid "Sort by _Type"
 msgstr "Zoradiť podľa _typu"
 
@@ -967,11 +956,13 @@ msgstr "Zoradiť podľa o_právnení"
 msgid "Sort by _Owner"
 msgstr "Zoradiť podľa _vlastníka"
 
-#: ../src/main-window.c:362 ../src/desktop/desktop-window.c:179
+#: ../src/main-window.c:362
+#: ../src/desktop/desktop-window.c:179
 msgid "Ascending"
 msgstr "Vzostupne"
 
-#: ../src/main-window.c:363 ../src/desktop/desktop-window.c:180
+#: ../src/main-window.c:363
+#: ../src/desktop/desktop-window.c:180
 msgid "Descending"
 msgstr "Zostupne"
 
@@ -1119,7 +1110,7 @@ msgid ", Free space: %s (Total: %s )"
 msgstr ", Voľné miesto: %s (Celkom: %s )"
 
 #: ../src/main-window.c:2112
-#, fuzzy, c-format
+#, c-format
 msgid "%d item selected (%s)%s"
 msgid_plural "%d items selected (%s)%s"
 msgstr[0] "%d viditeľná položka (%s)%s"
@@ -1146,24 +1137,29 @@ msgstr[2] "%d viditeľných položiek (%s)%s"
 msgid "Directory doesn't exist!"
 msgstr "Adresár neexistuje!"
 
-#: ../src/ptk/ptk-file-browser.c:1392 ../src/ptk/ptk-file-menu.c:142
+#: ../src/ptk/ptk-file-browser.c:1392
+#: ../src/ptk/ptk-file-menu.c:142
 msgid "Open in New _Tab"
 msgstr "Otvoriť v novej _karte"
 
-#: ../src/ptk/ptk-file-browser.c:1393 ../src/ptk/ptk-file-menu.c:143
+#: ../src/ptk/ptk-file-browser.c:1393
+#: ../src/ptk/ptk-file-menu.c:143
 msgid "Open in New _Window"
 msgstr "Otvoriť v novom _okne"
 
-#: ../src/ptk/ptk-file-browser.c:1646 ../src/edit-bookmarks.c:201
+#: ../src/ptk/ptk-file-browser.c:1646
+#: ../src/edit-bookmarks.c:201
 #: ../src/find-files.c:799
 msgid "Name"
 msgstr "Názov"
 
-#: ../src/ptk/ptk-file-browser.c:1646 ../src/find-files.c:820
+#: ../src/ptk/ptk-file-browser.c:1646
+#: ../src/find-files.c:820
 msgid "Size"
 msgstr "Veľkosť"
 
-#: ../src/ptk/ptk-file-browser.c:1646 ../src/find-files.c:824
+#: ../src/ptk/ptk-file-browser.c:1646
+#: ../src/find-files.c:824
 msgid "Type"
 msgstr "Typ"
 
@@ -1195,7 +1191,8 @@ msgstr "Kôš"
 msgid "Desktop"
 msgstr "Plocha"
 
-#: ../src/ptk/ptk-location-view.c:441 ../src/ptk/ptk-location-view.c:635
+#: ../src/ptk/ptk-location-view.c:441
+#: ../src/ptk/ptk-location-view.c:635
 msgid "Unable to mount device"
 msgstr "Nepodarilo sa pripojiť zariadenie"
 
@@ -1267,6 +1264,23 @@ msgstr "Vytvára sa odkaz..."
 msgid "Changing Properties"
 msgstr "Zmena vlastností"
 
+#. To: <Destination folder>
+#. ex. Copy file to..., Move file to...etc.
+#: ../src/ptk/ptk-file-task.c:154
+msgid "To:"
+msgstr "Kam:"
+
+#. Processing:
+#. Processing: <Name of currently proccesed file>
+#: ../src/ptk/ptk-file-task.c:169
+msgid "Processing:"
+msgstr "Spracúva sa:"
+
+#. Progress:
+#: ../src/ptk/ptk-file-task.c:184
+msgid "Progress:"
+msgstr "Priebeh:"
+
 #: ../src/ptk/ptk-file-task.c:320
 msgid "Cancel the operation?"
 msgstr "Prerušiť operáciu?"
@@ -1336,7 +1350,6 @@ msgid "Skip All"
 msgstr "Preskočiť všetky"
 
 #: ../src/ptk/ptk-file-archiver.c:125
-#, fuzzy
 msgid "Save Compressed Files to..."
 msgstr "Uložiť komprimované súbory do..."
 
@@ -1428,7 +1441,8 @@ msgid "_Open with \"%s\""
 msgstr "_Otvoriť pomocou „%s“"
 
 #. delete some confusing menu item if this menu is for current folder
-#: ../src/ptk/ptk-file-menu.c:408 ../src/ptk/ptk-file-menu.c:417
+#: ../src/ptk/ptk-file-menu.c:408
+#: ../src/ptk/ptk-file-menu.c:417
 #: ../src/find-files.c:229
 msgid "_Open"
 msgstr "_Otvoriť"
@@ -1445,7 +1459,8 @@ msgstr "Premenovať súbor"
 msgid "Please input new file name:"
 msgstr "Prosím, zadajte nový názov súboru:"
 
-#: ../src/ptk/ptk-file-misc.c:151 ../src/ptk/ptk-file-misc.c:172
+#: ../src/ptk/ptk-file-misc.c:151
+#: ../src/ptk/ptk-file-misc.c:172
 #: ../src/ptk/ptk-file-misc.c:225
 msgid ""
 "The file name you specified already exists.\n"
@@ -1454,7 +1469,8 @@ msgstr ""
 "Názov súboru ktorý ste zadali už existuje.\n"
 "Prosím zadajte nový:"
 
-#: ../src/ptk/ptk-file-misc.c:195 ../src/ptk/ptk-file-misc.c:197
+#: ../src/ptk/ptk-file-misc.c:195
+#: ../src/ptk/ptk-file-misc.c:197
 msgid "New Folder"
 msgstr "Nový priečinok"
 
@@ -1462,7 +1478,8 @@ msgstr "Nový priečinok"
 msgid "Input a name for the new folder:"
 msgstr "Zadajte názov pre nový priečinok:"
 
-#: ../src/ptk/ptk-file-misc.c:202 ../src/ptk/ptk-file-misc.c:204
+#: ../src/ptk/ptk-file-misc.c:202
+#: ../src/ptk/ptk-file-misc.c:204
 msgid "New File"
 msgstr "Nový súbor"
 
@@ -1501,8 +1518,7 @@ msgid "Invalid Group"
 msgstr "Neplatná skupina"
 
 #: ../src/ptk/ptk-file-properties.c:760
-msgid ""
-"Do you want to recursively apply these changes to all files and sub-folders?"
+msgid "Do you want to recursively apply these changes to all files and sub-folders?"
 msgstr "Chcete tieto zmeny použiť rekurzívne na všetky súbory a podadresáre?"
 
 #: ../src/edit-bookmarks.c:79
@@ -1531,7 +1547,8 @@ msgstr "Príkaz nenájdený"
 msgid "Destination directory \"%1$s\" is contained in source \"%2$s\""
 msgstr "Cieľový adresár „%1$s“ je podadresárom zdrojového „%2$s“"
 
-#: ../src/vfs/vfs-volume-hal.c:475 ../src/vfs/vfs-volume-hal.c:698
+#: ../src/vfs/vfs-volume-hal.c:475
+#: ../src/vfs/vfs-volume-hal.c:698
 #, c-format
 msgid "%s Volume"
 msgstr "%s zväzok"
@@ -1716,7 +1733,8 @@ msgid "Failed to connect to the HAL daemon: %s"
 msgstr "Nepodarilo sa pripojiť k HAL démonu: %s"
 
 #. definitely not a device that we're able to mount, eject or unmount
-#: ../src/vfs/vfs-volume-hal.c:1941 ../src/vfs/vfs-volume-hal.c:1997
+#: ../src/vfs/vfs-volume-hal.c:1941
+#: ../src/vfs/vfs-volume-hal.c:1997
 #, c-format
 msgid "Given device \"%s\" is not a volume or drive"
 msgstr "Zadané zariadenie „%s“ nie je zväzok ani jednotka"
@@ -1750,11 +1768,8 @@ msgstr "Zadaná neplatná voľba počas pokusu pripojiť zväzok „%s“"
 
 #: ../src/vfs/vfs-volume-hal.c:2272
 #, c-format
-msgid ""
-"The volume \"%s\" uses the <i>%s</i> file system which is not supported by "
-"your system"
-msgstr ""
-"Zväzok „%s“ používa súborový systém <i>%s</i>, ktorý váš systém nepodporuje"
+msgid "The volume \"%s\" uses the <i>%s</i> file system which is not supported by your system"
+msgstr "Zväzok „%s“ používa súborový systém <i>%s</i>, ktorý váš systém nepodporuje"
 
 #: ../src/vfs/vfs-volume-hal.c:2274
 #, c-format
@@ -1779,19 +1794,13 @@ msgstr "Zväzok „%s“ bol pravdepodobne pripojený ručne z príkazového ria
 
 #: ../src/vfs/vfs-volume-hal.c:2289
 #, c-format
-msgid ""
-"Blank discs cannot be mounted, use a CD recording application to record "
-"audio or data on the disc"
-msgstr ""
-"Prázdne disky nemožno pripojiť. Na nahranie údajov na disk použite aplikáciu "
-"na napaľovanie diskov."
+msgid "Blank discs cannot be mounted, use a CD recording application to record audio or data on the disc"
+msgstr "Prázdne disky nemožno pripojiť. Na nahranie údajov na disk použite aplikáciu na napaľovanie diskov."
 
 #: ../src/vfs/vfs-volume-hal.c:2300
 #, c-format
 msgid "Audio CDs cannot be mounted, use music players to play the audio tracks"
-msgstr ""
-"Zvukové disky nemožno pripojiť. Na prehranie zvukových stôp použite "
-"prehrávač hudby."
+msgstr "Zvukové disky nemožno pripojiť. Na prehranie zvukových stôp použite prehrávač hudby."
 
 #: ../src/desktop/desktop-window.c:193
 msgid "_Icons"
@@ -1828,3 +1837,4 @@ msgstr "Priečinok"
 #: ../src/find-files.c:830
 msgid "Last Modified"
 msgstr "Posledná zmena"
+
