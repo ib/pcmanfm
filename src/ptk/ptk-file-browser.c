@@ -1684,6 +1684,8 @@ void init_list_view( PtkFileBrowser* file_browser, GtkTreeView* list_view )
         gtk_tree_view_column_set_sort_indicator( col, TRUE );
         gtk_tree_view_column_set_sort_column_id( col, cols[ i ] );
         gtk_tree_view_column_set_sort_order( col, GTK_SORT_DESCENDING );
+
+        if ( cols[ i ] == COL_FILE_SIZE ) g_object_set( G_OBJECT( renderer ), "xalign", 1.0, NULL );
     }
 
     col = gtk_tree_view_get_column( list_view, 2 );
