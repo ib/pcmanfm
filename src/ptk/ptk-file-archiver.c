@@ -61,14 +61,12 @@ const ArchiveHandler handlers[]=
             "tar -xvf",
             ".tar", TRUE
         },
-        /*
         {
             "application/x-rar",
             NULL,
             "unrar -o- e",
             ".rar", TRUE
         }
-        */
     };
 
 
