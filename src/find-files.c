@@ -80,6 +80,7 @@ typedef struct _FindFile
 
     /* advanced options */
     GtkWidget* search_hidden;
+    GtkWidget* include_sub;
 
     /* size & date */
     GtkWidget* use_size_lower;
@@ -105,7 +106,6 @@ typedef struct _FindFile
     GtkWidget* places_view;
     GtkWidget* add_folder_btn;
     GtkWidget* remove_folder_btn;
-    GtkWidget* include_sub;
 
     /* search result pane */
     GtkWidget* search_result;
@@ -275,6 +275,15 @@ static char** compose_command( FindFile* data )
                     g_free( arg );
             }
         }while( gtk_tree_model_iter_next( GTK_TREE_MODEL( data->places_list ), &it ) );
+    }
+
+    /* if subdirectories are excluded */
+    if (!gtk_toggle_button_get_active((GtkToggleButton *) data->include_sub))
+    {
+        arg = g_strdup("-maxdepth");
+        g_array_append_val( argv, arg );
+        arg = g_strdup("1");
+        g_array_append_val( argv, arg );
     }
 
     /* if hidden files is excluded */
@@ -571,7 +580,7 @@ static gpointer search_thread( VFSAsyncTask* task, FindFile* data )
         }
     }
     /* end of stream (EOF) is reached */
-    if( path->len > 0 ) /* this is the last line without eol character '\n' */
+    if( path->len == 0 ) /* this is the last line without eol character '\n' */
     {
         if( ! data->task->cancel )
         {
@@ -896,6 +905,7 @@ void fm_find_files( const char** search_dirs )
     data->fc_use_regexp = (GtkWidget*)gtk_builder_get_object( builder, "fc_use_regexp" );
 
     /* advanced options */
+    data->include_sub = (GtkWidget*)gtk_builder_get_object( builder, "include_sub" );
     data->search_hidden = (GtkWidget*)gtk_builder_get_object( builder, "search_hidden" );
 
     /* size & date */
@@ -923,7 +933,6 @@ void fm_find_files( const char** search_dirs )
     data->places_view = (GtkWidget*)gtk_builder_get_object( builder, "places_view" );
     add_folder_btn = (GtkWidget*)gtk_builder_get_object( builder, "add_folder_btn" );
     remove_folder_btn = (GtkWidget*)gtk_builder_get_object( builder, "remove_folder_btn" );
-    data->include_sub = (GtkWidget*)gtk_builder_get_object( builder, "include_sub" );
 
     if( search_dirs )
     {
