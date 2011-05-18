@@ -15,7 +15,7 @@
 enum{
     COL_MIME_ICON,
     COL_MIME_DESC,
-    COL_MIME_TYPE,
+/*  COL_MIME_TYPE, */
     N_COL_MIME
 };
 
@@ -85,7 +85,7 @@ static void add_mime_types_to_tree( GtkTreeStore* tree,
         gtk_tree_store_set( tree, &it,
                             COL_MIME_ICON, icon,
                             COL_MIME_DESC, _(file_name),
-                            COL_MIME_TYPE, file_name, -1 );
+                            /*COL_MIME_TYPE, file_name,*/ -1 );
         if( icon )
             gdk_pixbuf_unref( icon );
         vfs_mime_type_unref( mime_type );
@@ -115,7 +115,7 @@ static void add_mime_types_to_tree( GtkTreeStore* tree,
         gtk_tree_store_set( tree, &it,
                             COL_MIME_ICON, vfs_mime_type_get_icon( mime_type, FALSE ),
                             COL_MIME_DESC, vfs_mime_type_get_description( mime_type ),
-                            COL_MIME_TYPE, file_name, -1 );
+                            /*COL_MIME_TYPE, file_name,*/ -1 );
         vfs_mime_type_unref( mime_type );
     }
 }
@@ -133,12 +133,12 @@ static void init_type_tree( GtkTreeView* view )
 
     GtkTreeStore* tree;
     GtkTreeViewColumn *col;
-    GtkCellRenderer* render;
+    GtkCellRenderer *prender, *render;
 
     tree = gtk_tree_store_new( N_COL_MIME,
                                GDK_TYPE_PIXBUF,
-                               G_TYPE_STRING,
-                               G_TYPE_STRING );
+                               G_TYPE_STRING/*,
+                               G_TYPE_STRING*/ );
 
     len = g_strv_length( sys_dirs );
     dirs = g_new0( const char*, len + 2 );
@@ -169,11 +169,15 @@ static void init_type_tree( GtkTreeView* view )
 
     gtk_tree_view_set_model( view, GTK_TREE_MODEL( tree ) );
 
-    render = gtk_cell_renderer_pixbuf_new();
-    col = gtk_tree_view_column_new_with_attributes(
-              "", render, "pixbuf", COL_MIME_ICON, NULL );
+    col = gtk_tree_view_column_new();
+    prender = gtk_cell_renderer_pixbuf_new();
+    g_object_set( prender, "xalign", 0.0, NULL );
+    gtk_tree_view_column_pack_start( col, prender, FALSE );
+    gtk_tree_view_column_add_attribute(
+        col, prender, "pixbuf", COL_MIME_ICON );
     render = gtk_cell_renderer_text_new();
-    gtk_tree_view_column_pack_start( col, render, TRUE );
+    g_object_set( render, "xalign", 0.0, NULL );
+    gtk_tree_view_column_pack_start( col, render, FALSE );
     gtk_tree_view_column_add_attribute(
         col, render, "text", COL_MIME_DESC );
     gtk_tree_view_append_column( view, col );
@@ -184,6 +188,17 @@ void edit_file_associations( GtkWindow* parent_win )
     GtkBuilder* builder = _gtk_builder_new_from_file( PACKAGE_UI_DIR "/file-assoc-dlg.ui", NULL );
     GtkWidget* dlg = (GtkWidget*)gtk_builder_get_object( builder, "file_assoc_dlg" );
     gtk_window_set_transient_for( GTK_WINDOW( dlg ), parent_win );
+
+    /* not yet working */
+    gtk_widget_set_sensitive( (GtkWidget*)gtk_builder_get_object( builder, "add_app" ), FALSE );
+    gtk_widget_set_sensitive( (GtkWidget*)gtk_builder_get_object( builder, "add_custom" ), FALSE );
+    gtk_widget_set_sensitive( (GtkWidget*)gtk_builder_get_object( builder, "edit" ), FALSE );
+    gtk_widget_set_sensitive( (GtkWidget*)gtk_builder_get_object( builder, "remove" ), FALSE );
+    gtk_widget_set_sensitive( (GtkWidget*)gtk_builder_get_object( builder, "up" ), FALSE );
+    gtk_widget_set_sensitive( (GtkWidget*)gtk_builder_get_object( builder, "down" ), FALSE );
+
+    gtk_widget_set_size_request( (GtkWidget*)gtk_builder_get_object( builder, "vbox3" ), 215, -1 );
+    gtk_widget_set_size_request( (GtkWidget*)gtk_builder_get_object( builder, "scrolledwindow2" ), 275, -1 );
 
     GtkWidget* types = (GtkWidget*)gtk_builder_get_object( builder, "types" );
     init_type_tree( (GtkTreeView*)types );
