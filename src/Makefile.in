@@ -86,8 +86,8 @@ am__pcmanfm_SOURCES_DIST = mime-type/mime-type.c mime-type/mime-type.h \
 	desktop/desktop-window.c desktop/desktop-window.h private.h \
 	main.c pcmanfm.h main-window.c main-window.h settings.c \
 	settings.h pref-dialog.c pref-dialog.h edit-bookmarks.c \
-	edit-bookmarks.h find-files.c find-files.h go-dialog.c \
-	go-dialog.h
+	edit-bookmarks.h file-assoc-dlg.c file-assoc-dlg.h \
+	find-files.c find-files.h go-dialog.c go-dialog.h
 am__objects_1 = pcmanfm-mime-type.$(OBJEXT) \
 	pcmanfm-mime-action.$(OBJEXT) pcmanfm-mime-cache.$(OBJEXT)
 am__objects_2 =
@@ -137,8 +137,8 @@ am_pcmanfm_OBJECTS = $(am__objects_1) $(am__objects_2) \
 	$(am__objects_9) $(am__objects_10) $(am__objects_11) \
 	pcmanfm-main.$(OBJEXT) pcmanfm-main-window.$(OBJEXT) \
 	pcmanfm-settings.$(OBJEXT) pcmanfm-pref-dialog.$(OBJEXT) \
-	pcmanfm-edit-bookmarks.$(OBJEXT) pcmanfm-find-files.$(OBJEXT) \
-	pcmanfm-go-dialog.$(OBJEXT)
+	pcmanfm-edit-bookmarks.$(OBJEXT) pcmanfm-file-assoc-dlg.$(OBJEXT) \
+	pcmanfm-find-files.$(OBJEXT) pcmanfm-go-dialog.$(OBJEXT)
 pcmanfm_OBJECTS = $(am_pcmanfm_OBJECTS)
 am__DEPENDENCIES_1 =
 pcmanfm_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -422,6 +422,7 @@ pcmanfm_SOURCES = \
     settings.c settings.h \
     pref-dialog.c pref-dialog.h \
     edit-bookmarks.c edit-bookmarks.h \
+    file-assoc-dlg.c file-assoc-dlg.h \
     find-files.c find-files.h \
     go-dialog.c go-dialog.h
 
@@ -543,6 +544,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pcmanfm-exo-private.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pcmanfm-exo-string.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pcmanfm-exo-tree-view.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pcmanfm-file-assoc-dlg.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pcmanfm-find-files.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pcmanfm-glib-utils.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pcmanfm-go-dialog.Po@am__quote@
@@ -1309,6 +1311,20 @@ pcmanfm-edit-bookmarks.obj: edit-bookmarks.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='edit-bookmarks.c' object='pcmanfm-edit-bookmarks.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(pcmanfm_CFLAGS) $(CFLAGS) -c -o pcmanfm-edit-bookmarks.obj `if test -f 'edit-bookmarks.c'; then $(CYGPATH_W) 'edit-bookmarks.c'; else $(CYGPATH_W) '$(srcdir)/edit-bookmarks.c'; fi`
+
+pcmanfm-file-assoc-dlg.o: file-assoc-dlg.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(pcmanfm_CFLAGS) $(CFLAGS) -MT pcmanfm-file-assoc-dlg.o -MD -MP -MF $(DEPDIR)/pcmanfm-file-assoc-dlg.Tpo -c -o pcmanfm-file-assoc-dlg.o `test -f 'file-assoc-dlg.c' || echo '$(srcdir)/'`file-assoc-dlg.c
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/pcmanfm-file-assoc-dlg.Tpo $(DEPDIR)/pcmanfm-file-assoc-dlg.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='file-assoc-dlg.c' object='pcmanfm-file-assoc-dlg.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(pcmanfm_CFLAGS) $(CFLAGS) -c -o pcmanfm-file-assoc-dlg.o `test -f 'file-assoc-dlg.c' || echo '$(srcdir)/'`file-assoc-dlg.c
+
+pcmanfm-file-assoc-dlg.obj: file-assoc-dlg.c
+@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(pcmanfm_CFLAGS) $(CFLAGS) -MT pcmanfm-file-assoc-dlg.obj -MD -MP -MF $(DEPDIR)/pcmanfm-file-assoc-dlg.Tpo -c -o pcmanfm-file-assoc-dlg.obj `if test -f 'file-assoc-dlg.c'; then $(CYGPATH_W) 'file-assoc-dlg.c'; else $(CYGPATH_W) '$(srcdir)/file-assoc-dlg.c'; fi`
+@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/pcmanfm-file-assoc-dlg.Tpo $(DEPDIR)/pcmanfm-file-assoc-dlg.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='file-assoc-dlg.c' object='pcmanfm-file-assoc-dlg.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(pcmanfm_CFLAGS) $(CFLAGS) -c -o pcmanfm-file-assoc-dlg.obj `if test -f 'file-assoc-dlg.c'; then $(CYGPATH_W) 'file-assoc-dlg.c'; else $(CYGPATH_W) '$(srcdir)/file-assoc-dlg.c'; fi`
 
 pcmanfm-find-files.o: find-files.c
 @am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(pcmanfm_CFLAGS) $(CFLAGS) -MT pcmanfm-find-files.o -MD -MP -MF $(DEPDIR)/pcmanfm-find-files.Tpo -c -o pcmanfm-find-files.o `test -f 'find-files.c' || echo '$(srcdir)/'`find-files.c

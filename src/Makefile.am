@@ -114,6 +114,7 @@ pcmanfm_SOURCES = \
     settings.c settings.h \
     pref-dialog.c pref-dialog.h \
     edit-bookmarks.c edit-bookmarks.h \
+    file-assoc-dlg.c file-assoc-dlg.h \
     find-files.c find-files.h \
     go-dialog.c go-dialog.h
 

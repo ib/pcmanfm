@@ -35,6 +35,7 @@
 #include "ptk-path-entry.h"
 
 #include "settings.h"
+#include "file-assoc-dlg.h"
 #include "find-files.h"
 
 #ifdef HAVE_STATVFS
@@ -99,10 +100,8 @@ static void on_new_text_file_activate ( GtkMenuItem *menuitem,
                                         gpointer user_data );
 static void on_preference_activate ( GtkMenuItem *menuitem,
                                      gpointer user_data );
-#if 0
 static void on_file_assoc_activate ( GtkMenuItem *menuitem,
                                      gpointer user_data );
-#endif
 static void on_about_activate ( GtkMenuItem *menuitem,
                                 gpointer user_data );
 #if 0
@@ -330,7 +329,7 @@ static PtkMenuItemEntry fm_edit_menu[] =
         PTK_MENU_ITEM( N_( "Select _All" ), on_select_all_activate, GDK_A, GDK_CONTROL_MASK ),
         PTK_MENU_ITEM( N_( "_Invert Selection" ), on_invert_selection_activate, GDK_I, GDK_CONTROL_MASK ),
         PTK_SEPARATOR_MENU_ITEM,
-        // PTK_IMG_MENU_ITEM( N_( "_File Associations" ), "gtk-execute", on_file_assoc_activate , 0, 0 ),
+        PTK_IMG_MENU_ITEM( N_( "_File Associations" ), "gtk-execute", on_file_assoc_activate , 0, 0 ),
         PTK_STOCK_MENU_ITEM( "gtk-preferences", on_preference_activate ),
         PTK_MENU_END
     };
@@ -1089,7 +1088,6 @@ void fm_main_window_preference( FMMainWindow* main_window )
 }
 
 
-#if 0
 void
 on_file_assoc_activate ( GtkMenuItem *menuitem,
                          gpointer user_data )
@@ -1097,7 +1095,6 @@ on_file_assoc_activate ( GtkMenuItem *menuitem,
     GtkWindow * main_window = GTK_WINDOW( user_data );
     edit_file_associations( main_window );
 }
-#endif
 
 /* callback used to open default browser when URLs got clicked */
 static void open_url( GtkAboutDialog *dlg, const gchar *url, gpointer data)
