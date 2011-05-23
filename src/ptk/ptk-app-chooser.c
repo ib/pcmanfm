@@ -295,7 +295,7 @@ on_browse_btn_clicked ( GtkButton *button,
                                                   GTK_STOCK_CANCEL,
                                                   GTK_RESPONSE_CANCEL,
                                                   NULL );
-    GtkBuilder* builder = (GtkBuilder*)g_object_get_data(G_OBJECT(dlg), "builder");
+    GtkBuilder* builder = (GtkBuilder*)g_object_get_data(G_OBJECT(parent), "builder");
 
     gtk_file_chooser_set_current_folder ( GTK_FILE_CHOOSER ( dlg ),
                                           "/usr/bin" );
