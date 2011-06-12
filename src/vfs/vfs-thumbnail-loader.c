@@ -180,10 +180,8 @@ gpointer thumbnail_loader_thread( VFSAsyncTask* task, VFSThumbnailLoader* loader
                                               NULL );
                 vfs_file_info_load_thumbnail( req->file, full_path, load_big );
                 g_free( full_path );
-                /*  Slow donwn for debugging.
-                g_debug( "DELAY!!" );
-                g_usleep(G_USEC_PER_SEC/2);
-                */
+                /*  Slow down for displaying. */
+                g_usleep(G_USEC_PER_SEC/1000);
 
                 /* g_debug( "thumbnail loaded: %s", req->file ); */
             }
