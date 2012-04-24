@@ -266,6 +266,14 @@ GdkPixbuf* vfs_mime_type_get_icon( VFSMimeType* mime_type, gboolean big )
             strncat( icon_name, mime_type->type, ( sep - mime_type->type ) );
             icon = vfs_load_icon ( icon_theme, icon_name, size );
         }
+        /* look for generic icon */
+        if ( G_UNLIKELY( ! icon ) )
+        {
+            char *generic_icon = mime_type_get_generic_icon( mime_type->type );
+            if ( G_LIKELY( generic_icon ) )
+                icon = vfs_load_icon ( icon_theme, generic_icon, size );
+            g_free( generic_icon );
+        }
         /* try foo-x-generic */
         if ( G_UNLIKELY( ! icon ) )
         {

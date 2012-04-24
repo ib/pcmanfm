@@ -124,6 +124,12 @@ char* mime_type_get_desc( const char* type, const char* locale  );
 void mime_cache_foreach( GFunc func, gpointer user_data );
 
 /*
+ * search generic-icons file
+ * (the returned string should be freed when no longer used)
+ */
+char* mime_type_get_generic_icon( const char* type );
+
+/*
  * Get mime caches
  */
 MimeCache** mime_type_get_caches( int* n );

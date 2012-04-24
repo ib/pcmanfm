@@ -668,6 +668,80 @@ char** mime_type_get_alias( const char* type )
 }
 
 /*
+ * search generic-icons file
+ * (the returned string should be freed when no longer used)
+ */
+char* mime_type_get_generic_icon( const char* type )
+{
+    const gchar* const * dir;
+    char file_path[ 256 ], *buffer;
+    int fd;
+    struct stat statbuf;
+    const char* generic_icon = NULL;
+    size_t type_len, generic_icon_len;
+    gchar *type_str;
+
+    type_len = strlen(type);
+    type_str = g_strndup(type, type_len + 1);
+    type_str[type_len] = ':';
+
+    dir = g_get_system_data_dirs();
+    for( ; *dir; ++dir )
+    {
+        /* FIXME: This path shouldn't be hard-coded. */
+        g_snprintf( file_path, 256, "%s/mime/generic-icons", *dir );
+
+        fd = open ( file_path, O_RDONLY, 0 );
+        if ( G_UNLIKELY( fd == -1 ) )
+            continue;
+        if( G_UNLIKELY( fstat ( fd, &statbuf ) == -1 ) )
+        {
+            close( fd );
+            continue;
+        }
+#ifdef HAVE_MMAP
+        buffer = (char*)mmap( NULL, statbuf.st_size, PROT_READ, MAP_SHARED, fd, 0 );
+#else
+        buffer = (char*)g_malloc( statbuf.st_size );
+        if( read( fd, buffer, statbuf.st_size ) == -1 )
+        {
+            g_free( buffer );
+            buffer = (char*)-1;
+        }
+#endif
+        close( fd );
+        if ( G_UNLIKELY( buffer == (void*)-1 ) )
+            continue;
+
+        if (( generic_icon = g_strstr_len( buffer, statbuf.st_size, type_str ) ))
+        {
+            generic_icon += type_len + 1;
+            generic_icon_len = 0;
+            if ( generic_icon + 1 < buffer + statbuf.st_size )
+            {
+                char *eol;
+                if (( eol = g_strstr_len( generic_icon, buffer + statbuf.st_size - generic_icon, "\n" ) ))
+                   generic_icon_len = eol - generic_icon;
+            }
+            if ( generic_icon_len == 0 ) generic_icon = NULL;
+        }
+
+#ifdef HAVE_MMAP
+        munmap ( buffer, statbuf.st_size );
+#else
+        g_free( buffer );
+#endif
+
+        g_free( type_str );
+
+        if ( generic_icon )
+            return g_strndup( generic_icon, generic_icon_len );
+    }
+
+    return NULL;
+}
+
+/*
  * Get mime caches
  */
 MimeCache** mime_type_get_caches( int* n )
