@@ -875,6 +875,12 @@ void fm_main_window_update_tab_label( FMMainWindow* main_window,
     /* TODO: Change the icon */
 
     name = g_path_get_basename( path );
+
+    if (!g_utf8_validate( name, -1, NULL )) {
+        g_free( name );
+        name = g_filename_display_basename( path );
+    }
+
     gtk_label_set_text( text, name );
     g_free( name );
 }
