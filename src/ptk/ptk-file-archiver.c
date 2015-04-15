@@ -72,6 +72,12 @@ const ArchiveHandler handlers[]=
             NULL,
             "unarj e",
             ".arj", TRUE
+        },
+        {
+            "application/x-7z-compressed",
+            "7z a -r",
+            "7z x",
+            ".7z", TRUE
         }
     };
 
