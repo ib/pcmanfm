@@ -78,6 +78,12 @@ const ArchiveHandler handlers[]=
             "7z a -r",
             "7z x",
             ".7z", TRUE
+        },
+        {
+            "application/x-xz",
+            "xz -z",
+            "xz -d",
+            ".xz", TRUE
         }
     };
 
