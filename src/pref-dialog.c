@@ -616,6 +616,7 @@ gboolean fm_edit_preference( GtkWindow* parent, int page )
         gtk_window_set_transient_for( GTK_WINDOW( data->dlg ), parent );
     gtk_notebook_set_current_page( (GtkNotebook*)data->notebook, page );
 
+    gtk_window_set_icon_name( GTK_WINDOW( data->dlg ), "pcmanfm" );
     gtk_window_present( (GtkWindow*)data->dlg );
 }
 
