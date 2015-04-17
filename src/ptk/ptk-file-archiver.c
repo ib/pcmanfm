@@ -32,6 +32,12 @@ ArchiveHandler;
 const ArchiveHandler handlers[]=
     {
         {
+            "application/x-xz-compressed-tar",
+            "tar -cJvf",
+            "tar -xJvf",
+            ".tar.xz", TRUE
+        },
+        {
             "application/x-bzip-compressed-tar",
             "tar --bzip2 -cvf",
             "tar --bzip2 -xvf",
