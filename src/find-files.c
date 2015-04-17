@@ -616,7 +616,7 @@ static void on_start_search( GtkWidget* btn, FindFile* data )
     char** argv;
     GError* err = NULL;
     int stdo, stde;
-    char* cmd_line;
+    //char* cmd_line;
 
     gtk_widget_hide( data->search_criteria );
     gtk_widget_show( data->search_result );
@@ -626,9 +626,9 @@ static void on_start_search( GtkWidget* btn, FindFile* data )
 
     argv = compose_command( data );
 
-    cmd_line = g_strjoinv( " ", argv );
-    g_debug( "find command: %s", cmd_line );
-    g_free( cmd_line );
+    //cmd_line = g_strjoinv( " ", argv );
+    //g_debug( "find command: %s", cmd_line );
+    //g_free( cmd_line );
 
     if( g_spawn_async_with_pipes( g_get_home_dir(), argv, NULL,
                                                   G_SPAWN_SEARCH_PATH | G_SPAWN_STDERR_TO_DEV_NULL,
