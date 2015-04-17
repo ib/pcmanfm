@@ -186,6 +186,12 @@ static void on_open_files( GtkAction* action, FindFile* data )
             else  /* open containing folders */
                 gtk_tree_model_get( model, &it, COL_DIR, &dir, -1 );
 
+            if (g_utf8_validate( dir, -1, NULL )) {
+                gchar *enc_name = g_filename_from_utf8( dir, -1, NULL, NULL, NULL );
+                g_free( dir );
+                dir = enc_name;
+            }
+
             if( open_files )
             {
                 GList *l;
@@ -270,7 +276,11 @@ static char** compose_command( FindFile* data )
             if( arg )
             {
                 if( *arg )
-                    g_array_append_val( argv, arg );
+                {
+                    gchar *enc_name = g_filename_from_utf8( arg, -1, NULL, NULL, NULL );
+                    g_array_append_val( argv, enc_name );
+                    g_free( arg );
+                }
                 else
                     g_free( arg );
             }
@@ -499,7 +509,7 @@ static void process_found_files( FindFile* data, GQueue* queue, const char* path
 
     if( path )
     {
-        name = g_filename_display_basename( path );
+        name = g_path_get_basename( path );
         fi = vfs_file_info_new();
         if( vfs_file_info_get( fi, path, name ) )
         {
@@ -529,14 +539,16 @@ static void process_found_files( FindFile* data, GQueue* queue, const char* path
         GDK_THREADS_ENTER();
         gtk_list_store_append( data->result_list, &it );
         icon = vfs_file_info_get_small_icon( ff->fi );
+        name = g_filename_display_name( ff->dir_path );
         gtk_list_store_set( data->result_list, &it,
                                     COL_ICON, icon,
                                     COL_NAME, vfs_file_info_get_disp_name(ff->fi),
-                                    COL_DIR, ff->dir_path, /* FIXME: non-UTF8? */
+                                    COL_DIR, name,
                                     COL_TYPE, vfs_file_info_get_mime_type_desc( ff->fi ),
                                     COL_SIZE, vfs_file_info_get_disp_size( ff->fi ),
                                     COL_MTIME, vfs_file_info_get_disp_mtime( ff->fi ),
                                     COL_INFO, ff->fi, -1 );
+        g_free( name );
         g_object_unref( icon );
         GDK_THREADS_LEAVE();
         g_slice_free( FoundFile, ff );
@@ -676,8 +688,10 @@ static void menu_pos( GtkMenu* menu, int* x, int* y, gboolean *push_in, GtkWidge
 static void add_search_dir( FindFile* data, const char* path )
 {
     GtkTreeIter it;
+    gchar *disp_name = g_filename_display_name( path );
     gtk_list_store_append( data->places_list, &it );
-    gtk_list_store_set( data->places_list, &it, 0, path, -1 );
+    gtk_list_store_set( data->places_list, &it, 0, disp_name, -1 );
+    g_free( disp_name );
 }
 
 static void on_add_search_browse(GtkWidget* menu, FindFile* data)
@@ -940,7 +954,11 @@ void fm_find_files( const char** search_dirs )
         for( dir = search_dirs; *dir; ++dir )
         {
             if( g_file_test( *dir, G_FILE_TEST_IS_DIR ) )
-                gtk_list_store_insert_with_values( data->places_list, &it, 0, 0, *dir, -1 );
+            {
+                gchar *disp_name = g_filename_display_name( *dir );
+                gtk_list_store_insert_with_values( data->places_list, &it, 0, 0, disp_name, -1 );
+                g_free( disp_name );
+            }
         }
     }
 
