@@ -226,7 +226,7 @@ static void on_open_files( GtkAction* action, FindFile* data )
 
 static GtkActionEntry menu_actions[] =
 {
-    { "OpenAction", GTK_STOCK_OPEN, N_("_Open"), NULL, NULL, G_CALLBACK(on_open_files) },
+    { "OpenAction", NULL, N_("_Open"), NULL, NULL, G_CALLBACK(on_open_files) },
     { "OpenFolderAction", GTK_STOCK_OPEN, N_("Open Containing _Folder"), NULL, NULL, G_CALLBACK(on_open_files) }
 };
 
