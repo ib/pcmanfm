@@ -12,6 +12,6 @@ Terminal=false
 Icon=folder-open
 StartupNotify=true
 Type=Application
-MimeType=x-directory/gnome-default-handler;x-directory/normal;inode/directory;
+MimeType=inode/directory;
 #NotShowIn=GNOME;
 
