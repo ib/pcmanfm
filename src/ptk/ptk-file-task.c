@@ -97,6 +97,7 @@ gboolean open_up_progress_dlg( PtkFileTask* task )
 {
     GtkTable* table;
     GtkLabel* label;
+    gchar *disp_name;
 
     const char * actions[] =
         {
@@ -139,7 +140,9 @@ gboolean open_up_progress_dlg( PtkFileTask* task )
     gtk_table_attach( table,
                       GTK_WIDGET(label),
                       0, 1, 0, 1, GTK_FILL, 0, 0, 0 );
-    task->from = GTK_LABEL(gtk_label_new( task->task->current_file ));
+    disp_name = g_filename_display_name( task->task->current_file );
+    task->from = GTK_LABEL(gtk_label_new( disp_name ));
+    g_free( disp_name );
     gtk_misc_set_alignment( GTK_MISC ( task->from ), 0, 0.5 );
     gtk_label_set_ellipsize( task->from, PANGO_ELLIPSIZE_MIDDLE );
     gtk_table_attach( table,
@@ -156,7 +159,9 @@ gboolean open_up_progress_dlg( PtkFileTask* task )
         gtk_table_attach( table,
                           GTK_WIDGET(label),
                           0, 1, 1, 2, GTK_FILL, 0, 0, 0 );
-        task->to = GTK_LABEL(gtk_label_new( task->task->dest_dir ));
+        disp_name = g_filename_display_name( task->task->dest_dir );
+        task->to = GTK_LABEL(gtk_label_new( disp_name ));
+        g_free( disp_name );
         gtk_misc_set_alignment( GTK_MISC ( task->to ), 0, 0.5 );
         gtk_label_set_ellipsize( task->to, PANGO_ELLIPSIZE_MIDDLE );
         gtk_table_attach( table,
