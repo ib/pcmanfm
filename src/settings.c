@@ -449,7 +449,7 @@ void save_settings()
                         &app_settings.desktop_shadow );
 
         /* Interface */
-        fputs( "[Interface]\n", file );
+        fputs( "\n[Interface]\n", file );
         if ( app_settings.always_show_tabs != always_show_tabs_default )
             fprintf( file, "always_show_tabs=%d\n", app_settings.always_show_tabs );
         if ( app_settings.hide_close_tab_buttons != hide_close_tab_buttons_default )
