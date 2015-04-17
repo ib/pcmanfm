@@ -82,7 +82,7 @@
   </object>
   <object class="GtkWindow" id="win">
     <property name="title" translatable="yes">Find Files</property>
-    <property name="default_width">580</property>
+    <property name="default_width">655</property>
     <property name="default_height">400</property>
     <child>
       <object class="GtkVBox" id="vbox1">
