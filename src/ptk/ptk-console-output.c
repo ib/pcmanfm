@@ -138,6 +138,7 @@ int ptk_console_output_run( GtkWindow* parent_win,
                             int argc, char* argv[] )
 {
     GtkWidget* main_dlg;
+    GdkPixbuf *icon;
     GtkWidget* desc_label;
     PtkConsoleOutputData* data;
     GtkWidget* hbox;
@@ -195,6 +196,9 @@ int ptk_console_output_run( GtkWindow* parent_win,
     gtk_widget_show_all( GTK_DIALOG(main_dlg)->vbox );
     gtk_window_set_default_size( GTK_WINDOW(main_dlg), 480, 240 );
 
+    icon = gtk_icon_theme_load_icon( gtk_icon_theme_get_default(), "pcmanfm", 16, 0, NULL );
+    gtk_window_set_icon( GTK_WINDOW( main_dlg ), icon );
+    g_object_unref( icon );
     gtk_widget_show( main_dlg );
 
     if( g_spawn_async_with_pipes( working_dir, argv, NULL,
