@@ -132,6 +132,7 @@ static void init_type_tree( GtkTreeView* view )
     char* name;
 
     GtkTreeStore* tree;
+    GtkTreeModel *sorted;
     GtkTreeViewColumn *col;
     GtkCellRenderer *prender, *render;
 
@@ -139,6 +140,9 @@ static void init_type_tree( GtkTreeView* view )
                                GDK_TYPE_PIXBUF,
                                G_TYPE_STRING/*,
                                G_TYPE_STRING*/ );
+
+    sorted = gtk_tree_model_sort_new_with_model( GTK_TREE_MODEL( tree ) );
+    gtk_tree_sortable_set_sort_column_id( GTK_TREE_SORTABLE( sorted ), COL_MIME_DESC, GTK_SORT_ASCENDING );
 
     len = g_strv_length( sys_dirs );
     dirs = g_new0( const char*, len + 2 );
@@ -167,7 +171,7 @@ static void init_type_tree( GtkTreeView* view )
     }
     g_free( dirs );
 
-    gtk_tree_view_set_model( view, GTK_TREE_MODEL( tree ) );
+    gtk_tree_view_set_model( view, sorted );
 
     col = gtk_tree_view_column_new();
     prender = gtk_cell_renderer_pixbuf_new();
