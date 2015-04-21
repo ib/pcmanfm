@@ -432,6 +432,7 @@ GtkWidget* ptk_file_menu_new( const char* file_path,
         gdk_pixbuf_unref( open_icon );
 
     /* Compress & Extract */
+    /* FIXME: Only show extract_menu when all selected files have the same type. */
     if ( ! ptk_file_archiver_is_format_supported( mime_type, TRUE ) )
     {
         /* This is not a supported archive format */
