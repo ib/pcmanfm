@@ -200,7 +200,16 @@ void ptk_file_archiver_create( GtkWindow* parent_win,
         return;
     }
 
-    g_shell_parse_argv( handlers[format].compress_cmd,
+    for( i = 0; i < G_N_ELEMENTS(handlers); ++i )
+    {
+        if ( handlers[i].compress_cmd )
+        {
+            if ( format == 0 ) break;
+            else format--;
+        }
+    }
+
+    g_shell_parse_argv( handlers[i].compress_cmd,
                         &cmdc, &cmdv, NULL );
 
     n = g_list_length( files );
