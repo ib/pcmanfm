@@ -50,10 +50,16 @@ const ArchiveHandler handlers[]=
             ".tar.gz", TRUE
         },
         {
-            "application/x-gzip",   /* legacy (so only extraction support) */
-            NULL,
-            "gunzip",
-            ".gz", TRUE
+            "application/x-tar",
+            "tar -cvf",
+            "tar -xvf",
+            ".tar", TRUE
+        },
+        {
+            "application/x-xz",
+            "xz -z",
+            "xz -d",
+            ".xz", TRUE
         },
         {
             "application/gzip",
@@ -62,28 +68,10 @@ const ArchiveHandler handlers[]=
             ".gz", TRUE
         },
         {
-            "application/zip",
-            "zip -r",
-            "unzip",
-            ".zip", TRUE
-        },
-        {
-            "application/x-tar",
-            "tar -cvf",
-            "tar -xvf",
-            ".tar", TRUE
-        },
-        {
-            "application/x-rar",
+            "application/x-gzip",   /* legacy (so only extraction support) */
             NULL,
-            "unrar -o- e",
-            ".rar", TRUE
-        },
-        {
-            "application/x-arj",
-            NULL,
-            "unarj e",
-            ".arj", TRUE
+            "gunzip",
+            ".gz", TRUE
         },
         {
             "application/x-7z-compressed",
@@ -92,10 +80,22 @@ const ArchiveHandler handlers[]=
             ".7z", TRUE
         },
         {
-            "application/x-xz",
-            "xz -z",
-            "xz -d",
-            ".xz", TRUE
+            "application/x-rar",
+            NULL,
+            "unrar -o- e",
+            ".rar", TRUE
+        },
+        {
+            "application/zip",
+            "zip -r",
+            "unzip",
+            ".zip", TRUE
+        },
+        {
+            "application/x-arj",
+            NULL,
+            "unarj e",
+            ".arj", TRUE
         }
     };
 
