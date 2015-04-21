@@ -50,7 +50,13 @@ const ArchiveHandler handlers[]=
             ".tar.gz", TRUE
         },
         {
-            "application/x-gzip",
+            "application/x-gzip",   /* legacy (so only extraction support) */
+            NULL,
+            "gunzip",
+            ".gz", TRUE
+        },
+        {
+            "application/gzip",
             "gzip",
             "gunzip",
             ".gz", TRUE
