@@ -96,7 +96,7 @@ const ArchiveHandler handlers[]=
 
 static void on_format_changed( GtkComboBox* combo, gpointer user_data )
 {
-    int i, n, len;
+    int i, len;
     GtkFileChooser* dlg = GTK_FILE_CHOOSER(user_data);
     char* ext = NULL;
     char *path, *name, *new_name;
@@ -107,14 +107,13 @@ static void on_format_changed( GtkComboBox* combo, gpointer user_data )
     ext = gtk_combo_box_get_active_text(combo);
     name = g_path_get_basename( path );
     g_free( path );
-    n = gtk_tree_model_iter_n_children( gtk_combo_box_get_model(combo),
-                                        NULL );
-    for( i = 0; i < n; ++i )
+
+    for( i = 0; i < G_N_ELEMENTS(handlers); ++i )
     {
-        if( g_str_has_suffix( name, handlers[i].file_ext ) )
+        if( g_str_has_suffix( name, handlers[i].file_ext ) && handlers[i].compress_cmd )
             break;
     }
-    if( i < n )
+    if( i < G_N_ELEMENTS(handlers) )
     {
         len = strlen( name ) - strlen( handlers[i].file_ext );
         name[len] = '\0';
