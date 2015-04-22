@@ -831,7 +831,7 @@ GtkWidget* fm_main_window_create_tab_label( FMMainWindow* main_window,
         gtk_button_set_focus_on_click ( GTK_BUTTON ( close_btn ), FALSE );
         gtk_button_set_relief( GTK_BUTTON ( close_btn ), GTK_RELIEF_NONE );
         gtk_container_add ( GTK_CONTAINER ( close_btn ),
-                            gtk_image_new_from_icon_name( "gtk-close", GTK_ICON_SIZE_MENU ) );
+                            gtk_image_new_from_icon_name( "window-close", GTK_ICON_SIZE_MENU ) );
         gtk_box_pack_start ( GTK_BOX( tab_label ),
                              close_btn, FALSE, FALSE, 0 );
         g_signal_connect( G_OBJECT( close_btn ), "clicked",

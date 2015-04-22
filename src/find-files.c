@@ -903,7 +903,7 @@ void fm_find_files( const char** search_dirs )
     data->win = (GtkWidget*)gtk_builder_get_object( builder, "win" );
     g_object_set_data_full( G_OBJECT( data->win ), "find-files", data, (GDestroyNotify)free_data );
 
-    gtk_window_set_icon_name( GTK_WINDOW( data->win ), GTK_STOCK_FIND );
+    gtk_window_set_icon_name( GTK_WINDOW( data->win ), "edit-find" );
 
     /* search criteria pane */
     data->search_criteria = (GtkWidget*)gtk_builder_get_object( builder, "search_criteria" );
@@ -988,7 +988,7 @@ void fm_find_files( const char** search_dirs )
     data->start_btn = (GtkWidget*)gtk_builder_get_object( builder, "start_btn" );
     data->stop_btn = (GtkWidget*)gtk_builder_get_object( builder, "stop_btn" );
     data->again_btn = (GtkWidget*)gtk_builder_get_object( builder, "again_btn" );
-    img = gtk_image_new_from_icon_name( GTK_STOCK_REFRESH, GTK_ICON_SIZE_BUTTON );
+    img = gtk_image_new_from_icon_name( "view-refresh", GTK_ICON_SIZE_BUTTON );
     gtk_button_set_image( (GtkButton*)data->again_btn, img );
 
     g_signal_connect(data->start_btn, "clicked", G_CALLBACK( on_start_search ), data );
