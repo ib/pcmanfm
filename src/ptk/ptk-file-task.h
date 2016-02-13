@@ -1,7 +1,7 @@
 /*
 *  C Interface: ptk-file-task
 *
-* Description: 
+* Description:
 *
 *
 * Author: Hong Jen Yee (PCMan) <pcman.tw (AT) gmail.com>, (C) 2006
@@ -62,4 +62,3 @@ void ptk_file_task_run( PtkFileTask* task );
 void ptk_file_task_cancel( PtkFileTask* task );
 
 #endif
-

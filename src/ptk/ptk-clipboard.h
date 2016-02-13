@@ -1,7 +1,7 @@
 /*
 *  C Interface: ptk-clipboard
 *
-* Description: 
+* Description:
 *
 *
 * Author: Hong Jen Yee (PCMan) <pcman.tw (AT) gmail.com>, (C) 2006

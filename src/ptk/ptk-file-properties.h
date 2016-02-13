@@ -1,7 +1,7 @@
-/*                                                                                  
+/*
 *  C Interface: file_properties
 *
-* Description: 
+* Description:
 *
 *
 * Author: Hong Jen Yee (PCMan) <pcman.tw (AT) gmail.com>, (C) 2006
@@ -28,4 +28,3 @@ void on_filePropertiesDlg_response          (GtkDialog       *dialog,
 G_END_DECLS
 
 #endif
-

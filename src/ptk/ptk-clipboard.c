@@ -1,7 +1,7 @@
 /*
 *  C Implementation: ptk-clipboard
 *
-* Description: 
+* Description:
 *
 *
 * Author: Hong Jen Yee (PCMan) <pcman.tw (AT) gmail.com>, (C) 2006
@@ -214,5 +214,3 @@ void ptk_clipboard_paste_files( GtkWindow* parent_win,
         ptk_file_task_run( task );
     }
 }
-
-

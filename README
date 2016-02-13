@@ -145,12 +145,12 @@ Icons of Files are missing?:
 Desktop Icon Support:
 
   PCManFM provides very basic support for desktop icons.
-  Before version 0.3.6.2, using this is strongly discouraged since there are some 
+  Before version 0.3.6.2, using this is strongly discouraged since there are some
   performance problems in this part.  In 0.3.6.2 this is partially fixed.
-  Since version 0.3.9, the desktop icon support is completely re-designed and 
+  Since version 0.3.9, the desktop icon support is completely re-designed and
   re-written. The performance problem was solved, and the functionality is already
   acceptable. Drag and drop support for desktop icons is finally added in 0.4.3.
-  So, upgrading to 0.4 series is strongly encoraged. Don't use the deprecated 0.2.x and 
+  So, upgrading to 0.4 series is strongly encoraged. Don't use the deprecated 0.2.x and
   0.3.x series unless you have really good reasons.
 
   If you only need to set the desktop wallpaper and don't need the icons,
@@ -162,9 +162,9 @@ Desktop Icon Support:
 
 Where is the "Trash Can"?
 
-  Currently we haven't support this yet. Having a correctly working tash can is 
+  Currently we haven't support this yet. Having a correctly working tash can is
   not as easy as you think. It's actually much more complicated than simply moving
-  the files to ~/.Trash. To implement a standard-compliant, correct, and safe 
+  the files to ~/.Trash. To implement a standard-compliant, correct, and safe
   trash can is not an easy task. To see is to believe, read the spec yourself:
   This is the current proposed Freedesktop.org "Trash Spec"
   http://www.ramendik.ru/docs/trashspec.html

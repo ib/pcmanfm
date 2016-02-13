@@ -60,7 +60,7 @@ case `$LD -Bsymbolic-functions -v 2>&1 </dev/null` in
   LDFLAGS="$LDFLAGS -Wl,-Bsymbolic-functions"
   AC_MSG_RESULT([yes])
   ;;
-*)                                                                              
+*)
   AC_MSG_RESULT([no])
   ;;
 esac

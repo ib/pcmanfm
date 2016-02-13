@@ -77,7 +77,7 @@ void fm_main_window_add_new_tab( FMMainWindow* mainWindow,
                                  const char* folder_path,
                                  gboolean open_dir_tree,
                                  PtkFBSidePaneMode side_pane_mode );
-                                 
+
 GtkWidget* fm_main_window_create_tab_label( FMMainWindow* main_window,
                                             PtkFileBrowser* file_browser );
 

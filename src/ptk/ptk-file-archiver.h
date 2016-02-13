@@ -1,7 +1,7 @@
 /*
 *  C Interface: ptk-file-archiver
 *
-* Description: 
+* Description:
 *
 *
 * Author: Hong Jen Yee (PCMan) <pcman.tw (AT) gmail.com>, (C) 2006
@@ -34,4 +34,3 @@ gboolean ptk_file_archiver_is_format_supported( VFSMimeType* mime,
 
 G_END_DECLS
 #endif
-

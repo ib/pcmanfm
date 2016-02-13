@@ -464,5 +464,5 @@ gboolean on_dir_tree_view_key_press( GtkWidget* view,
         }
         break;
     }
-    return TRUE;  
+    return TRUE;
 }

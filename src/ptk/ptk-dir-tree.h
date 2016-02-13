@@ -1,7 +1,7 @@
 /*
 *  C Interface: ptk-dir-tree
 *
-* Description: 
+* Description:
 *
 *
 * Author: Hong Jen Yee (PCMan) <pcman.tw (AT) gmail.com>, (C) 2006

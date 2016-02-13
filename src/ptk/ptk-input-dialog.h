@@ -1,7 +1,7 @@
 /*
 *  C Interface: ptk-input-dialog
 *
-* Description: 
+* Description:
 *
 *
 * Author: Hong Jen Yee (PCMan) <pcman.tw (AT) gmail.com>, (C) 2005
@@ -47,11 +47,10 @@ GtkWidget* ptk_input_dialog_get_entry( GtkWidget* input_dialog );
 /*
 * Used to prompt the user to input a string.
 * The returned string should be freed when no longer needed.
-*/ 
+*/
 /*
 char* ptk_input_dialog_get_user_input( const char* title,
                                    const char* prompt );
 */
 
 #endif
-

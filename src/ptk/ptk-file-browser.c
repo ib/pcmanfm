@@ -467,7 +467,7 @@ static gboolean side_pane_chdir( PtkFileBrowser* file_browser,
 gboolean ptk_file_restrict_homedir( const char* folder_path ) {
     const char *homedir = NULL;
     int ret=(1==0);
-    
+
     homedir = g_getenv("HOME");
     if (!homedir) {
       homedir = g_get_home_dir();
@@ -2888,7 +2888,7 @@ static void ptk_file_browser_create_side_pane( PtkFileBrowser* file_browser )
 {
     GtkTooltips* tooltips = gtk_tooltips_new();
     file_browser->side_pane_buttons = gtk_toolbar_new();
-    
+
     file_browser->side_pane = gtk_vbox_new( FALSE, 0 );
     file_browser->side_view_scroll = gtk_scrolled_window_new( NULL, NULL );
     gtk_scrolled_window_set_shadow_type( GTK_SCROLLED_WINDOW( file_browser->side_view_scroll ),
@@ -2913,7 +2913,7 @@ static void ptk_file_browser_create_side_pane( PtkFileBrowser* file_browser )
     gtk_box_pack_start( GTK_BOX( file_browser->side_pane ),
                         GTK_WIDGET( file_browser->side_view_scroll ),
                         TRUE, TRUE, 0 );
-    
+
     gtk_toolbar_set_style( GTK_TOOLBAR( file_browser->side_pane_buttons ), GTK_TOOLBAR_ICONS );
     side_pane_bar[ 0 ].ret = ( GtkWidget** ) ( GtkWidget * ) & file_browser->location_btn;
     side_pane_bar[ 1 ].ret = ( GtkWidget** ) ( GtkWidget * ) & file_browser->dir_tree_btn;
@@ -2921,13 +2921,13 @@ static void ptk_file_browser_create_side_pane( PtkFileBrowser* file_browser )
                                      side_pane_bar, file_browser, tooltips );
     gtk_box_pack_start( GTK_BOX( file_browser->side_pane ),
                         file_browser->side_pane_buttons, FALSE, FALSE, 0 );
-                        
+
     gtk_widget_show_all( file_browser->side_pane );
     if ( !file_browser->show_side_pane_buttons )
     {
         gtk_widget_hide( file_browser->side_pane_buttons );
     }
-    
+
     gtk_paned_pack1( GTK_PANED( file_browser ),
                      file_browser->side_pane, FALSE, TRUE );
 }
@@ -2968,7 +2968,7 @@ void ptk_file_browser_hide_side_pane( PtkFileBrowser* file_browser )
         file_browser->side_pane = NULL;
         file_browser->side_view = NULL;
         file_browser->side_view_scroll = NULL;
-        
+
         file_browser->side_pane_buttons = NULL;
         file_browser->location_btn = NULL;
         file_browser->dir_tree_btn = NULL;

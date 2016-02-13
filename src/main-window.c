@@ -630,19 +630,19 @@ void fm_main_window_init( FMMainWindow* main_window )
 
     closure = g_cclosure_new_swap( G_CALLBACK(fm_main_window_edit_address), main_window, NULL );
     gtk_accel_group_connect( main_window->accel_group, GDK_D, GDK_MOD1_MASK, 0, closure );
-    
+
     /* Add shortcut keys Ctrl+PageUp/PageDown and Ctrl+Tab/Ctrl+Shift+Tab to swtich tabs */
     closure = g_cclosure_new_swap( G_CALLBACK(fm_main_window_next_tab), main_window, NULL );
     gtk_accel_group_connect( main_window->accel_group, GDK_Page_Down, GDK_CONTROL_MASK, 0, closure );
-    
+
     closure = g_cclosure_new_swap( G_CALLBACK(fm_main_window_prev_tab), main_window, NULL );
     gtk_accel_group_connect( main_window->accel_group, GDK_Page_Up, GDK_CONTROL_MASK, 0, closure );
-    
+
       /* No way to assign Tab with accel group (http://bugzilla.gnome.org/show_bug.cgi?id=123994) */
     g_signal_connect( G_OBJECT( main_window ), "key-press-event",
                       G_CALLBACK( on_main_window_keypress ), NULL );
 
-    
+
     g_signal_connect( main_window->address_bar, "activate",
                       G_CALLBACK(on_address_bar_activate), main_window );
     gtk_box_pack_start ( GTK_BOX ( hbox ), GTK_WIDGET( main_window->address_bar ), TRUE, TRUE, 0 );
@@ -780,7 +780,7 @@ fm_main_window_prev_tab ( FMMainWindow* widget )
 {
     if ( gtk_notebook_get_current_page( widget->notebook ) == 0 )
     {
-        gtk_notebook_set_current_page( widget->notebook, 
+        gtk_notebook_set_current_page( widget->notebook,
           gtk_notebook_get_n_pages( widget->notebook ) - 1 );
     }
     else

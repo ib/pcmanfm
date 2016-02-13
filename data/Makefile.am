@@ -34,11 +34,10 @@ EXTRA_DIST = \
 	$(ui_DATA)
 
 CLEANFILES = \
-	$(ui_DATA) 
+	$(ui_DATA)
 
 # Generate GtkBuilder UI files from Glade files
 %.ui: %.glade
 #	$(GTK_BUILDER_CONVERT) $< $@
 	$(top_srcdir)/gtk-builder-convert $< $@
 #	$(top_builddir)/src/xml-purge $@
-

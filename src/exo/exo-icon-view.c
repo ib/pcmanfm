@@ -4957,7 +4957,7 @@ exo_icon_view_get_path_at_pos (const ExoIconView *icon_view,
 
   /* translate the widget coordinates to icon window coordinates */
   /*
-  NOTE by Hong Jen Yee: This should be disabled for pcmanfm to work. So weird. 
+  NOTE by Hong Jen Yee: This should be disabled for pcmanfm to work. So weird.
   x += icon_view->priv->hadjustment->value;
   y += icon_view->priv->vadjustment->value;
   */

@@ -51,7 +51,7 @@ static unparsedLine* unparsedLine_new() {
 
 /**
  * free a unparsedLine structure
- * 
+ *
  * @param data the pointer of the structure to be free
  * @param user_data the pointer of a boolean value. If it's true, this
  *                  function will also free the data->line. If it's NULL or
@@ -115,7 +115,7 @@ static void load( const char* path )
                 unusedLine = unparsedLine_new();
                 unusedLine->lineNum = lineNum;
                 unusedLine->line = strdup(line_buf);
-                bookmarks.unparsedLines = g_list_append( 
+                bookmarks.unparsedLines = g_list_append(
                                           bookmarks.unparsedLines, unusedLine);
                 free(line);
                 line=NULL;
@@ -150,7 +150,7 @@ static void load( const char* path )
                 unusedLine = unparsedLine_new();
                 unusedLine->lineNum = lineNum;
                 unusedLine->line = strdup(line_buf);
-                bookmarks.unparsedLines = g_list_append( 
+                bookmarks.unparsedLines = g_list_append(
                                           bookmarks.unparsedLines, unusedLine);
             }
             free(line);
@@ -319,7 +319,7 @@ void ptk_bookmarks_save ()
     gchar* path;
     GList* l;
     GList* ul;
-    
+
     int lineNum=0;
 
     path = g_build_filename( g_get_home_dir(), bookmarks_file_name, NULL );
@@ -332,7 +332,7 @@ void ptk_bookmarks_save ()
         ul = bookmarks.unparsedLines;
         for( l = bookmarks.list; l; l = l->next )
         {
-            while (ul != NULL && ul->data != NULL 
+            while (ul != NULL && ul->data != NULL
                 && ((unparsedLine*)ul->data)->lineNum==lineNum) {
               fputs(((unparsedLine*)ul->data)->line,file);
               lineNum++;
@@ -433,4 +433,3 @@ const gchar* ptk_bookmarks_item_get_path( const gchar* item )
     int name_len = strlen(item);
     return (item + name_len + 1);
 }
-

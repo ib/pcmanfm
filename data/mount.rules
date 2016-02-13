@@ -1,5 +1,5 @@
 # This file contains default mount options for pcmanfm
-# If mount options are already specfied for a volume in /etc/fstab, then 
+# If mount options are already specfied for a volume in /etc/fstab, then
 # 'mount' command will be used, and it will follow /etc/fstab.
 # If a volume is not defined in /etc/fstab, such as removable usb disk,
 # the mount options defined in this file will be used.
