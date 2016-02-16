@@ -8,7 +8,6 @@ data/ui/appchooserdlg.glade
 data/ui/appchooserdlg.ui
 data/ui/file-assoc-dlg.glade
 data/ui/file-assoc-dlg.ui
-data/ui/file_operation.glade
 data/ui/file_properties.glade
 data/ui/file_properties.ui
 data/ui/find-files.glade
