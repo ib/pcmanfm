@@ -1,6 +1,7 @@
 [encoding: UTF-8]
 # List of source files containing translatable strings.
 data/pcmanfm-find.desktop.in
+data/pcmanfm-folder-handler.desktop.in
 data/pcmanfm.desktop.in
 data/ui/about-dlg.glade
 data/ui/about-dlg.ui
