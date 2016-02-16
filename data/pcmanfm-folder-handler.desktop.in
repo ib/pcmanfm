@@ -14,4 +14,3 @@ StartupNotify=true
 Type=Application
 MimeType=inode/directory;
 #NotShowIn=GNOME;
-
