@@ -205,9 +205,6 @@ Makefile
 src/Makefile
 po/Makefile.in
 data/Makefile
-data/pcmanfm.desktop
-data/pcmanfm-find.desktop
-data/pcmanfm-folder-handler.desktop
 ])
 
 echo

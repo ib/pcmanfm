@@ -1,10 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Open Folder
-Name[de]=Ordner öffnen
-Name[ru]=Открыть Папку
-Name[fi]=Avaa kansio
-Name[ja]=フォルダを開く
+_Name=Open Folder
 TryExec=pcmanfm
 Exec=pcmanfm %U
 NoDisplay=true

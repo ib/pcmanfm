@@ -1,7 +1,8 @@
 desktopdir = $(datadir)/applications
-desktop_DATA = pcmanfm.desktop \
-	       pcmanfm-find.desktop \
-	       pcmanfm-folder-handler.desktop
+desktop_in_files = pcmanfm.desktop.in \
+	       pcmanfm-find.desktop.in \
+	       pcmanfm-folder-handler.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 DISTCLEANFILES = pcmanfm.desktop \
 		 pcmanfm-find.desktop \

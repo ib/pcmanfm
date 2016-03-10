@@ -221,9 +221,10 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 desktopdir = $(datadir)/applications
-desktop_DATA = pcmanfm.desktop \
-	       pcmanfm-find.desktop \
-	       pcmanfm-folder-handler.desktop
+desktop_in_files = pcmanfm.desktop.in \
+	       pcmanfm-find.desktop.in \
+	       pcmanfm-folder-handler.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
 DISTCLEANFILES = pcmanfm.desktop \
 		 pcmanfm-find.desktop \
@@ -290,12 +291,6 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 $(am__aclocal_m4_deps):
-pcmanfm.desktop: $(top_builddir)/config.status $(srcdir)/pcmanfm.desktop.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-pcmanfm-find.desktop: $(top_builddir)/config.status $(srcdir)/pcmanfm-find.desktop.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-pcmanfm-folder-handler.desktop: $(top_builddir)/config.status $(srcdir)/pcmanfm-folder-handler.desktop.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 
 mostlyclean-libtool:
 	-rm -f *.lo

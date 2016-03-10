@@ -1,13 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Encoding=UTF-8
-Name=Search for Files or Folders
-Name[de]=Nach Dateien suchen
-Name[ru]=Поиск Файлов или Папок
-Name[fi]=Etsi tiedostoja ja kansioita
-Name[et]=Failide ja kaustade otsimine
-Name[ja]=ファイルやフォルダの検索
-Name[zh_TW]=尋找檔案或資料夾
+_Name=Search for Files or Folders
 Categories=Application;Utility;GTK;
 Exec=pcmanfm --find-files %F
 Icon=edit-find
@@ -15,10 +9,4 @@ StartupNotify=true
 Type=Application
 Terminal=false
 MimeType=inode/directory;
-Comment=Search for files and folders in disks
-Comment[de]=Nach Dateien und Ordnern auf der Festplatte suchen
-Comment[ru]=Поиск Файлов или Папок на дисках
-Comment[zh_TW]=在磁碟中尋找檔案或資料夾
-Comment[fi]=Etsi tiedostoja ja kansioita levyiltä
-Comment[et]=Otsi ketastelt faile ja katalooge
-Comment[ja]=ディスクからファイルやフォルダを探します
+_Comment=Search for files and folders in disks
