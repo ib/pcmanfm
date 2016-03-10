@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.1.0\n"
 
-#: ../data/ui/about-dlg.glade.h:1
+#: ../data/ui/about-dlg.ui.h
 msgid "Copyright (C) 2005 - 2008"
 msgstr "Авторско право (C) 2005 - 2008"
 
-#: ../data/ui/about-dlg.glade.h:2
+#: ../data/ui/about-dlg.ui.h
 msgid ""
 "Lightweight file manager\n"
 "\n"
@@ -32,21 +32,9 @@ msgstr ""
 "\n"
 "Създаден от Hon Jen Yee (PCMan)"
 
-#: ../data/ui/about-dlg.glade.h:5
+#: ../data/ui/about-dlg.ui.h
 msgid ""
-"The icon was taken from \"nuoveXT 2\" icon theme\n"
-"created by Alexandre Moore (saki).\n"
-"http://www.gnome-look.org/content/show.php/nuoveXT+2?content=56625"
-msgstr ""
-
-#. Please replace this line with your own names, one name per line.
-#: ../data/ui/about-dlg.glade.h:9
-msgid "translator-credits"
-msgstr "Росен Карпузов <gustav@cointech.net>"
-
-#: ../data/ui/about-dlg.glade.h:10
-msgid ""
-"洪任諭 Hong Jen Yee <pcman.tw@gmail.com>\n"
+"&#x6D2A;&#x4EFB;&#x8AED; Hong Jen Yee <pcman.tw@gmail.com>\n"
 "\n"
 "Source code taken from other projects:\n"
 " * libmd5-rfc: Aladdin Enterprises\n"
@@ -60,785 +48,672 @@ msgid ""
 "     * gnome-mount: David Zeuthen"
 msgstr ""
 
-#: ../data/ui/appchooserdlg.glade.h:1
+#: ../data/ui/about-dlg.ui.h
+msgid "translator-credits"
+msgstr "Росен Карпузов <gustav@cointech.net>"
+
+#: ../data/ui/about-dlg.ui.h
+msgid ""
+"The icon was taken from \"nuoveXT 2\" icon theme\n"
+"created by Alexandre Moore (saki).\n"
+"http://www.gnome-look.org/content/show.php/nuoveXT+2?content=56625"
+msgstr ""
+
+#: ../data/ui/appchooserdlg.ui.h
 msgid "Choose an Application"
 msgstr "Избор на програма"
 
-#: ../data/ui/appchooserdlg.glade.h:2
+#: ../data/ui/appchooserdlg.ui.h
 msgid "File Type To be Opened:"
 msgstr ""
 
-#: ../data/ui/appchooserdlg.glade.h:3
-msgid "Opened in Terminal"
-msgstr "Стартиране в терминал"
-
-#: ../data/ui/appchooserdlg.glade.h:4
+#: ../data/ui/appchooserdlg.ui.h
 msgid ""
 "Please choose an application from following lists or enter the command line "
 "by hand:"
 msgstr ""
 "Моля изберете програма от следния списък или въведете командния ред на ръка: "
 
-#: ../data/ui/appchooserdlg.glade.h:5
-msgid "Set selected application to default action"
-msgstr ""
-
-#: ../data/ui/appchooserdlg.glade.h:6
-msgid "_All Applications"
-msgstr "_Всички Приложения"
-
-#: ../data/ui/appchooserdlg.glade.h:7
-msgid "_Browse"
-msgstr "_Разглеждане"
-
-#: ../data/ui/appchooserdlg.glade.h:8
-msgid "_Command Line:"
-msgstr "_Команден ред:"
-
-#: ../data/ui/appchooserdlg.glade.h:9
+#: ../data/ui/appchooserdlg.ui.h
 msgid "_Recommended Applications"
 msgstr "_Препоръчани програми"
 
-#: ../data/ui/file-assoc-dlg.glade.h:1
+#: ../data/ui/appchooserdlg.ui.h
+msgid "_All Applications"
+msgstr "_Всички Приложения"
+
+#: ../data/ui/appchooserdlg.ui.h
+msgid "_Command Line:"
+msgstr "_Команден ред:"
+
+#: ../data/ui/appchooserdlg.ui.h
+msgid "_Browse"
+msgstr "_Разглеждане"
+
+#: ../data/ui/appchooserdlg.ui.h
+msgid "Opened in Terminal"
+msgstr "Стартиране в терминал"
+
+#: ../data/ui/appchooserdlg.ui.h
+msgid "Set selected application to default action"
+msgstr ""
+
+#: ../data/ui/file-assoc-dlg.ui.h
+msgid "File Associations"
+msgstr "Асоцииране на файлове"
+
+#: ../data/ui/file-assoc-dlg.ui.h
+msgid "Known File Types:"
+msgstr "Познати файлови типове:"
+
+#: ../data/ui/file-assoc-dlg.ui.h
 msgid "Actions Showed in Popup Menus"
 msgstr "Действия показани в изскачащи менюта "
 
-#: ../data/ui/file-assoc-dlg.glade.h:2
+#: ../data/ui/file-assoc-dlg.ui.h
 msgid "Add _Application"
 msgstr "Добавяне на _програма"
 
-#: ../data/ui/file-assoc-dlg.glade.h:3
+#: ../data/ui/file-assoc-dlg.ui.h
 #, fuzzy
 msgid "Add _Custom Action"
 msgstr "/Добавяне на източник"
 
-#: ../data/ui/file-assoc-dlg.glade.h:4
-msgid "File Associations"
-msgstr "Асоцииране на файлове"
-
-#: ../data/ui/file-assoc-dlg.glade.h:5
-msgid "Known File Types:"
-msgstr "Познати файлови типове:"
-
-#: ../data/ui/file-assoc-dlg.glade.h:6
-msgid "Move _Down"
-msgstr "Преместване на_долу"
-
-#: ../data/ui/file-assoc-dlg.glade.h:7
+#: ../data/ui/file-assoc-dlg.ui.h
 msgid "Move _Up"
 msgstr "Преместване _нагоре"
 
-#. Processing: <Name of currently proccesed file>
-#: ../data/ui/file_operation.glade.h:2
-#, fuzzy
-msgid "<b>Processing:</b>"
-msgstr "Обработване:"
+#: ../data/ui/file-assoc-dlg.ui.h
+msgid "Move _Down"
+msgstr "Преместване на_долу"
 
-#: ../data/ui/file_operation.glade.h:3
-#, fuzzy
-msgid "<b>Progress:</b>"
-msgstr "Изпълнение:"
-
-#. To: <Destination folder> ex. Copy file to..., Move file to...etc.
-#: ../data/ui/file_operation.glade.h:5
-#, fuzzy
-msgid "<b>To:</b>"
-msgstr "<b>Група:</b>"
-
-#. Preparing to do some file operation (Copy, Move, Delete...)
-#: ../data/ui/file_operation.glade.h:7 ../src/ptk/ptk-file-task.c:176
-msgid "Preparing..."
-msgstr "Подготовка..."
-
-#: ../data/ui/file_properties.glade.h:1
-msgid "<b>File Type:</b>"
-msgstr "<b>Тип файл:</b>"
-
-#: ../data/ui/file_properties.glade.h:2
-msgid "<b>File _Name:</b>"
-msgstr "<b>Име на _файл:</b>"
-
-#: ../data/ui/file_properties.glade.h:3
-msgid "<b>Group:</b>"
-msgstr "<b>Група:</b>"
-
-#: ../data/ui/file_properties.glade.h:4
-msgid "<b>Last Access:</b>"
-msgstr "<b>Последен достъп:</b>"
-
-#: ../data/ui/file_properties.glade.h:5
-msgid "<b>Last Modification:</b>"
-msgstr "<b>Последна промяна:</b>"
-
-#: ../data/ui/file_properties.glade.h:6
-msgid "<b>Location:</b>"
-msgstr "<b>Местоположение:</b>"
-
-#: ../data/ui/file_properties.glade.h:7
-msgid "<b>Open _with:</b>"
-msgstr "<b>Отваряне _с:</b>"
-
-#: ../data/ui/file_properties.glade.h:8
-msgid "<b>Other Users:</b>"
-msgstr "<b>Други потребители:</b>"
-
-#: ../data/ui/file_properties.glade.h:9
-msgid "<b>Owner:</b>"
-msgstr "<b>Собственик:</b>"
-
-#: ../data/ui/file_properties.glade.h:10
-msgid "<b>Size on Disk:</b>"
-msgstr "<b>Размер на диск:</b>"
-
-#: ../data/ui/file_properties.glade.h:11
-msgid "<b>Total Size of Files:</b>"
-msgstr "<b>Общ размер на файлове:</b>"
-
-#: ../data/ui/file_properties.glade.h:12
-msgid "<b>_Group:</b>"
-msgstr "<b>_Група:</b>"
-
-#: ../data/ui/file_properties.glade.h:13
-msgid "<b>_Owner:</b>"
-msgstr "<b>_Собственик:</b>"
-
-#: ../data/ui/file_properties.glade.h:14
-msgid "Execute"
-msgstr "Изпълняване"
-
-#: ../data/ui/file_properties.glade.h:15
+#: ../data/ui/file-properties.ui.h
 msgid "File Properties"
 msgstr "Информация за файла"
 
-#: ../data/ui/file_properties.glade.h:16
+#: ../data/ui/file-properties.ui.h
+msgid "<b>File _Name:</b>"
+msgstr "<b>Име на _файл:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>File Type:</b>"
+msgstr "<b>Тип файл:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Total Size of Files:</b>"
+msgstr "<b>Общ размер на файлове:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Last Modification:</b>"
+msgstr "<b>Последна промяна:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Last Access:</b>"
+msgstr "<b>Последен достъп:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Location:</b>"
+msgstr "<b>Местоположение:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Size on Disk:</b>"
+msgstr "<b>Размер на диск:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Open _with:</b>"
+msgstr "<b>Отваряне _с:</b>"
+
+#: ../data/ui/file-properties.ui.h ../data/ui/prefdlg.ui.h
+msgid "_General"
+msgstr "_Общи"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>_Owner:</b>"
+msgstr "<b>_Собственик:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>_Group:</b>"
+msgstr "<b>_Група:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Owner:</b>"
+msgstr "<b>Собственик:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Group:</b>"
+msgstr "<b>Група:</b>"
+
+#: ../data/ui/file-properties.ui.h
+msgid "<b>Other Users:</b>"
+msgstr "<b>Други потребители:</b>"
+
+#: ../data/ui/file-properties.ui.h
 msgid "Read"
 msgstr "Четене"
 
-#. This is used in file attribute
-#: ../data/ui/file_properties.glade.h:18
-msgid "Set GID"
-msgstr "Задаване на GID"
+#: ../data/ui/file-properties.ui.h
+msgid "Write"
+msgstr "Запис"
 
-#. This is used in file attribute
-#: ../data/ui/file_properties.glade.h:20
+#: ../data/ui/file-properties.ui.h
+msgid "Execute"
+msgstr "Изпълняване"
+
+#: ../data/ui/file-properties.ui.h
 msgid "Set UID"
 msgstr "Задаване на UID"
 
-#. This is used in file attribute
-#: ../data/ui/file_properties.glade.h:22
+#: ../data/ui/file-properties.ui.h
+msgid "Set GID"
+msgstr "Задаване на GID"
+
+#: ../data/ui/file-properties.ui.h
 #, fuzzy
 msgid "Sticky"
 msgstr "На всички работни плотове"
 
-#: ../data/ui/file_properties.glade.h:23
-msgid "Write"
-msgstr "Запис"
-
-#: ../data/ui/file_properties.glade.h:24 ../data/ui/prefdlg.glade.h:41
-msgid "_General"
-msgstr "_Общи"
-
-#: ../data/ui/file_properties.glade.h:25
+#: ../data/ui/file-properties.ui.h
 msgid "_Permissions"
 msgstr "_Права"
 
-#: ../data/ui/find-files.glade.h:1
-#, fuzzy
-msgid "<b>File Content</b>"
-msgstr "Съдържание на файла"
-
-#: ../data/ui/find-files.glade.h:2
-#, fuzzy
-msgid "<b>File Name Contains:</b>"
-msgstr "името съдържа интервали"
-
-#: ../data/ui/find-files.glade.h:3
-#, fuzzy
-msgid "<b>File Size</b>"
-msgstr "Размер на файл"
-
-#: ../data/ui/find-files.glade.h:4
-msgid "<b>File Types to Search</b>"
+#: ../data/ui/find-files.ui.h
+msgid "Bytes"
 msgstr ""
 
-#: ../data/ui/find-files.glade.h:5
-#, fuzzy
-msgid "<b>Last Modified</b>"
-msgstr "Последна промяна:"
-
-#: ../data/ui/find-files.glade.h:6
-#, fuzzy
-msgid "<b>Places to Search</b>"
-msgstr "/Търсене/_Отиване на..."
-
-#: ../data/ui/find-files.glade.h:7
-#, fuzzy
-msgid "<b>Search Result:</b>"
-msgstr "&Последни резултати"
-
-#: ../data/ui/find-files.glade.h:8
-#, fuzzy
-msgid "All Files and Folders"
-msgstr "Споделени мрежови директории <br />и файлове"
-
-#: ../data/ui/find-files.glade.h:9
-msgid ""
-"Any\n"
-"Within One Day\n"
-"Within One Week\n"
-"Within One Month\n"
-"Within One Year\n"
-"Within Selected Date Range"
+#: ../data/ui/find-files.ui.h
+msgid "KB"
 msgstr ""
 
-#: ../data/ui/find-files.glade.h:15
-msgid "Audio Files (mp3, ogg,...)"
+#: ../data/ui/find-files.ui.h
+msgid "MB"
 msgstr ""
 
-#: ../data/ui/find-files.glade.h:16
-msgid ""
-"Bytes\n"
-"KB\n"
-"MB\n"
-"GB"
+#: ../data/ui/find-files.ui.h
+msgid "GB"
 msgstr ""
 
-#: ../data/ui/find-files.glade.h:20
-#, fuzzy
-msgid "Case Sensitive"
-msgstr "Чувствителен регистър"
+#: ../data/ui/find-files.ui.h
+msgid "Any"
+msgstr ""
 
-#: ../data/ui/find-files.glade.h:21
-#, fuzzy
-msgid "Content"
-msgstr "Съдържание"
+#: ../data/ui/find-files.ui.h
+msgid "Within One Day"
+msgstr ""
 
-#: ../data/ui/find-files.glade.h:22
-#, fuzzy
-msgid "File Contains:"
-msgstr "Адресът съдържа"
+#: ../data/ui/find-files.ui.h
+msgid "Within One Week"
+msgstr ""
 
-#: ../data/ui/find-files.glade.h:23
+#: ../data/ui/find-files.ui.h
+msgid "Within One Month"
+msgstr ""
+
+#: ../data/ui/find-files.ui.h
+msgid "Within One Year"
+msgstr ""
+
+#: ../data/ui/find-files.ui.h
+msgid "Within Selected Date Range"
+msgstr ""
+
+#: ../data/ui/find-files.ui.h
 #, fuzzy
 msgid "Find Files"
 msgstr "Търсене на файлове"
 
-#: ../data/ui/find-files.glade.h:24
+#: ../data/ui/find-files.ui.h
 #, fuzzy
-msgid "General"
-msgstr "Общи"
+msgid "<b>File Name Contains:</b>"
+msgstr "името съдържа интервали"
 
-#: ../data/ui/find-files.glade.h:25
+#: ../data/ui/find-files.ui.h
 #, fuzzy
-msgid "Greater Than:"
-msgstr "по-голямо от"
+msgid "Case Sensitive"
+msgstr "Чувствителен регистър"
 
-#: ../data/ui/find-files.glade.h:26
+#: ../data/ui/find-files.ui.h
+msgid "Video Files (avi, mpg,...)"
+msgstr ""
+
+#: ../data/ui/find-files.ui.h
+msgid "Audio Files (mp3, ogg,...)"
+msgstr ""
+
+#: ../data/ui/find-files.ui.h
 msgid "Image Files (jpg, png,...)"
 msgstr ""
 
-#: ../data/ui/find-files.glade.h:27
+#: ../data/ui/find-files.ui.h
 #, fuzzy
 msgid "Plain Text Files"
 msgstr "Редактиране на текстови файлове"
 
-#: ../data/ui/find-files.glade.h:28
+#: ../data/ui/find-files.ui.h
 #, fuzzy
-msgid "Search Again"
-msgstr "Търси пак        F17"
+msgid "All Files and Folders"
+msgstr "Споделени мрежови директории <br />и файлове"
 
-#: ../data/ui/find-files.glade.h:29
+#: ../data/ui/find-files.ui.h
+msgid "<b>File Types to Search</b>"
+msgstr ""
+
+#: ../data/ui/find-files.ui.h
+msgid "Search in Sub Directories"
+msgstr ""
+
+#: ../data/ui/find-files.ui.h
 #, fuzzy
 msgid "Search Hidden Files"
 msgstr "Показвай скрити файлове"
 
-#: ../data/ui/find-files.glade.h:30
-msgid "Search in Sub Directories"
-msgstr ""
-
-#: ../data/ui/find-files.glade.h:31
+#: ../data/ui/find-files.ui.h
 #, fuzzy
-msgid "Size & Date"
-msgstr "Управляващ елемент дата"
+msgid "<b>Places to Search</b>"
+msgstr "/Търсене/_Отиване на..."
 
-#: ../data/ui/find-files.glade.h:32
+#: ../data/ui/find-files.ui.h
 #, fuzzy
-msgid "Smaller Than:"
-msgstr "по-малка от"
+msgid "General"
+msgstr "Общи"
 
-#: ../data/ui/find-files.glade.h:33
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "File Contains:"
+msgstr "Адресът съдържа"
+
+#: ../data/ui/find-files.ui.h
 #, fuzzy
 msgid "Use Regular Expression"
 msgstr "Регулярен израз"
 
-#: ../data/ui/find-files.glade.h:34
-msgid "Video Files (avi, mpg,...)"
-msgstr ""
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "<b>File Content</b>"
+msgstr "Съдържание на файла"
 
-#: ../data/ui/godlg.glade.h:1
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "Content"
+msgstr "Съдържание"
+
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "Greater Than:"
+msgstr "по-голямо от"
+
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "Smaller Than:"
+msgstr "по-малка от"
+
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "<b>File Size</b>"
+msgstr "Размер на файл"
+
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "<b>Last Modified</b>"
+msgstr "Последна промяна:"
+
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "Size & Date"
+msgstr "Управляващ елемент дата"
+
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "<b>Search Result:</b>"
+msgstr "&Последни резултати"
+
+#: ../data/ui/find-files.ui.h
+#, fuzzy
+msgid "Search Again"
+msgstr "Търси пак        F17"
+
+#: ../data/ui/godlg.ui.h
 #, fuzzy
 msgid "Go to folder"
 msgstr "Възстановяване в директория:"
 
-#: ../data/ui/prefdlg.glade.h:1
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
-msgid "<b>Behavior</b>"
-msgstr "<b>Поведение</b>"
+#| msgid "Open in New _Tab"
+msgid "Opened in Current Tab"
+msgstr "Отваряне в нов _подпрозорец"
 
-#: ../data/ui/prefdlg.glade.h:2
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
-msgid "<b>Colors</b>"
-msgstr "<b>Цветове</b>"
+#| msgid "Open in New _Tab"
+msgid "Opened in New Tab"
+msgstr "Отваряне в нов _подпрозорец"
 
-#: ../data/ui/prefdlg.glade.h:3
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
-msgid "<b>Display</b>"
-msgstr "<b>Изглед</b>"
+#| msgid "Open in New _Window"
+msgid "Opened in New Window"
+msgstr "Отваряне в _нов прозорец"
 
-#: ../data/ui/prefdlg.glade.h:4
-#, fuzzy
-msgid "<b>General</b>"
-msgstr "<b>Основни</b>"
-
-#: ../data/ui/prefdlg.glade.h:5
-#, fuzzy
-msgid "<b>Wallpaper</b>"
-msgstr "тапет"
-
-#: ../data/ui/prefdlg.glade.h:6
-#, fuzzy
-msgid "Always show the tab bar"
-msgstr "Винаги да се показва лентата с подпрозорците"
-
-#: ../data/ui/prefdlg.glade.h:7
-#, fuzzy
-msgid "Background:"
-msgstr "Фон:"
-
-#: ../data/ui/prefdlg.glade.h:8
-#, fuzzy
-msgid "Bookmarks:"
-msgstr "&Отметки"
-
-#: ../data/ui/prefdlg.glade.h:9
-msgid "Disable \"Trash Can\" and delete files from disk directly"
+#: ../data/ui/prefdlg.ui.h
+msgid "Stretch to fill the entire screen"
 msgstr ""
 
-#: ../data/ui/prefdlg.glade.h:10
-msgid "Display image files with supported format as thumbnails"
+#: ../data/ui/prefdlg.ui.h
+msgid "Stretch to fit the screen"
 msgstr ""
 
-#: ../data/ui/prefdlg.glade.h:11
-msgid "Hide 'Close tab' buttons"
+#: ../data/ui/prefdlg.ui.h
+msgid "Center on the screen"
 msgstr ""
 
-#: ../data/ui/prefdlg.glade.h:12
-msgid "Hide folder content border"
+#: ../data/ui/prefdlg.ui.h
+msgid "Tile the image to fill the entire screen"
 msgstr ""
 
-#: ../data/ui/prefdlg.glade.h:13
-#, fuzzy
-msgid "Hide side pane buttons"
-msgstr "Показване/скриване на страничния панел."
-
-#: ../data/ui/prefdlg.glade.h:14
-msgid "I_nterface"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:15
-msgid "Manage the desktop and show file icons"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:16
-msgid "Max size of files displayed as thumbnails:"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:17
-#, fuzzy
-msgid "Mode:"
-msgstr "Режим:"
-
-#: ../data/ui/prefdlg.glade.h:18
-msgid "On-disk file name encoding:"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:19
-msgid "Open files with single click"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:20
-msgid ""
-"Opened in Current Tab\n"
-"Opened in New Tab\n"
-"Opened in New Window"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:23
-#, fuzzy
-msgid "Please select an image file"
-msgstr "Избор на изображение за обложка"
-
-#: ../data/ui/prefdlg.glade.h:24
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
 msgid "Preferences"
 msgstr "Настройки"
 
-#: ../data/ui/prefdlg.glade.h:25
-#, fuzzy
-msgid "Shadow:"
-msgstr "Сянка:"
-
-#: ../data/ui/prefdlg.glade.h:26
-msgid "Show \"My Documents\" icon on desktop"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:27
-#, fuzzy
-msgid "Show icons of volumes on desktop"
-msgstr "Показване на монтираните устройства на работния плот"
-
-#: ../data/ui/prefdlg.glade.h:28
-msgid "Show menus provided by WM when desktop is clicked"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:29
-msgid "Size of Big Icons:"
-msgstr ""
-
-#: ../data/ui/prefdlg.glade.h:30
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
 msgid "Size of Small Icons:"
 msgstr "Най-малък"
 
-#: ../data/ui/prefdlg.glade.h:31
-msgid ""
-"Stretch to fill the entire screen\n"
-"Stretch to fit the screen\n"
-"Center on the screen\n"
-"Tile the image to fill the entire screen"
+#: ../data/ui/prefdlg.ui.h
+msgid "Size of Big Icons:"
 msgstr ""
 
-#: ../data/ui/prefdlg.glade.h:35
-msgid "Terminal:"
-msgstr "Терминал:"
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "<b>Display</b>"
+msgstr "<b>Изглед</b>"
 
-#: ../data/ui/prefdlg.glade.h:36
-msgid "Text:"
-msgstr "Текст:"
-
-#: ../data/ui/prefdlg.glade.h:37
-msgid "Use SI decimal prefixes instead of IEC binary prefixes"
+#: ../data/ui/prefdlg.ui.h
+msgid "Open files with single click"
 msgstr ""
 
-#: ../data/ui/prefdlg.glade.h:38
+#: ../data/ui/prefdlg.ui.h
+msgid "Disable \"Trash Can\" and delete files from disk directly"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "Bookmarks:"
+msgstr "&Отметки"
+
+#: ../data/ui/prefdlg.ui.h
+msgid "Display image files with supported format as thumbnails"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+msgid "Max size of files displayed as thumbnails:"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "<b>Behavior</b>"
+msgstr "<b>Поведение</b>"
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "Always show the tab bar"
+msgstr "Винаги да се показва лентата с подпрозорците"
+
+#: ../data/ui/prefdlg.ui.h
+msgid "Hide 'Close tab' buttons"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "Hide side pane buttons"
+msgstr "Показване/скриване на страничния панел."
+
+#: ../data/ui/prefdlg.ui.h
+msgid "Hide folder content border"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+msgid "I_nterface"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+msgid "Manage the desktop and show file icons"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+msgid "Show \"My Documents\" icon on desktop"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "Show icons of volumes on desktop"
+msgstr "Показване на монтираните устройства на работния плот"
+
+#: ../data/ui/prefdlg.ui.h
+msgid "Show menus provided by WM when desktop is clicked"
+msgstr ""
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "<b>General</b>"
+msgstr "<b>Основни</b>"
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "Please select an image file"
+msgstr "Избор на изображение за обложка"
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "Mode:"
+msgstr "Режим:"
+
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
 msgid "Wallpaper:"
 msgstr "тапет"
 
-#: ../data/ui/prefdlg.glade.h:39
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
-msgid "_Advanced"
-msgstr "_Разширени"
+msgid "<b>Wallpaper</b>"
+msgstr "тапет"
 
-#: ../data/ui/prefdlg.glade.h:40
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "Background:"
+msgstr "Фон:"
+
+#: ../data/ui/prefdlg.ui.h
+msgid "Text:"
+msgstr "Текст:"
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "Shadow:"
+msgstr "Сянка:"
+
+#: ../data/ui/prefdlg.ui.h
+#, fuzzy
+msgid "<b>Colors</b>"
+msgstr "<b>Цветове</b>"
+
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
 msgid "_Desktop"
 msgstr "Ра_ботен плот"
 
-#: ../data/ui/prefdlg.glade.h:42
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
 msgid "_Volume Management"
 msgstr "Работа със сметки"
 
-#: ../src/exo/exo-icon-view.c:696
-#, fuzzy
-msgid "Column Spacing"
-msgstr "Разредка на колоните"
-
-#: ../src/exo/exo-icon-view.c:697
-#, fuzzy
-msgid "Space which is inserted between grid column"
-msgstr "Пространството, което се вмъква между колоните в мрежата"
-
-#: ../src/exo/exo-icon-view.c:713
-#, fuzzy
-msgid "Number of columns"
-msgstr "Брой колони"
-
-#: ../src/exo/exo-icon-view.c:714
-#, fuzzy
-msgid "Number of columns to display"
-msgstr "Брой колони, които да се покажат"
-
-#: ../src/exo/exo-icon-view.c:728
-#, fuzzy
-msgid "Enable Search"
-msgstr "Разрешаване на търсене"
-
-#: ../src/exo/exo-icon-view.c:729
-#, fuzzy
-msgid "View allows user to search through columns interactively"
-msgstr ""
-"Изгледът позволява на потребителите да претърсват колоните интерактивно"
-
-#: ../src/exo/exo-icon-view.c:746
-#, fuzzy
-msgid "Width for each item"
-msgstr "Широчина на всеки елемент"
-
-#: ../src/exo/exo-icon-view.c:747
-#, fuzzy
-msgid "The width used for each item"
-msgstr "Широчината, която се ползва за всеки елемент"
-
-#: ../src/exo/exo-icon-view.c:765
-#, fuzzy
-msgid "Layout mode"
-msgstr "Режимите за достъп се различават"
-
-#: ../src/exo/exo-icon-view.c:766
-#, fuzzy
-msgid "The layout mode"
-msgstr "Режимите за достъп се различават"
-
-#: ../src/exo/exo-icon-view.c:782
-msgid "Margin"
-msgstr "Граница"
-
-#: ../src/exo/exo-icon-view.c:783
-#, fuzzy
-msgid "Space which is inserted at the edges of the icon view"
-msgstr "Пространството, което се вмъква по ръбовете на изгледа с икони"
-
-#: ../src/exo/exo-icon-view.c:799
-#, fuzzy
-msgid "Markup column"
-msgstr "Колона с маркиране"
-
-#: ../src/exo/exo-icon-view.c:800
-#, fuzzy
-msgid "Model column used to retrieve the text if using Pango markup"
-msgstr ""
-"Колона в модела, от която се взема текста, ако се ползва маркиране на Pango"
-
-#: ../src/exo/exo-icon-view.c:814
-#, fuzzy
-msgid "Icon View Model"
-msgstr "Изглед с икони"
-
-#: ../src/exo/exo-icon-view.c:815
-#, fuzzy
-msgid "The model for the icon view"
-msgstr "Моделът на изглед с икони"
-
-#: ../src/exo/exo-icon-view.c:828
-msgid "Orientation"
-msgstr "Ориентация"
-
-#: ../src/exo/exo-icon-view.c:829
-#, fuzzy
-msgid ""
-"How the text and icon of each item are positioned relative to each other"
-msgstr "Как се разполагат относително един спрямо друг текстът и иконата"
-
-#: ../src/exo/exo-icon-view.c:845
-#, fuzzy
-msgid "Pixbuf column"
-msgstr "Колона на буферите"
-
-#: ../src/exo/exo-icon-view.c:846
-#, fuzzy
-msgid "Model column used to retrieve the icon pixbuf from"
-msgstr "Колона в модела, от която се вземат буферите с пиксели за иконите"
-
-#: ../src/exo/exo-icon-view.c:861
-msgid "Reorderable"
-msgstr "Преподредим"
-
-#: ../src/exo/exo-icon-view.c:862
-#, fuzzy
-msgid "View is reorderable"
-msgstr "Изгледът може да се преподрежда"
-
-#: ../src/exo/exo-icon-view.c:877
-#, fuzzy
-msgid "Row Spacing"
-msgstr "Разредка на редовете"
-
-#: ../src/exo/exo-icon-view.c:878
-#, fuzzy
-msgid "Space which is inserted between grid rows"
-msgstr "Пространството, което се вмъква между редовете в мрежата"
-
-#: ../src/exo/exo-icon-view.c:892
-#, fuzzy
-msgid "Search Column"
-msgstr "Колона за търсене"
-
-#: ../src/exo/exo-icon-view.c:893
-#, fuzzy
-msgid "Model column to search through when searching through item"
-msgstr "Колона от модела, в която се търси"
-
-#: ../src/exo/exo-icon-view.c:907
-#, fuzzy
-msgid "Selection mode"
-msgstr "Начин на избор"
-
-#: ../src/exo/exo-icon-view.c:908
-#, fuzzy
-msgid "The selection mode"
-msgstr "Начинът за избор"
-
-#: ../src/exo/exo-icon-view.c:923 ../src/exo/exo-tree-view.c:201
-msgid "Single Click"
-msgstr "Единично натискане"
-
-#: ../src/exo/exo-icon-view.c:924 ../src/exo/exo-tree-view.c:202
-msgid "Whether the items in the view can be activated with single clicks"
+#: ../data/ui/prefdlg.ui.h
+msgid "On-disk file name encoding:"
 msgstr ""
 
-#: ../src/exo/exo-icon-view.c:940 ../src/exo/exo-tree-view.c:218
-#, fuzzy
-msgid "Single Click Timeout"
-msgstr "<b>Пауза между две натискания</b>"
+#: ../data/ui/prefdlg.ui.h
+msgid "Terminal:"
+msgstr "Терминал:"
 
-#: ../src/exo/exo-icon-view.c:941 ../src/exo/exo-tree-view.c:219
-msgid ""
-"The amount of time after which the item under the mouse cursor will be "
-"selected automatically in single click mode"
+#: ../data/ui/prefdlg.ui.h
+msgid "Use SI decimal prefixes instead of IEC binary prefixes"
 msgstr ""
 
-#: ../src/exo/exo-icon-view.c:956
-msgid "Spacing"
-msgstr "Разредка"
-
-#: ../src/exo/exo-icon-view.c:957
+#: ../data/ui/prefdlg.ui.h
 #, fuzzy
-msgid "Space which is inserted between cells of an item"
-msgstr "Пространството, което се вмъква между клетките на елемент"
+msgid "_Advanced"
+msgstr "_Разширени"
 
-#: ../src/exo/exo-icon-view.c:972
-#, fuzzy
-msgid "Text column"
-msgstr "Текстова колона"
+#: ../src/edit-bookmarks.c
+msgid "New Item"
+msgstr "Нов елемент"
 
-#: ../src/exo/exo-icon-view.c:973
-#, fuzzy
-msgid "Model column used to retrieve the text from"
-msgstr "Колона в модела, от която се взема текста"
+#: ../src/edit-bookmarks.c
+msgid "Edit Bookmarks"
+msgstr "Редактиране на отметките"
 
-#: ../src/exo/exo-icon-view.c:980
-#, fuzzy
-msgid "Selection Box Color"
-msgstr "Цвят на прозореца за избор"
+#: ../src/edit-bookmarks.c ../src/find-files.c ../src/ptk/ptk-file-browser.c
+msgid "Name"
+msgstr "Име"
 
-#: ../src/exo/exo-icon-view.c:981
-#, fuzzy
-msgid "Color of the selection box"
-msgstr "Цветът на прозореца за избор"
+#: ../src/edit-bookmarks.c
+msgid "Path"
+msgstr "Път"
 
-#: ../src/exo/exo-icon-view.c:987
-#, fuzzy
-msgid "Selection Box Alpha"
-msgstr "Алфа каналът на прозореца за избор"
-
-#: ../src/exo/exo-icon-view.c:988
-#, fuzzy
-msgid "Opacity of the selection box"
-msgstr "Непрозрачността на прозореца за избор"
+#: ../src/edit-bookmarks.c
+msgid "Use drag & drop to sort the items"
+msgstr ""
 
 #. mime-type: application
-#: ../src/file-assoc-dlg.c:34
+#: ../src/file-assoc-dlg.c
 msgid "application"
 msgstr "приложение"
 
 #. mime-type: audio
-#: ../src/file-assoc-dlg.c:37
+#: ../src/file-assoc-dlg.c
 msgid "audio"
 msgstr "аудио"
 
 #. mime-type: video
-#: ../src/file-assoc-dlg.c:40
+#: ../src/file-assoc-dlg.c
 msgid "video"
 msgstr "видео"
 
 #. mime-type: text
-#: ../src/file-assoc-dlg.c:43
+#: ../src/file-assoc-dlg.c
 msgid "text"
 msgstr "текст"
 
 #. mime-type: multipart
-#: ../src/file-assoc-dlg.c:46
+#: ../src/file-assoc-dlg.c
 msgid "multipart"
 msgstr ""
 
 #. mime-type: image
-#: ../src/file-assoc-dlg.c:49
+#: ../src/file-assoc-dlg.c
 msgid "image"
 msgstr "изображение"
 
 #. mime-type: message
-#: ../src/file-assoc-dlg.c:52
+#: ../src/file-assoc-dlg.c
 msgid "message"
 msgstr "съобщение"
 
 #. mime-type: model
-#: ../src/file-assoc-dlg.c:55
+#: ../src/file-assoc-dlg.c
 msgid "model"
 msgstr "модел"
 
 #. mime-type: inode
-#: ../src/file-assoc-dlg.c:58
+#: ../src/file-assoc-dlg.c
 msgid "inode"
 msgstr "I-възел"
 
 #. mime-type: packages
-#: ../src/file-assoc-dlg.c:61
+#: ../src/file-assoc-dlg.c
 #, fuzzy
 msgid "packages"
 msgstr "&Пакети"
 
-#: ../src/main.c:92
+#. delete some confusing menu item if this menu is for current folder
+#: ../src/find-files.c ../src/ptk/ptk-file-menu.c
+msgid "_Open"
+msgstr "_Отваряне"
+
+#: ../src/find-files.c
+#, fuzzy
+msgid "Open Containing _Folder"
+msgstr "Отваряне на &родителската директория"
+
+#: ../src/find-files.c
+msgid "Select a folder"
+msgstr "Избор на папка"
+
+#: ../src/find-files.c
+msgid "Browse..."
+msgstr "Преглед..."
+
+#: ../src/find-files.c
+msgid "All Local Disk Partitions"
+msgstr ""
+
+#: ../src/find-files.c
+msgid "Folder"
+msgstr "Папка"
+
+#: ../src/find-files.c ../src/ptk/ptk-file-browser.c
+msgid "Size"
+msgstr "Размер"
+
+#: ../src/find-files.c ../src/ptk/ptk-file-browser.c
+msgid "Type"
+msgstr "Тип"
+
+#: ../src/find-files.c
+msgid "Last Modified"
+msgstr "Последна промяна"
+
+#: ../src/main.c
 #, fuzzy
 msgid "Don't show desktop icons."
 msgstr "Пока&зване на иконите върху работния плот"
 
-#: ../src/main.c:93
+#: ../src/main.c
 #, fuzzy
 msgid "Run PCManFM as a daemon"
 msgstr "Стартиране като daemon процес"
 
-#: ../src/main.c:94
+#: ../src/main.c
 msgid ""
 "Open folders in new tabs of the last used window instead of creating new "
 "windows"
 msgstr ""
 
-#: ../src/main.c:95
+#: ../src/main.c
 msgid ""
 "Open preference dialog. 'n' is the number of page you want to show (1, 2, "
 "3...)."
 msgstr ""
 
-#: ../src/main.c:96
+#: ../src/main.c
 msgid "Find Files with PCManFM"
 msgstr ""
 
-#: ../src/main.c:103
+#: ../src/main.c
 #, fuzzy
 msgid "Set desktop wallpaper"
 msgstr "&Използване като тапет"
 
-#: ../src/main.c:112
+#: ../src/main.c
 msgid "[FILE1, FILE2,...]"
 msgstr ""
 
-#: ../src/main.c:339
+#: ../src/main.c
 msgid "GTK+ icon theme is not properly set"
 msgstr ""
 
-#: ../src/main.c:341
+#: ../src/main.c
 #, c-format
 msgid ""
 "<big><b>%s</b></big>\n"
@@ -860,33 +735,29 @@ msgid ""
 "no standard for this, but it will be solved by freedesktop.org in the future."
 msgstr ""
 
-#: ../src/main.c:678 ../src/main.c:747 ../src/main.c:798
-#: ../src/main-window.c:1704 ../src/main-window.c:1771
-#: ../src/ptk/ptk-file-browser.c:520 ../src/ptk/ptk-file-browser.c:538
-#: ../src/ptk/ptk-file-task.c:332 ../src/ptk/ptk-console-output.c:225
-#: ../src/ptk/ptk-file-misc.c:258 ../src/ptk/ptk-file-misc.c:326
-#: ../src/ptk/ptk-file-misc.c:415 ../src/ptk/ptk-file-properties.c:701
-#: ../src/ptk/ptk-file-properties.c:712
+#: ../src/main.c ../src/main-window.c ../src/ptk/ptk-console-output.c
+#: ../src/ptk/ptk-file-browser.c ../src/ptk/ptk-file-misc.c
+#: ../src/ptk/ptk-file-properties.c ../src/ptk/ptk-file-task.c
 msgid "Error"
 msgstr "Грешка"
 
-#: ../src/main.c:678
+#: ../src/main.c
 msgid ""
 "Error: Unable to establish connection with FAM.\n"
 "\n"
 "Do you have \"FAM\" or \"Gamin\" installed and running?"
 msgstr ""
 
-#: ../src/main.c:747
+#: ../src/main.c
 #, fuzzy
 msgid "File doesn't exist"
 msgstr "Файлът не съществува"
 
-#: ../src/main.c:794
+#: ../src/main.c
 msgid "Don't know how to open the file"
 msgstr ""
 
-#: ../src/main.c:796
+#: ../src/main.c
 #, fuzzy, c-format
 msgid ""
 "Unable to open file:\n"
@@ -894,473 +765,817 @@ msgid ""
 "%s"
 msgstr "Не може да бъде отворен файл."
 
-#: ../src/main-window.c:304 ../src/ptk/ptk-file-menu.c:109
-#: ../src/desktop/desktop-window.c:186
+#: ../src/main-window.c ../src/desktop/desktop-window.c
+#: ../src/ptk/ptk-file-menu.c
 #, fuzzy
 msgid "_Folder"
 msgstr "Директория"
 
-#: ../src/main-window.c:305 ../src/ptk/ptk-file-menu.c:110
-#: ../src/desktop/desktop-window.c:187
+#: ../src/main-window.c ../src/desktop/desktop-window.c
+#: ../src/ptk/ptk-file-menu.c
 #, fuzzy
 msgid "_Text File"
 msgstr "Текстов файл (*)"
 
-#: ../src/main-window.c:311
+#: ../src/main-window.c
 msgid "New _Window"
 msgstr "Нов _прозорец"
 
-#: ../src/main-window.c:312
+#: ../src/main-window.c
 msgid "New _Tab"
 msgstr "Нов _подпрозорец"
 
-#: ../src/main-window.c:314 ../src/ptk/ptk-file-menu.c:133
-#: ../src/desktop/desktop-window.c:196
+#: ../src/main-window.c ../src/desktop/desktop-window.c
+#: ../src/ptk/ptk-file-menu.c
 msgid "_Create New"
 msgstr "_Създаване на нов..."
 
-#: ../src/main-window.c:315
+#: ../src/main-window.c
 msgid "File _Properties"
 msgstr "Информация за файла"
 
-#: ../src/main-window.c:317
+#: ../src/main-window.c
 msgid "Close Tab"
 msgstr "Затваряне на подпрозорец"
 
-#: ../src/main-window.c:318
+#: ../src/main-window.c
 msgid "_Close Window"
 msgstr "Зат_варяне на този прозорец"
 
-#: ../src/main-window.c:327 ../src/ptk/ptk-file-menu.c:128
+#: ../src/main-window.c ../src/ptk/ptk-file-menu.c
 msgid "_Delete"
 msgstr "_Изтриване"
 
-#: ../src/main-window.c:328 ../src/ptk/ptk-file-browser.c:1396
-#: ../src/ptk/ptk-file-menu.c:129
+#: ../src/main-window.c ../src/ptk/ptk-file-browser.c
+#: ../src/ptk/ptk-file-menu.c
 msgid "_Rename"
 msgstr "П_реименуване"
 
-#: ../src/main-window.c:330
+#: ../src/main-window.c
 msgid "Select _All"
 msgstr "Избиране на _всичко"
 
-#: ../src/main-window.c:331
+#: ../src/main-window.c
 msgid "_Invert Selection"
 msgstr "_Обръщане на избора"
 
-#: ../src/main-window.c:340
+#: ../src/main-window.c
+#, fuzzy
+#| msgid "File Associations"
+msgid "_File Associations"
+msgstr "Асоцииране на файлове"
+
+#: ../src/main-window.c
 msgid "Go _Back"
 msgstr "Връщане назад"
 
-#: ../src/main-window.c:341
+#: ../src/main-window.c
 msgid "Go _Forward"
 msgstr "Отиване напред"
 
-#: ../src/main-window.c:342
+#: ../src/main-window.c
 #, fuzzy
 msgid "Go to _Parent Folder"
 msgstr "Преместване в родителската папка"
 
-#: ../src/main-window.c:343
+#: ../src/main-window.c
 #, fuzzy
 msgid "Go _Home"
 msgstr "Домашна директория на потребител"
 
-#: ../src/main-window.c:355 ../src/desktop/desktop-window.c:173
+#: ../src/main-window.c ../src/desktop/desktop-window.c
 #, fuzzy
 msgid "Sort by _Name"
 msgstr "Подреждане по _име"
 
-#: ../src/main-window.c:356 ../src/desktop/desktop-window.c:174
+#: ../src/main-window.c ../src/desktop/desktop-window.c
 #, fuzzy
 msgid "Sort by _Size"
 msgstr "По размер"
 
-#: ../src/main-window.c:357 ../src/desktop/desktop-window.c:176
+#: ../src/main-window.c ../src/desktop/desktop-window.c
 msgid "Sort by _Modification Time"
 msgstr ""
 
-#: ../src/main-window.c:358 ../src/desktop/desktop-window.c:175
+#: ../src/main-window.c ../src/desktop/desktop-window.c
 #, fuzzy
 msgid "Sort by _Type"
 msgstr "Търсене по тип"
 
-#: ../src/main-window.c:359
+#: ../src/main-window.c
 #, fuzzy
 msgid "Sort by _Permission"
 msgstr "Филтър"
 
-#: ../src/main-window.c:360
+#: ../src/main-window.c
 #, fuzzy
 msgid "Sort by _Owner"
 msgstr "четене от собственика"
 
-#: ../src/main-window.c:362 ../src/desktop/desktop-window.c:179
+#: ../src/main-window.c ../src/desktop/desktop-window.c
 msgid "Ascending"
 msgstr "Възходящо"
 
-#: ../src/main-window.c:363 ../src/desktop/desktop-window.c:180
+#: ../src/main-window.c ../src/desktop/desktop-window.c
 msgid "Descending"
 msgstr "Низходящо"
 
-#: ../src/main-window.c:369
+#: ../src/main-window.c
 #, fuzzy
 msgid "_Open Side Pane"
 msgstr "Показване на страничната лента"
 
-#: ../src/main-window.c:371
+#: ../src/main-window.c
 #, fuzzy
 msgid "Show _Location Pane"
 msgstr "Показване на предварителния преглед на писмата"
 
-#: ../src/main-window.c:372
+#: ../src/main-window.c
 #, fuzzy
 msgid "Show _Directory Tree"
 msgstr "&Местни папки"
 
-#: ../src/main-window.c:378
+#: ../src/main-window.c
 msgid "_Refresh"
 msgstr "_Обновяване"
 
-#: ../src/main-window.c:379
+#: ../src/main-window.c
 msgid "Side _Pane"
 msgstr "_Страничен панел"
 
 #. PTK_CHECK_MENU_ITEM( N_( "_Full Screen" ), on_fullscreen_activate, GDK_F11, 0 ),
-#: ../src/main-window.c:381
+#: ../src/main-window.c
 #, fuzzy
 msgid "L_ocation Bar"
 msgstr "Лента за състоянието"
 
-#: ../src/main-window.c:383
+#: ../src/main-window.c
 msgid "Show _Hidden Files"
 msgstr "Показване на _скритите файлове"
 
-#: ../src/main-window.c:384
+#: ../src/main-window.c
 msgid "_Sort..."
 msgstr "_Подреждане…"
 
-#: ../src/main-window.c:386
+#: ../src/main-window.c
 #, fuzzy
 msgid "View as _Icons"
 msgstr "Показване като мрежа"
 
-#: ../src/main-window.c:387
+#: ../src/main-window.c
 msgid "View as _Compact List"
 msgstr ""
 
-#: ../src/main-window.c:388
+#: ../src/main-window.c
 msgid "View as Detailed _List"
 msgstr ""
 
-#: ../src/main-window.c:394
+#: ../src/main-window.c
 #, fuzzy
 msgid "Open _Terminal"
 msgstr "_Отваряне на прозорец"
 
-#: ../src/main-window.c:395
+#: ../src/main-window.c
 msgid "Open Current Folder as _Root"
 msgstr ""
 
-#: ../src/main-window.c:399
+#: ../src/main-window.c
 #, fuzzy
 msgid "_Find Files"
 msgstr "Търсене на файлове"
 
-#: ../src/main-window.c:405
+#: ../src/main-window.c
 msgid "_File"
 msgstr "_Файл"
 
-#: ../src/main-window.c:406
+#: ../src/main-window.c
 msgid "_Edit"
 msgstr "_Редактиране"
 
 #. PTK_POPUP_MENU( N_( "_Edit" ), fm_edit_menu ),
-#: ../src/main-window.c:408
+#: ../src/main-window.c
 #, fuzzy
 msgid "_Go"
 msgstr "_Управление"
 
-#: ../src/main-window.c:409
+#: ../src/main-window.c
 #, fuzzy
 msgid "_Bookmark"
 msgstr "&Отметка..."
 
-#: ../src/main-window.c:410
+#: ../src/main-window.c
 msgid "_View"
 msgstr "_Изглед"
 
-#: ../src/main-window.c:411
+#: ../src/main-window.c
 msgid "_Tool"
 msgstr "_Инструмент"
 
-#: ../src/main-window.c:412
+#: ../src/main-window.c
 msgid "_Help"
 msgstr "_Помощ"
 
-#: ../src/main-window.c:420
+#: ../src/main-window.c
 msgid "New Tab"
 msgstr "Нов подпрозорец"
 
-#: ../src/main-window.c:421
+#: ../src/main-window.c
 msgid "Back"
 msgstr "Назад"
 
-#: ../src/main-window.c:422
+#: ../src/main-window.c
 msgid "Forward"
 msgstr "Напред"
 
-#: ../src/main-window.c:423
+#: ../src/main-window.c
 msgid "Parent Folder"
 msgstr "Родителска директория"
 
-#: ../src/main-window.c:424
+#: ../src/main-window.c
 msgid "Refresh"
 msgstr "Опресни"
 
-#: ../src/main-window.c:425
+#: ../src/main-window.c
 msgid "Home Directory"
 msgstr "Домашна директория на потребител"
 
-#: ../src/main-window.c:426
+#: ../src/main-window.c
 msgid "Open Side Pane"
 msgstr "Показване на страничната лента"
 
-#: ../src/main-window.c:432
+#: ../src/main-window.c
 msgid "Go"
 msgstr "Давай"
 
-#: ../src/main-window.c:664
+#: ../src/main-window.c
 msgid "Warning: You are in super user mode"
 msgstr ""
 
-#: ../src/main-window.c:1705
+#: ../src/main-window.c
 msgid "Terminal program has not been set"
 msgstr ""
 
-#: ../src/main-window.c:1846
+#: ../src/main-window.c
 msgid "_Add to Bookmarks"
 msgstr "_Добавяне към отметките"
 
-#: ../src/main-window.c:1847
+#: ../src/main-window.c
 msgid "_Edit Bookmarks"
 msgstr "_Редакция на отметки"
 
-#: ../src/main-window.c:1918
+#: ../src/main-window.c
 msgid "Loading..."
 msgstr "Зареждане…"
 
-#: ../src/main-window.c:2103
+#: ../src/main-window.c
 #, fuzzy, c-format
 msgid ", Free space: %s (Total: %s )"
 msgstr "Свободно място:"
 
-#: ../src/main-window.c:2112
+#: ../src/main-window.c
 #, fuzzy, c-format
 msgid "%d item selected (%s)%s"
 msgid_plural "%d items selected (%s)%s"
 msgstr[0] "Маркиран е %1 елемента"
 msgstr[1] ""
 
-#: ../src/main-window.c:2122
+#: ../src/main-window.c
 #, fuzzy, c-format
 msgid "%d hidden"
 msgid_plural "%d hidden"
 msgstr[0] "Скрита"
 msgstr[1] ""
 
-#: ../src/main-window.c:2123
+#: ../src/main-window.c
 #, fuzzy, c-format
 msgid "%d visible item (%s)%s"
 msgid_plural "%d visible items (%s)%s"
 msgstr[0] "&Добавяне на елемент"
 msgstr[1] ""
 
-#: ../src/ptk/ptk-file-browser.c:521
+#: ../src/desktop/desktop-window.c
+msgid "_Icons"
+msgstr "_Икони"
+
+#: ../src/desktop/desktop-window.c
+#, fuzzy
+msgid "_Desktop Settings"
+msgstr "Настройки на средата"
+
+#: ../src/desktop/desktop-window.c
+msgid "My Documents"
+msgstr "Моите документи"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Column Spacing"
+msgstr "Разредка на колоните"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Space which is inserted between grid column"
+msgstr "Пространството, което се вмъква между колоните в мрежата"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Number of columns"
+msgstr "Брой колони"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Number of columns to display"
+msgstr "Брой колони, които да се покажат"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Enable Search"
+msgstr "Разрешаване на търсене"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "View allows user to search through columns interactively"
+msgstr ""
+"Изгледът позволява на потребителите да претърсват колоните интерактивно"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Width for each item"
+msgstr "Широчина на всеки елемент"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "The width used for each item"
+msgstr "Широчината, която се ползва за всеки елемент"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Layout mode"
+msgstr "Режимите за достъп се различават"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "The layout mode"
+msgstr "Режимите за достъп се различават"
+
+#: ../src/exo/exo-icon-view.c
+msgid "Margin"
+msgstr "Граница"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Space which is inserted at the edges of the icon view"
+msgstr "Пространството, което се вмъква по ръбовете на изгледа с икони"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Markup column"
+msgstr "Колона с маркиране"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Model column used to retrieve the text if using Pango markup"
+msgstr ""
+"Колона в модела, от която се взема текста, ако се ползва маркиране на Pango"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Icon View Model"
+msgstr "Изглед с икони"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "The model for the icon view"
+msgstr "Моделът на изглед с икони"
+
+#: ../src/exo/exo-icon-view.c
+msgid "Orientation"
+msgstr "Ориентация"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid ""
+"How the text and icon of each item are positioned relative to each other"
+msgstr "Как се разполагат относително един спрямо друг текстът и иконата"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Pixbuf column"
+msgstr "Колона на буферите"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Model column used to retrieve the icon pixbuf from"
+msgstr "Колона в модела, от която се вземат буферите с пиксели за иконите"
+
+#: ../src/exo/exo-icon-view.c
+msgid "Reorderable"
+msgstr "Преподредим"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "View is reorderable"
+msgstr "Изгледът може да се преподрежда"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Row Spacing"
+msgstr "Разредка на редовете"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Space which is inserted between grid rows"
+msgstr "Пространството, което се вмъква между редовете в мрежата"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Search Column"
+msgstr "Колона за търсене"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Model column to search through when searching through item"
+msgstr "Колона от модела, в която се търси"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Selection mode"
+msgstr "Начин на избор"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "The selection mode"
+msgstr "Начинът за избор"
+
+#: ../src/exo/exo-icon-view.c ../src/exo/exo-tree-view.c
+msgid "Single Click"
+msgstr "Единично натискане"
+
+#: ../src/exo/exo-icon-view.c ../src/exo/exo-tree-view.c
+msgid "Whether the items in the view can be activated with single clicks"
+msgstr ""
+
+#: ../src/exo/exo-icon-view.c ../src/exo/exo-tree-view.c
+#, fuzzy
+msgid "Single Click Timeout"
+msgstr "<b>Пауза между две натискания</b>"
+
+#: ../src/exo/exo-icon-view.c ../src/exo/exo-tree-view.c
+msgid ""
+"The amount of time after which the item under the mouse cursor will be "
+"selected automatically in single click mode"
+msgstr ""
+
+#: ../src/exo/exo-icon-view.c
+msgid "Spacing"
+msgstr "Разредка"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Space which is inserted between cells of an item"
+msgstr "Пространството, което се вмъква между клетките на елемент"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Text column"
+msgstr "Текстова колона"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Model column used to retrieve the text from"
+msgstr "Колона в модела, от която се взема текста"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Selection Box Color"
+msgstr "Цвят на прозореца за избор"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Color of the selection box"
+msgstr "Цветът на прозореца за избор"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Selection Box Alpha"
+msgstr "Алфа каналът на прозореца за избор"
+
+#: ../src/exo/exo-icon-view.c
+#, fuzzy
+msgid "Opacity of the selection box"
+msgstr "Непрозрачността на прозореца за избор"
+
+#: ../src/ptk/ptk-console-output.c
+msgid ""
+"\n"
+"Complete!"
+msgstr ""
+
+#: ../src/ptk/ptk-console-output.c
+msgid "Command:"
+msgstr "Команда:"
+
+#: ../src/ptk/ptk-dir-tree.c
+msgid "File System"
+msgstr "Файлова система"
+
+#: ../src/ptk/ptk-dir-tree.c
+#, fuzzy
+msgid "No Sub Folder"
+msgstr "Няма такава папка „%s“"
+
+#: ../src/ptk/ptk-file-archiver.c
+#, fuzzy
+msgid "Save Compressed Files to..."
+msgstr "Папка, в която да се запазят получените файлове"
+
+#: ../src/ptk/ptk-file-archiver.c
+#, fuzzy
+msgid "Format of compressed File:"
+msgstr "Файл компресиран с bzip2"
+
+#: ../src/ptk/ptk-file-archiver.c
+#, fuzzy, c-format
+msgid "Creating Compressed File: %s"
+msgstr "Файл компресиран с bzip2"
+
+#: ../src/ptk/ptk-file-archiver.c
+#, fuzzy
+msgid "Compress Files"
+msgstr "Компресиране на TIFF-файлове"
+
+#: ../src/ptk/ptk-file-archiver.c
+#, fuzzy
+msgid "Extract File to..."
+msgstr "Файлът \"%1\" не може да бъде извлечен"
+
+#: ../src/ptk/ptk-file-archiver.c
+#, fuzzy, c-format
+msgid "Extracting Files to: %s"
+msgstr "&Файл за вето:"
+
+#: ../src/ptk/ptk-file-archiver.c
+#, fuzzy
+msgid "Extract Files"
+msgstr " %s преименува файлове\n"
+
+#: ../src/ptk/ptk-file-browser.c
 #, fuzzy
 msgid "Directory doesn't exist!"
 msgstr "Файлът не съществува"
 
-#: ../src/ptk/ptk-file-browser.c:1392 ../src/ptk/ptk-file-menu.c:142
+#: ../src/ptk/ptk-file-browser.c ../src/ptk/ptk-file-menu.c
 msgid "Open in New _Tab"
 msgstr "Отваряне в нов _подпрозорец"
 
-#: ../src/ptk/ptk-file-browser.c:1393 ../src/ptk/ptk-file-menu.c:143
+#: ../src/ptk/ptk-file-browser.c ../src/ptk/ptk-file-menu.c
 msgid "Open in New _Window"
 msgstr "Отваряне в _нов прозорец"
 
-#: ../src/ptk/ptk-file-browser.c:1646 ../src/edit-bookmarks.c:201
-#: ../src/find-files.c:799
-msgid "Name"
-msgstr "Име"
-
-#: ../src/ptk/ptk-file-browser.c:1646 ../src/find-files.c:820
-msgid "Size"
-msgstr "Размер"
-
-#: ../src/ptk/ptk-file-browser.c:1646 ../src/find-files.c:824
-msgid "Type"
-msgstr "Тип"
-
-#: ../src/ptk/ptk-file-browser.c:1647
+#: ../src/ptk/ptk-file-browser.c
 msgid "Permission"
 msgstr "Права"
 
-#: ../src/ptk/ptk-file-browser.c:1647
+#: ../src/ptk/ptk-file-browser.c
 #, fuzzy
 msgid "Owner:Group"
 msgstr "Собственик (група)"
 
-#: ../src/ptk/ptk-file-browser.c:1647
+#: ../src/ptk/ptk-file-browser.c
 #, fuzzy
 msgid "Last Modification"
 msgstr "Промяна на пътека"
 
-#: ../src/ptk/ptk-file-browser.c:2856
+#: ../src/ptk/ptk-file-browser.c
 msgid "Location"
 msgstr "Местоположение"
 
-#: ../src/ptk/ptk-file-browser.c:2857
+#: ../src/ptk/ptk-file-browser.c
 msgid "Directory Tree"
 msgstr "Дърво на директориите"
 
-#: ../src/ptk/ptk-location-view.c:207
-msgid "Trash"
-msgstr "Кошче"
-
-#: ../src/ptk/ptk-location-view.c:250
-msgid "Desktop"
-msgstr "Работен плот"
-
-#: ../src/ptk/ptk-location-view.c:441 ../src/ptk/ptk-location-view.c:635
+#: ../src/ptk/ptk-file-menu.c
 #, fuzzy
-msgid "Unable to mount device"
-msgstr "Не може да се записва в устройство %s"
+msgid "E_xtract Here"
+msgstr "&Копиране"
 
-#: ../src/ptk/ptk-location-view.c:652
+#: ../src/ptk/ptk-file-menu.c
 #, fuzzy
-msgid "Unable to unmount device"
-msgstr "Не може да се записва в устройство %s"
+msgid "Extract _To"
+msgstr "Извличане в: "
 
-#: ../src/ptk/ptk-location-view.c:671
+#: ../src/ptk/ptk-file-menu.c
 #, fuzzy
-msgid "Unable to eject device"
-msgstr "Не може да се записва в устройство %s"
+msgid "Open _with..."
+msgstr "Отваряне с"
 
-#: ../src/ptk/ptk-location-view.c:730
+#: ../src/ptk/ptk-file-menu.c
+msgid "Compress"
+msgstr "Компресиране"
+
+#: ../src/ptk/ptk-file-menu.c
 #, fuzzy
-msgid "_Mount File System"
-msgstr "Виртуална Файлова Система:"
+msgid "E_xtract"
+msgstr "Из&вличане..."
 
-#: ../src/ptk/ptk-location-view.c:740
-msgid "_Eject"
-msgstr "_Изваждане"
+#: ../src/ptk/ptk-file-menu.c
+msgid "_Properties"
+msgstr "_Настройки"
 
-#: ../src/ptk/ptk-location-view.c:746
+#: ../src/ptk/ptk-file-menu.c
 #, fuzzy
-msgid "_Unmount File System"
-msgstr "Виртуална Файлова Система:"
+msgid "Open in Terminal"
+msgstr "&Стартиране в терминал"
 
-#: ../src/ptk/ptk-file-task.c:103
+#: ../src/ptk/ptk-file-menu.c
+#, fuzzy
+msgid "_Open with another program"
+msgstr "Отваряне на <b>%(name)s с %(program)s</b>"
+
+#: ../src/ptk/ptk-file-menu.c
+msgid "E_xecute"
+msgstr "_Изпълнение"
+
+#: ../src/ptk/ptk-file-menu.c
+#, c-format
+msgid "_Open with \"%s\""
+msgstr "_Отваряне с \\„%s\\“"
+
+#: ../src/ptk/ptk-file-misc.c
+#, fuzzy
+msgid "Really delete selected files?"
+msgstr "Изтриване на маркираните файлове"
+
+#: ../src/ptk/ptk-file-misc.c
+msgid "Rename File"
+msgstr "Преименувай файл"
+
+#: ../src/ptk/ptk-file-misc.c
+msgid "Please input new file name:"
+msgstr ""
+
+#: ../src/ptk/ptk-file-misc.c
+msgid ""
+"The file name you specified already exists.\n"
+"Please input a new one:"
+msgstr ""
+
+#: ../src/ptk/ptk-file-misc.c
+msgid "New Folder"
+msgstr "Нова директория"
+
+#: ../src/ptk/ptk-file-misc.c
+msgid "Input a name for the new folder:"
+msgstr "Въведете име за новата папка:"
+
+#: ../src/ptk/ptk-file-misc.c
+msgid "New File"
+msgstr "Нов файл"
+
+#: ../src/ptk/ptk-file-misc.c
+msgid "Input a name for the new file:"
+msgstr ""
+
+#: ../src/ptk/ptk-file-misc.c
+msgid "The new file cannot be created!"
+msgstr ""
+
+#: ../src/ptk/ptk-file-properties.c
+msgid "Multiple files are selected"
+msgstr ""
+
+#: ../src/ptk/ptk-file-properties.c
+msgid "Multiple files of different types"
+msgstr ""
+
+#: ../src/ptk/ptk-file-properties.c
+#, fuzzy
+msgid "Other program..."
+msgstr "Програмата \"%1\" блокира."
+
+#. The total file size displayed in "File Properties" is not
+#. completely calculated yet. So "Calculating..." is displayed.
+#: ../src/ptk/ptk-file-properties.c
+msgid "Calculating..."
+msgstr "Изчисление..."
+
+#: ../src/ptk/ptk-file-properties.c
+msgid "Invalid User"
+msgstr "несъществуващ потребител"
+
+#: ../src/ptk/ptk-file-properties.c
+msgid "Invalid Group"
+msgstr "Невалидна група"
+
+#: ../src/ptk/ptk-file-properties.c
+msgid ""
+"Do you want to recursively apply these changes to all files and sub-folders?"
+msgstr ""
+
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Move: "
 msgstr "Преместване: "
 
-#: ../src/ptk/ptk-file-task.c:104
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Copy: "
 msgstr "&Копиране"
 
-#: ../src/ptk/ptk-file-task.c:105
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Move to Trash: "
 msgstr "Преместване в кошчето"
 
-#: ../src/ptk/ptk-file-task.c:106
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Delete: "
 msgstr "/_Изтрий"
 
-#: ../src/ptk/ptk-file-task.c:107
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Link: "
 msgstr "Линк      "
 
-#: ../src/ptk/ptk-file-task.c:108
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Change Properties: "
 msgstr "Промяна настройките на лист"
 
-#: ../src/ptk/ptk-file-task.c:112
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Moving..."
 msgstr "Премествам %s"
 
-#: ../src/ptk/ptk-file-task.c:113
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Copying..."
 msgstr "Копиране"
 
-#: ../src/ptk/ptk-file-task.c:114
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Moving to Trash..."
 msgstr "Преместване на файловете в кошчето"
 
-#: ../src/ptk/ptk-file-task.c:115
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Deleting..."
 msgstr "%s: Изтрива се %s\n"
 
-#: ../src/ptk/ptk-file-task.c:116
+#: ../src/ptk/ptk-file-task.c
 msgid "Linking..."
 msgstr ""
 
-#: ../src/ptk/ptk-file-task.c:117
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Changing Properties"
 msgstr "Обща свойства"
 
 #. To: <Destination folder>
 #. ex. Copy file to..., Move file to...etc.
-#: ../src/ptk/ptk-file-task.c:154
+#: ../src/ptk/ptk-file-task.c
 msgid "To:"
 msgstr "До:"
 
 #. Processing:
 #. Processing: <Name of currently proccesed file>
-#: ../src/ptk/ptk-file-task.c:169
+#: ../src/ptk/ptk-file-task.c
 msgid "Processing:"
 msgstr "Обработване:"
 
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../src/ptk/ptk-file-task.c
+msgid "Preparing..."
+msgstr "Подготовка..."
+
 #. Progress:
-#: ../src/ptk/ptk-file-task.c:184
+#: ../src/ptk/ptk-file-task.c
 msgid "Progress:"
 msgstr "Изпълнение:"
 
-#: ../src/ptk/ptk-file-task.c:320
+#: ../src/ptk/ptk-file-task.c
 msgid "Cancel the operation?"
 msgstr "Прекъсване на операцията?"
 
 #. Ask the user whether to overwrite dir content or not
-#: ../src/ptk/ptk-file-task.c:409
+#: ../src/ptk/ptk-file-task.c
 msgid "Do you want to overwrite the folder and its content?"
 msgstr ""
 
 #. Ask the user whether to overwrite the file or not
-#: ../src/ptk/ptk-file-task.c:414
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Do you want to overwrite this file?"
 msgstr "Вече има такъв файл. Сигурни ли сте, че искате да бъде презаписан?"
 
 #. Rename is required
-#: ../src/ptk/ptk-file-task.c:419
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy
 msgid "Please choose a new file name."
 msgstr "Моля, въведете име на новия портфейл:"
 
 #. Ths first %s is a file name, and the second one represents followed message.
 #. ex: "/home/pcman/some_file" already exists.\n\nDo you want to overwrite existing file?"
-#: ../src/ptk/ptk-file-task.c:427
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy, c-format
 msgid ""
 "\"%s\" already exists.\n"
@@ -1369,7 +1584,7 @@ msgid ""
 msgstr "%s вече съществува\n"
 
 #. Ths first %s is a file name, and the second one represents followed message.
-#: ../src/ptk/ptk-file-task.c:432
+#: ../src/ptk/ptk-file-task.c
 #, fuzzy, c-format
 msgid ""
 "\"%s\"\n"
@@ -1381,523 +1596,339 @@ msgstr ""
 "Файлът източник и файлът приемник са един и същи файл.\n"
 "%1"
 
-#: ../src/ptk/ptk-file-task.c:449
+#: ../src/ptk/ptk-file-task.c
 msgid "Overwrite"
 msgstr "Презапис"
 
-#: ../src/ptk/ptk-file-task.c:450
+#: ../src/ptk/ptk-file-task.c
 msgid "Overwrite All"
 msgstr "Презаписване на всички"
 
-#: ../src/ptk/ptk-file-task.c:455
+#: ../src/ptk/ptk-file-task.c
 msgid "Rename"
 msgstr "Преименуване"
 
-#: ../src/ptk/ptk-file-task.c:456
+#: ../src/ptk/ptk-file-task.c
 msgid "Skip"
 msgstr "Пропуск"
 
-#: ../src/ptk/ptk-file-task.c:457
+#: ../src/ptk/ptk-file-task.c
 msgid "Skip All"
 msgstr "Пропускане на всички"
 
-#: ../src/ptk/ptk-file-archiver.c:125
+#: ../src/ptk/ptk-location-view.c
+msgid "Trash"
+msgstr "Кошче"
+
+#: ../src/ptk/ptk-location-view.c
+msgid "Desktop"
+msgstr "Работен плот"
+
+#: ../src/ptk/ptk-location-view.c
 #, fuzzy
-msgid "Save Compressed Files to..."
-msgstr "Папка, в която да се запазят получените файлове"
+msgid "Unable to mount device"
+msgstr "Не може да се записва в устройство %s"
 
-#: ../src/ptk/ptk-file-archiver.c:133
+#: ../src/ptk/ptk-location-view.c
 #, fuzzy
-msgid "Format of compressed File:"
-msgstr "Файл компресиран с bzip2"
+msgid "Unable to unmount device"
+msgstr "Не може да се записва в устройство %s"
 
-#: ../src/ptk/ptk-file-archiver.c:204
-#, fuzzy, c-format
-msgid "Creating Compressed File: %s"
-msgstr "Файл компресиран с bzip2"
-
-#: ../src/ptk/ptk-file-archiver.c:207
+#: ../src/ptk/ptk-location-view.c
 #, fuzzy
-msgid "Compress Files"
-msgstr "Компресиране на TIFF-файлове"
+msgid "Unable to eject device"
+msgstr "Не може да се записва в устройство %s"
 
-#: ../src/ptk/ptk-file-archiver.c:238
+#: ../src/ptk/ptk-location-view.c
 #, fuzzy
-msgid "Extract File to..."
-msgstr "Файлът \"%1\" не може да бъде извлечен"
+msgid "_Mount File System"
+msgstr "Виртуална Файлова Система:"
 
-#: ../src/ptk/ptk-file-archiver.c:287
-#, fuzzy, c-format
-msgid "Extracting Files to: %s"
-msgstr "&Файл за вето:"
+#: ../src/ptk/ptk-location-view.c
+msgid "_Eject"
+msgstr "_Изваждане"
 
-#: ../src/ptk/ptk-file-archiver.c:289
+#: ../src/ptk/ptk-location-view.c
 #, fuzzy
-msgid "Extract Files"
-msgstr " %s преименува файлове\n"
+msgid "_Unmount File System"
+msgstr "Виртуална Файлова Система:"
 
-#: ../src/ptk/ptk-console-output.c:67
-msgid ""
-"\n"
-"Complete!"
-msgstr ""
-
-#: ../src/ptk/ptk-console-output.c:171
-msgid "Command:"
-msgstr "Команда:"
-
-#: ../src/ptk/ptk-dir-tree.c:174
-msgid "File System"
-msgstr "Файлова система"
-
-#: ../src/ptk/ptk-dir-tree.c:397
-#, fuzzy
-msgid "No Sub Folder"
-msgstr "Няма такава папка „%s“"
-
-#: ../src/ptk/ptk-file-menu.c:116
-#, fuzzy
-msgid "E_xtract Here"
-msgstr "&Копиране"
-
-#: ../src/ptk/ptk-file-menu.c:117
-#, fuzzy
-msgid "Extract _To"
-msgstr "Извличане в: "
-
-#: ../src/ptk/ptk-file-menu.c:123
-#, fuzzy
-msgid "Open _with..."
-msgstr "Отваряне с"
-
-#: ../src/ptk/ptk-file-menu.c:131
-msgid "Compress"
-msgstr "Компресиране"
-
-#: ../src/ptk/ptk-file-menu.c:132
-#, fuzzy
-msgid "E_xtract"
-msgstr "Из&вличане..."
-
-#: ../src/ptk/ptk-file-menu.c:135
-msgid "_Properties"
-msgstr "_Настройки"
-
-#: ../src/ptk/ptk-file-menu.c:144
-#, fuzzy
-msgid "Open in Terminal"
-msgstr "&Стартиране в терминал"
-
-#: ../src/ptk/ptk-file-menu.c:373
-#, fuzzy
-msgid "_Open with another program"
-msgstr "Отваряне на <b>%(name)s с %(program)s</b>"
-
-#: ../src/ptk/ptk-file-menu.c:388
-msgid "E_xecute"
-msgstr "_Изпълнение"
-
-#: ../src/ptk/ptk-file-menu.c:397
-#, c-format
-msgid "_Open with \"%s\""
-msgstr "_Отваряне с \\„%s\\“"
-
-#. delete some confusing menu item if this menu is for current folder
-#: ../src/ptk/ptk-file-menu.c:408 ../src/ptk/ptk-file-menu.c:417
-#: ../src/find-files.c:229
-msgid "_Open"
-msgstr "_Отваряне"
-
-#: ../src/ptk/ptk-file-misc.c:60
-#, fuzzy
-msgid "Really delete selected files?"
-msgstr "Изтриване на маркираните файлове"
-
-#: ../src/ptk/ptk-file-misc.c:121
-msgid "Rename File"
-msgstr "Преименувай файл"
-
-#: ../src/ptk/ptk-file-misc.c:122
-msgid "Please input new file name:"
-msgstr ""
-
-#: ../src/ptk/ptk-file-misc.c:151 ../src/ptk/ptk-file-misc.c:172
-#: ../src/ptk/ptk-file-misc.c:225
-msgid ""
-"The file name you specified already exists.\n"
-"Please input a new one:"
-msgstr ""
-
-#: ../src/ptk/ptk-file-misc.c:195 ../src/ptk/ptk-file-misc.c:197
-msgid "New Folder"
-msgstr "Нова директория"
-
-#: ../src/ptk/ptk-file-misc.c:196
-msgid "Input a name for the new folder:"
-msgstr "Въведете име за новата папка:"
-
-#: ../src/ptk/ptk-file-misc.c:202 ../src/ptk/ptk-file-misc.c:204
-msgid "New File"
-msgstr "Нов файл"
-
-#: ../src/ptk/ptk-file-misc.c:203
-msgid "Input a name for the new file:"
-msgstr ""
-
-#: ../src/ptk/ptk-file-misc.c:259
-msgid "The new file cannot be created!"
-msgstr ""
-
-#: ../src/ptk/ptk-file-properties.c:305
-msgid "Multiple files are selected"
-msgstr ""
-
-#: ../src/ptk/ptk-file-properties.c:384
-msgid "Multiple files of different types"
-msgstr ""
-
-#: ../src/ptk/ptk-file-properties.c:452
-#, fuzzy
-msgid "Other program..."
-msgstr "Програмата \"%1\" блокира."
-
-#. The total file size displayed in "File Properties" is not
-#. completely calculated yet. So "Calculating..." is displayed.
-#: ../src/ptk/ptk-file-properties.c:546
-msgid "Calculating..."
-msgstr "Изчисление..."
-
-#: ../src/ptk/ptk-file-properties.c:701
-msgid "Invalid User"
-msgstr "несъществуващ потребител"
-
-#: ../src/ptk/ptk-file-properties.c:712
-msgid "Invalid Group"
-msgstr "Невалидна група"
-
-#: ../src/ptk/ptk-file-properties.c:760
-msgid ""
-"Do you want to recursively apply these changes to all files and sub-folders?"
-msgstr ""
-
-#: ../src/edit-bookmarks.c:79
-msgid "New Item"
-msgstr "Нов елемент"
-
-#: ../src/edit-bookmarks.c:153
-msgid "Edit Bookmarks"
-msgstr "Редактиране на отметките"
-
-#: ../src/edit-bookmarks.c:210
-msgid "Path"
-msgstr "Път"
-
-#: ../src/edit-bookmarks.c:233
-msgid "Use drag & drop to sort the items"
-msgstr ""
-
-#: ../src/vfs/vfs-app-desktop.c:445
+#: ../src/vfs/vfs-app-desktop.c
 #, fuzzy, c-format
 msgid "Command not found"
 msgstr "Командата не е инсталирана"
 
-#: ../src/vfs/vfs-file-task.c:733
+#: ../src/vfs/vfs-file-task.c
 #, c-format
 msgid "Destination directory \"%1$s\" is contained in source \"%2$s\""
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:475 ../src/vfs/vfs-volume-hal.c:698
+#: ../src/vfs/vfs-volume-hal.c
 #, fuzzy, c-format
 msgid "%s Volume"
 msgstr "Дял %s"
 
-#: ../src/vfs/vfs-volume-hal.c:490
+#: ../src/vfs/vfs-volume-hal.c
 msgid "CD-ROM"
 msgstr "CD-ROM"
 
-#: ../src/vfs/vfs-volume-hal.c:492
+#: ../src/vfs/vfs-volume-hal.c
 msgid "CD-R"
 msgstr "CD-R"
 
-#: ../src/vfs/vfs-volume-hal.c:494
+#: ../src/vfs/vfs-volume-hal.c
 msgid "CD-RW"
 msgstr "CD-RW"
 
-#: ../src/vfs/vfs-volume-hal.c:498
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD-ROM"
 msgstr "DVD-ROM"
 
-#: ../src/vfs/vfs-volume-hal.c:500
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD+R"
 msgstr "DVD+R"
 
-#: ../src/vfs/vfs-volume-hal.c:502
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD+RW"
 msgstr "DVD+RW"
 
-#: ../src/vfs/vfs-volume-hal.c:504
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD-R"
 msgstr "DVD-R"
 
-#: ../src/vfs/vfs-volume-hal.c:506
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD-RW"
 msgstr "DVD-RW"
 
-#: ../src/vfs/vfs-volume-hal.c:508
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD-RAM"
 msgstr "DVD-RAM"
 
-#: ../src/vfs/vfs-volume-hal.c:517
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "%s/%s Drive"
 msgstr "Устройство %s/%s"
 
-#: ../src/vfs/vfs-volume-hal.c:519
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "%s Drive"
 msgstr "Устройство %s"
 
-#: ../src/vfs/vfs-volume-hal.c:524
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Floppy Drive"
 msgstr "Флопи-дисково устройство"
 
-#: ../src/vfs/vfs-volume-hal.c:527
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Compact Flash Drive"
 msgstr "Устройство за компактна флаш памет"
 
-#: ../src/vfs/vfs-volume-hal.c:529
+#: ../src/vfs/vfs-volume-hal.c
 #, fuzzy
 msgid "Memory Stick Drive"
 msgstr "Устройство за паметови пръчки"
 
-#: ../src/vfs/vfs-volume-hal.c:531
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Smart Media Drive"
 msgstr "Устройство за умни носители (smart media)"
 
-#: ../src/vfs/vfs-volume-hal.c:533
+#: ../src/vfs/vfs-volume-hal.c
 msgid "SD/MMC Drive"
 msgstr "Устройство SD/MMC"
 
-#: ../src/vfs/vfs-volume-hal.c:535
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Zip Drive"
 msgstr "Устройство Zip"
 
-#: ../src/vfs/vfs-volume-hal.c:538
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Jaz Drive"
 msgstr "Устройство Jaz"
 
-#: ../src/vfs/vfs-volume-hal.c:541
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Pen Drive"
 msgstr "Устройство Pen"
 
-#: ../src/vfs/vfs-volume-hal.c:547
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "%s %s Music Player"
 msgstr "Портативно устройство за музика %s %s"
 
-#: ../src/vfs/vfs-volume-hal.c:555
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "%s %s Digital Camera"
 msgstr "Цифров фотоапарат/камера %s %s"
 
-#: ../src/vfs/vfs-volume-hal.c:586
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Drive"
 msgstr "Устройство"
 
-#: ../src/vfs/vfs-volume-hal.c:591
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "External %s"
 msgstr "Външно %s"
 
-#: ../src/vfs/vfs-volume-hal.c:625
+#: ../src/vfs/vfs-volume-hal.c
 msgid "CD-ROM Disc"
 msgstr "Диск CD-ROM"
 
-#: ../src/vfs/vfs-volume-hal.c:630
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Blank CD-R Disc"
 msgstr "Празен диск CD-R"
 
-#: ../src/vfs/vfs-volume-hal.c:632
+#: ../src/vfs/vfs-volume-hal.c
 msgid "CD-R Disc"
 msgstr "Диск CD-R"
 
-#: ../src/vfs/vfs-volume-hal.c:637
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Blank CD-RW Disc"
 msgstr "Празен диск CD-RW"
 
-#: ../src/vfs/vfs-volume-hal.c:639
+#: ../src/vfs/vfs-volume-hal.c
 msgid "CD-RW Disc"
 msgstr "Диск CD-RW"
 
-#: ../src/vfs/vfs-volume-hal.c:643
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD-ROM Disc"
 msgstr "Диск DVD-ROM"
 
-#: ../src/vfs/vfs-volume-hal.c:648
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Blank DVD-RAM Disc"
 msgstr "Празен диск DVD-RAM"
 
-#: ../src/vfs/vfs-volume-hal.c:650
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD-RAM Disc"
 msgstr "Диск DVD-RAM"
 
-#: ../src/vfs/vfs-volume-hal.c:655
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Blank DVD-R Disc"
 msgstr "Празен диск DVD-R"
 
-#: ../src/vfs/vfs-volume-hal.c:657
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD-R Disc"
 msgstr "Диск DVD-R"
 
-#: ../src/vfs/vfs-volume-hal.c:662
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Blank DVD-RW Disc"
 msgstr "Празен диск DVD-RW"
 
-#: ../src/vfs/vfs-volume-hal.c:664
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD-RW Disc"
 msgstr "Диск DVD-RW"
 
-#: ../src/vfs/vfs-volume-hal.c:670
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Blank DVD+R Disc"
 msgstr "Празен диск DVD+R"
 
-#: ../src/vfs/vfs-volume-hal.c:672
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD+R Disc"
 msgstr "Диск DVD+R"
 
-#: ../src/vfs/vfs-volume-hal.c:677
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Blank DVD+RW Disc"
 msgstr "Празен диск DVD+RW"
 
-#: ../src/vfs/vfs-volume-hal.c:679
+#: ../src/vfs/vfs-volume-hal.c
 msgid "DVD+RW Disc"
 msgstr "Диск DVD+RW"
 
-#: ../src/vfs/vfs-volume-hal.c:686
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Audio Disc"
 msgstr "Аудио диск"
 
-#: ../src/vfs/vfs-volume-hal.c:696
+#: ../src/vfs/vfs-volume-hal.c
 #, fuzzy, c-format
 msgid "%s Removable Volume"
 msgstr "Подвижен дял %s"
 
-#: ../src/vfs/vfs-volume-hal.c:704
+#: ../src/vfs/vfs-volume-hal.c
 msgid "Volume"
 msgstr "Сила на звука"
 
-#: ../src/vfs/vfs-volume-hal.c:1100
+#: ../src/vfs/vfs-volume-hal.c
 #, fuzzy, c-format
 msgid "Failed to connect to the HAL daemon: %s"
 msgstr "Неуспешно свързване към демона HAL"
 
 #. definitely not a device that we're able to mount, eject or unmount
-#: ../src/vfs/vfs-volume-hal.c:1941 ../src/vfs/vfs-volume-hal.c:1997
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "Given device \"%s\" is not a volume or drive"
 msgstr ""
 
 #. tell the caller that no matching device was found
-#: ../src/vfs/vfs-volume-hal.c:2073
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "Device \"%s\" not found in file system device table"
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:2256
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "You are not privileged to mount the volume \"%s\""
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:2257
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "You are not privileged to unmount the volume \"%s\""
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:2258
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "You are not privileged to eject the volume \"%s\""
 msgstr ""
 
 #. TODO: slim down mount options to what is allowed, cf. volume.mount.valid_options
-#: ../src/vfs/vfs-volume-hal.c:2270
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "Invalid mount option when attempting to mount the volume \"%s\""
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:2272
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid ""
 "The volume \"%s\" uses the <i>%s</i> file system which is not supported by "
 "your system"
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:2274
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "An application is preventing the volume \"%s\" from being unmounted"
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:2276
+#: ../src/vfs/vfs-volume-hal.c
 #, fuzzy, c-format
 msgid "The volume \"%s\" is not mounted"
 msgstr "%s е празна (не е монтирана?)\n"
 
-#: ../src/vfs/vfs-volume-hal.c:2278
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "Error <i>%s</i>"
 msgstr "Грешка <i>%s</i>"
 
 #. TRANSLATORS: HAL can only unmount volumes that were mounted via HAL.
-#: ../src/vfs/vfs-volume-hal.c:2281
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "The volume \"%s\" was probably mounted manually on the command line"
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:2289
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid ""
 "Blank discs cannot be mounted, use a CD recording application to record "
 "audio or data on the disc"
 msgstr ""
 
-#: ../src/vfs/vfs-volume-hal.c:2300
+#: ../src/vfs/vfs-volume-hal.c
 #, c-format
 msgid "Audio CDs cannot be mounted, use music players to play the audio tracks"
 msgstr ""
 
-#: ../src/desktop/desktop-window.c:193
-msgid "_Icons"
-msgstr "_Икони"
-
-#: ../src/desktop/desktop-window.c:198
 #, fuzzy
-msgid "_Desktop Settings"
-msgstr "Настройки на средата"
+#~ msgid "<b>Processing:</b>"
+#~ msgstr "Обработване:"
 
-#: ../src/desktop/desktop-window.c:1842
-msgid "My Documents"
-msgstr "Моите документи"
-
-#: ../src/find-files.c:230
 #, fuzzy
-msgid "Open Containing _Folder"
-msgstr "Отваряне на &родителската директория"
+#~ msgid "<b>Progress:</b>"
+#~ msgstr "Изпълнение:"
 
-#: ../src/find-files.c:677
-msgid "Select a folder"
-msgstr "Избор на папка"
-
-#: ../src/find-files.c:722
-msgid "Browse..."
-msgstr "Преглед..."
-
-#: ../src/find-files.c:744
-msgid "All Local Disk Partitions"
-msgstr ""
-
-#: ../src/find-files.c:814
-msgid "Folder"
-msgstr "Папка"
-
-#: ../src/find-files.c:830
-msgid "Last Modified"
-msgstr "Последна промяна"
+#, fuzzy
+#~ msgid "<b>To:</b>"
+#~ msgstr "<b>Група:</b>"
