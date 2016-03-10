@@ -8,24 +8,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"POT-Creation-Date: 2016-03-10 17:44+0100\n"
 "PO-Revision-Date: 2009-01-19 10:38+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
 "Language-Team: \n"
+"Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "PCMan File Manager"
+msgstr "PCMan failihaldur"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "File Manager"
+msgstr "Failihaldur"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "Browse the file system and manage the files"
+msgstr "Lehitse failisüsteemi ja halda faile"
+
+#: ../data/pcmanfm-find.desktop.in.h
+msgid "Search for Files or Folders"
+msgstr "Failide ja kaustade otsimine"
+
+#: ../data/pcmanfm-find.desktop.in.h
+msgid "Search for files and folders in disks"
+msgstr "Otsi ketastelt faile ja katalooge"
+
+#: ../data/pcmanfm-folder-handler.desktop.in.h
+#, fuzzy
+#| msgid "New Folder"
+msgid "Open Folder"
+msgstr "Uus kataloog"
 
 #: ../data/ui/about-dlg.ui.h
 msgid "Copyright (C) 2005 - 2008"
 msgstr "Copyright (C) 2005 - 2008"
 
 #: ../data/ui/about-dlg.ui.h
+#, fuzzy
+#| msgid ""
+#| "Lightweight file manager\n"
+#| "\n"
+#| "Developed by Hon Jen Yee (PCMan)"
 msgid ""
 "Lightweight file manager\n"
 "\n"
-"Developed by Hon Jen Yee (PCMan)"
+"Developed by Hon Jen Yee (PCMan)\n"
+"(continuation of the 0.5 series)"
 msgstr ""
 "Sulgkerge failihaldur\n"
 "\n"

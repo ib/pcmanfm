@@ -6,10 +6,10 @@
 # Avoid injury or death
 msgid ""
 msgstr ""
-"Project-Id-Version: PCMan FM 0.5\n"
+"Project-Id-Version: PCMan File Manager 0.5.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-19 01:00+0200\n"
-"PO-Revision-Date: 2011-05-19 01:00+0200\n"
+"POT-Creation-Date: 2016-03-10 17:44+0100\n"
+"PO-Revision-Date: 2016-03-10 17:47+0100\n"
 "Last-Translator: Ingo Brückl\n"
 "Language-Team: German <de@li.org>\n"
 "Language: de\n"
@@ -19,6 +19,30 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.1.0\n"
 
+#: ../data/pcmanfm.desktop.in.h
+msgid "PCMan File Manager"
+msgstr "PCMan Dateimanager"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "File Manager"
+msgstr "Dateimanager"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "Browse the file system and manage the files"
+msgstr "Dateisystem durchsuchen und Dateien verwalten"
+
+#: ../data/pcmanfm-find.desktop.in.h
+msgid "Search for Files or Folders"
+msgstr "Nach Dateien suchen"
+
+#: ../data/pcmanfm-find.desktop.in.h
+msgid "Search for files and folders in disks"
+msgstr "Nach Dateien und Ordnern auf der Festplatte suchen"
+
+#: ../data/pcmanfm-folder-handler.desktop.in.h
+msgid "Open Folder"
+msgstr "Ordner öffnen"
+
 #: ../data/ui/about-dlg.ui.h
 msgid "Copyright (C) 2005 - 2008"
 msgstr "Copyright (C) 2005 - 2008"
@@ -27,27 +51,15 @@ msgstr "Copyright (C) 2005 - 2008"
 msgid ""
 "Lightweight file manager\n"
 "\n"
-"Developed by Hon Jen Yee (PCMan)"
+"Developed by Hon Jen Yee (PCMan)\n"
+"(continuation of the 0.5 series)"
 msgstr ""
-"Ressourcenschonender Datei-Manager\n"
+"Ressourcenschonender Dateimanager\n"
 "\n"
-"Entwicklung von Hon Jen Yee (PCMan)"
+"Entwicklung von Hon Jen Yee (PCMan)\n"
+"(Fortführung der 0.5-Serie)"
 
 #: ../data/ui/about-dlg.ui.h
-#, fuzzy
-#| msgid ""
-#| "洪任諭 Hong Jen Yee <pcman.tw@gmail.com>\n"
-#| "\n"
-#| "Source code taken from other projects:\n"
-#| " * libmd5-rfc: Aladdin Enterprises\n"
-#| " * Working area detection: Gary Kramlich\n"
-#| " * ExoIconView: os-cillation e.K, Anders Carlsson, & Benedikt Meurer\n"
-#| " * Text and icon renderer uses code from Jonathan Blandford\n"
-#| " * Desktop icons use code from Brian Tarricone\n"
-#| " * Volume management uses code from following projects/authors:\n"
-#| "     * gnome-vfs: David Zeuthen\n"
-#| "     * thunar-vfs and libexo: Benedikt Meurer\n"
-#| "     * gnome-mount: David Zeuthen"
 msgid ""
 "&#x6D2A;&#x4EFB;&#x8AED; Hong Jen Yee <pcman.tw@gmail.com>\n"
 "\n"
@@ -62,7 +74,7 @@ msgid ""
 "     * thunar-vfs and libexo: Benedikt Meurer\n"
 "     * gnome-mount: David Zeuthen"
 msgstr ""
-"洪任諭 Hong Jen Yee <pcman.tw@gmail.com>\n"
+"&#x6D2A;&#x4EFB;&#x8AED; Hong Jen Yee <pcman.tw@gmail.com>\n"
 "\n"
 "Der Quelltext folgender Projekte wurde verwendet:\n"
 " * libmd5-rfc: Aladdin Enterprises\n"
@@ -1076,7 +1088,7 @@ msgstr "Suche aktivieren"
 
 #: ../src/exo/exo-icon-view.c
 msgid "View allows user to search through columns interactively"
-msgstr ""
+msgstr "Ansicht erlaubt dem Benutzer, die Spalten interaktiv zu durchsuchen"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Width for each item"
@@ -1104,19 +1116,21 @@ msgstr "Platz der an den Ecken der Symbolansicht eingefügt wird"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Markup column"
-msgstr ""
+msgstr "Auszeichnungsspalte"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Model column used to retrieve the text if using Pango markup"
 msgstr ""
+"Modell-Spalte, von der der Text bei Verwendung von Pango-Auszeichnung "
+"abgerufen wird"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Icon View Model"
-msgstr ""
+msgstr "Symbolansicht-Modell"
 
 #: ../src/exo/exo-icon-view.c
 msgid "The model for the icon view"
-msgstr ""
+msgstr "Das Modell für die Symbolansicht"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Orientation"
@@ -1129,19 +1143,19 @@ msgstr "Anordnung von Text und Symbolen relativ zueinander"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Pixbuf column"
-msgstr ""
+msgstr "Pixelpuffer-Spalte"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Model column used to retrieve the icon pixbuf from"
-msgstr ""
+msgstr "Modell-Spalte, von der der Symbol-Pixelpuffer abgerufen wird"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Reorderable"
-msgstr ""
+msgstr "Neuordnung möglich"
 
 #: ../src/exo/exo-icon-view.c
 msgid "View is reorderable"
-msgstr ""
+msgstr "Ansicht kann neu geordnet werden"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Row Spacing"
@@ -1157,7 +1171,7 @@ msgstr "Suchspalte"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Model column to search through when searching through item"
-msgstr ""
+msgstr "Modell-Spalte, die beim Durchsuchen von Einträgen durchsucht wird"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Selection mode"
@@ -1177,13 +1191,15 @@ msgstr "Einträge in der Ansicht können mit einfachem Klick angezeigt werden"
 
 #: ../src/exo/exo-icon-view.c ../src/exo/exo-tree-view.c
 msgid "Single Click Timeout"
-msgstr ""
+msgstr "Zeitbeschränkung für einfachen Klick"
 
 #: ../src/exo/exo-icon-view.c ../src/exo/exo-tree-view.c
 msgid ""
 "The amount of time after which the item under the mouse cursor will be "
 "selected automatically in single click mode"
 msgstr ""
+"Die Zeitspanne, nach der der Eintrag unter dem Mauszeiger im Einfach-Klick-"
+"Modus automatisch ausgewählt wird"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Spacing"
@@ -1199,7 +1215,7 @@ msgstr "Textspalte"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Model column used to retrieve the text from"
-msgstr ""
+msgstr "Modell-Spalte, von der der Text abgerufen wird"
 
 #: ../src/exo/exo-icon-view.c
 msgid "Selection Box Color"
@@ -1928,9 +1944,6 @@ msgstr ""
 #~ "     * gnome-vfs: David Zeuthen,\n"
 #~ "     * thunar-vfs und libexo: Benedikt Meurer\n"
 #~ "     * gnome-mount: David Zeuthen"
-
-#~ msgid "PCMan File Manager"
-#~ msgstr "PCMan Datei-Manager"
 
 #~ msgid "Icon Theme:"
 #~ msgstr "Symbole:"

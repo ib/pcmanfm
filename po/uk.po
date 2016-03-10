@@ -2,16 +2,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"POT-Creation-Date: 2016-03-10 17:44+0100\n"
 "PO-Revision-Date: 2009-10-27 11:27+0100\n"
 "Last-Translator: Y P <yupadmin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: UTF-8\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 1.1.0\n"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "PCMan File Manager"
+msgstr ""
+
+#: ../data/pcmanfm.desktop.in.h
+#, fuzzy
+#| msgid "_Volume Management"
+msgid "File Manager"
+msgstr "_Управління диском"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "Browse the file system and manage the files"
+msgstr ""
+
+#: ../data/pcmanfm-find.desktop.in.h
+#, fuzzy
+#| msgid "All Files and Folders"
+msgid "Search for Files or Folders"
+msgstr "Всі файли і каталоги"
+
+#: ../data/pcmanfm-find.desktop.in.h
+msgid "Search for files and folders in disks"
+msgstr ""
+
+#: ../data/pcmanfm-folder-handler.desktop.in.h
+#, fuzzy
+#| msgid "New Folder"
+msgid "Open Folder"
+msgstr "Новий каталог"
 
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -23,10 +54,16 @@ msgid "Copyright (C) 2005 - 2008"
 msgstr "Copyright (C) 2005 - 2009"
 
 #: ../data/ui/about-dlg.ui.h
+#, fuzzy
+#| msgid ""
+#| "Lightweight file manager\n"
+#| "\n"
+#| "Developed by Hon Jen Yee (PCMan)"
 msgid ""
 "Lightweight file manager\n"
 "\n"
-"Developed by Hon Jen Yee (PCMan)"
+"Developed by Hon Jen Yee (PCMan)\n"
+"(continuation of the 0.5 series)"
 msgstr ""
 "Легкий файловий менеджер,\n"
 "\n"

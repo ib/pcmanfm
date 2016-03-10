@@ -9,10 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pcmanfm 0.1.9.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"POT-Creation-Date: 2016-03-10 17:44+0100\n"
 "PO-Revision-Date: 2009-10-26 18:07+0100\n"
 "Last-Translator: Alessandro Pellizzari <alex@amiran.it>\n"
 "Language-Team: Italian <firetux83@gmail.com>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,15 +22,51 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
+#: ../data/pcmanfm.desktop.in.h
+msgid "PCMan File Manager"
+msgstr "PCMan File Manager"
+
+#: ../data/pcmanfm.desktop.in.h
+#, fuzzy
+#| msgid "PCMan File Manager"
+msgid "File Manager"
+msgstr "PCMan File Manager"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "Browse the file system and manage the files"
+msgstr ""
+
+#: ../data/pcmanfm-find.desktop.in.h
+#, fuzzy
+#| msgid "All Files and Folders"
+msgid "Search for Files or Folders"
+msgstr "Tutti i File e le Cartelle"
+
+#: ../data/pcmanfm-find.desktop.in.h
+msgid "Search for files and folders in disks"
+msgstr ""
+
+#: ../data/pcmanfm-folder-handler.desktop.in.h
+#, fuzzy
+#| msgid "New Folder"
+msgid "Open Folder"
+msgstr "Nuova Cartella"
+
 #: ../data/ui/about-dlg.ui.h
 msgid "Copyright (C) 2005 - 2008"
 msgstr "Copyright (C) 2005 - 2008"
 
 #: ../data/ui/about-dlg.ui.h
+#, fuzzy
+#| msgid ""
+#| "Lightweight file manager\n"
+#| "\n"
+#| "Developed by Hon Jen Yee (PCMan)"
 msgid ""
 "Lightweight file manager\n"
 "\n"
-"Developed by Hon Jen Yee (PCMan)"
+"Developed by Hon Jen Yee (PCMan)\n"
+"(continuation of the 0.5 series)"
 msgstr ""
 "Leggero file manager\n"
 "\n"
@@ -1924,9 +1961,6 @@ msgstr ""
 
 #~ msgid "gksu or kdesu is not found"
 #~ msgstr "Gksu o Kdesu non trovato"
-
-#~ msgid "PCMan File Manager"
-#~ msgstr "PCMan File Manager"
 
 #~ msgid "Icon Theme:"
 #~ msgstr "Tema icone:"

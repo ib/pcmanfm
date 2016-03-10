@@ -7,26 +7,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pcmanfm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"POT-Creation-Date: 2016-03-10 17:44+0100\n"
 "PO-Revision-Date: 2009-10-23 18:34+0200\n"
 "Last-Translator: Rossen Karpuzov <gustav@cointech.net>\n"
 "Language-Team: Mandriva User Group - Bulgaria <mandriva-bg@googlegroups."
 "com>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.1.0\n"
 
+#: ../data/pcmanfm.desktop.in.h
+msgid "PCMan File Manager"
+msgstr ""
+
+#: ../data/pcmanfm.desktop.in.h
+#, fuzzy
+msgid "File Manager"
+msgstr "Работа със сметки"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "Browse the file system and manage the files"
+msgstr ""
+
+#: ../data/pcmanfm-find.desktop.in.h
+#, fuzzy
+msgid "Search for Files or Folders"
+msgstr "Споделени мрежови директории <br />и файлове"
+
+#: ../data/pcmanfm-find.desktop.in.h
+msgid "Search for files and folders in disks"
+msgstr ""
+
+#: ../data/pcmanfm-folder-handler.desktop.in.h
+#, fuzzy
+#| msgid "New Folder"
+msgid "Open Folder"
+msgstr "Нова директория"
+
 #: ../data/ui/about-dlg.ui.h
 msgid "Copyright (C) 2005 - 2008"
 msgstr "Авторско право (C) 2005 - 2008"
 
 #: ../data/ui/about-dlg.ui.h
+#, fuzzy
+#| msgid ""
+#| "Lightweight file manager\n"
+#| "\n"
+#| "Developed by Hon Jen Yee (PCMan)"
 msgid ""
 "Lightweight file manager\n"
 "\n"
-"Developed by Hon Jen Yee (PCMan)"
+"Developed by Hon Jen Yee (PCMan)\n"
+"(continuation of the 0.5 series)"
 msgstr ""
 "Lightweight файлов мениджър\n"
 "\n"

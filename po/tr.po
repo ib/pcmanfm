@@ -7,15 +7,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pcmanfm_TR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-26 16:22+0100\n"
+"POT-Creation-Date: 2016-03-10 17:44+0100\n"
 "PO-Revision-Date: 2006-11-14 15:51+0200\n"
 "Last-Translator: Bekir SONAT <bekirsonat@kde.org.tr>\n"
 "Language-Team: Türkçe <yerellestirme@kde.org.tr>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=1; plural=0;\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "PCMan File Manager"
+msgstr "PCMan Dosya Yönetici"
+
+#: ../data/pcmanfm.desktop.in.h
+#, fuzzy
+#| msgid "PCMan File Manager"
+msgid "File Manager"
+msgstr "PCMan Dosya Yönetici"
+
+#: ../data/pcmanfm.desktop.in.h
+msgid "Browse the file system and manage the files"
+msgstr ""
+
+#: ../data/pcmanfm-find.desktop.in.h
+#, fuzzy
+msgid "Search for Files or Folders"
+msgstr "_Gizli Dosyaları Göster"
+
+#: ../data/pcmanfm-find.desktop.in.h
+msgid "Search for files and folders in disks"
+msgstr ""
+
+#: ../data/pcmanfm-folder-handler.desktop.in.h
+#, fuzzy
+#| msgid "New Folder"
+msgid "Open Folder"
+msgstr "Yeni Dizin"
 
 #: ../data/ui/about-dlg.ui.h
 #, fuzzy
@@ -23,10 +53,16 @@ msgid "Copyright (C) 2005 - 2008"
 msgstr "Copyright (C) 2005 - 2006"
 
 #: ../data/ui/about-dlg.ui.h
+#, fuzzy
+#| msgid ""
+#| "Lightweight file manager\n"
+#| "\n"
+#| "Developed by Hon Jen Yee (PCMan)"
 msgid ""
 "Lightweight file manager\n"
 "\n"
-"Developed by Hon Jen Yee (PCMan)"
+"Developed by Hon Jen Yee (PCMan)\n"
+"(continuation of the 0.5 series)"
 msgstr ""
 "Hafif sıklet dosya yöneticisi\n"
 "\n"
@@ -1915,9 +1951,6 @@ msgstr ""
 
 #~ msgid " * Desktop icons use code from Brian Tarricone"
 #~ msgstr " * Masaüstü simgelerinin işlenmesi: Brian Tarricone"
-
-#~ msgid "PCMan File Manager"
-#~ msgstr "PCMan Dosya Yönetici"
 
 #~ msgid "Icon Theme:"
 #~ msgstr "Simge teması:"
