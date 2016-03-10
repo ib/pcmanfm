@@ -21,7 +21,7 @@ ui_in_files= \
 	ui/prefdlg.glade \
 	ui/appchooserdlg.glade \
 	ui/file-assoc-dlg.glade \
-	ui/file_properties.glade \
+	ui/file-properties.glade \
 	ui/about-dlg.glade \
 	ui/find-files.glade \
 	ui/godlg.glade
