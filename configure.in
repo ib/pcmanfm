@@ -222,7 +222,7 @@ echo Desktop icon integration..................... : $desktop_integration
 echo
 echo The binary will be installed in $prefix/bin
 echo
-echo http://pcmanfm.sourceforge.net/
+echo https://github.com/ib/pcmanfm
 echo
 echo Please read README carefully if you are packaging PCManFM.
 echo

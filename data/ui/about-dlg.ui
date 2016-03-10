@@ -9,8 +9,9 @@
     <property name="copyright" translatable="yes">Copyright (C) 2005 - 2008</property>
     <property name="comments" translatable="yes">Lightweight file manager
 
-Developed by Hon Jen Yee (PCMan)</property>
-    <property name="website">http://pcmanfm.sourceforge.net/</property>
+Developed by Hon Jen Yee (PCMan)
+(continuation of the 0.5 series)</property>
+    <property name="website">https://github.com/ib/pcmanfm</property>
     <property name="license">PCMan File Manager
 
 Copyright (C) 2005 - 2008 &#x6D2A;&#x4EFB;&#x8AED; (Hong Jen Yee)
