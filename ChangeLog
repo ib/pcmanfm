@@ -1,3 +1,17 @@
+2009-04-27 Og Maciel <ogmaciel@gnome.org>
+
+	* po/pt_BR.po: Updated Brazilian Portuguese translation by
+	  Henrique P. Machado.
+
+2009-01-26 Og Maciel <ogmaciel@gnome.org>
+
+	* po/pcmanfm.pot: Updated.
+	* po/POTFILES.in: Updated.
+	* po/pt.po: Renamed from pt_PT.po as there is no pt_PT.
+	* po/*.po: Updated all message catalogs against the updated pcmanfm.pot
+	  file.
+	* po/LINGUAS: Added with available languages.
+
 2009-01-26 Og Maciel <ogmaciel@gnome.org>
 
 	* data/ui/about-dlg.glade: Fixed typo fixes SF.net #2490464.
