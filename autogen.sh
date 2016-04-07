@@ -58,7 +58,7 @@ fi
 }
 
 (grep "^AM_GLIB_GNU_GETTEXT" $srcdir/configure.in >/dev/null) && {
-  (grep "sed.*POTFILES" $srcdir/configure.in) > /dev/null || \
+  (grep "^AC_PROG_INTLTOOL" $srcdir/configure.in) > /dev/null || \
   (glib-gettextize --version) < /dev/null > /dev/null 2>&1 || {
     echo
     echo "**Error**: You must have \`glib' installed."
@@ -113,16 +113,13 @@ do
       aclocalinclude="$ACLOCAL_FLAGS"
 
       if grep "^AM_GLIB_GNU_GETTEXT" configure.in >/dev/null; then
-	echo "Creating $dr/aclocal.m4 ..."
-	test -r $dr/aclocal.m4 || touch $dr/aclocal.m4
-	echo "Running glib-gettextize...  Ignore non-fatal messages."
-	echo "no" | glib-gettextize --force --copy
-	echo "Making $dr/aclocal.m4 writable ..."
-	test -r $dr/aclocal.m4 && chmod u+w $dr/aclocal.m4
-      fi
-      if grep "^AC_PROG_INTLTOOL" configure.in >/dev/null; then
-        echo "Running intltoolize..."
-	intltoolize --copy --force --automake
+        if grep "^AC_PROG_INTLTOOL" configure.in >/dev/null; then
+          echo "Running intltoolize..."
+          intltoolize --copy --force --automake
+        else
+          echo "Running glib-gettextize...  Ignore non-fatal messages."
+          glib-gettextize --force --copy
+        fi
       fi
       if grep "^AM_PROG_XML_I18N_TOOLS" configure.in >/dev/null; then
         echo "Running xml-i18n-toolize..."
