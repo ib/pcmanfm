@@ -80,7 +80,13 @@ const ArchiveHandler handlers[]=
             ".7z", TRUE
         },
         {
-            "application/x-rar",
+            "application/vnd.rar",
+            NULL,
+            "unrar -o- e",
+            ".rar", TRUE
+        },
+        {
+            "application/x-rar",   /* legacy */
             NULL,
             "unrar -o- e",
             ".rar", TRUE
