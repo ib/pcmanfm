@@ -1891,7 +1891,7 @@ void on_folder_view_drag_data_received ( GtkWidget *widget,
                     file_path = g_filename_from_uri( *puri, NULL, NULL );
 
                 if ( file_path )
-                    files = g_list_prepend( files, file_path );
+                    files = g_list_append( files, file_path );
                 ++puri;
             }
             g_strfreev( list );
