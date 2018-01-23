@@ -22,6 +22,8 @@ AC_SUBST(LIBTOOL_EXPORT_OPTIONS)
 # check for mmap()
 AC_FUNC_MMAP
 
+AC_CHECK_LIB(m, pow,, AC_MSG_FAILURE([libm not found]))
+
 gtk_modules="gtk+-2.0 >= 2.12.0 \
              gthread-2.0"
 PKG_CHECK_MODULES(GTK, [$gtk_modules])
