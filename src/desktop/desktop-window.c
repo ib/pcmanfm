@@ -2353,7 +2353,7 @@ GdkFilterReturn on_rootwin_event ( GdkXEvent *xevent,
         }
 #endif
     }
-    return GDK_FILTER_TRANSLATE;
+    return GDK_FILTER_CONTINUE;
 }
 
 /* This function is taken from xfdesktop */
