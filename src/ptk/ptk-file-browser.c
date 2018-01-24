@@ -208,7 +208,7 @@ on_folder_view_drag_motion ( GtkWidget *widget,
                              guint time,
                              PtkFileBrowser* file_browser );
 
-static gboolean
+static void
 on_folder_view_drag_leave ( GtkWidget *widget,
                             GdkDragContext *drag_context,
                             guint time,
@@ -2190,7 +2190,7 @@ gboolean on_folder_view_drag_motion ( GtkWidget *widget,
     return TRUE;
 }
 
-gboolean on_folder_view_drag_leave ( GtkWidget *widget,
+void on_folder_view_drag_leave ( GtkWidget *widget,
                                      GdkDragContext *drag_context,
                                      guint time,
                                      PtkFileBrowser* file_browser )
@@ -2205,7 +2205,6 @@ gboolean on_folder_view_drag_leave ( GtkWidget *widget,
         g_source_remove( folder_view_auto_scroll_timer );
         folder_view_auto_scroll_timer = 0;
     }
-    return TRUE;
 }
 
 
