@@ -333,7 +333,6 @@ static const char* lookup_suffix_nodes( const char* buf, const char* nodes, guin
 /* Reverse suffix tree is used since mime.cache 1.1 (shared mime info 0.4)
  * Returns the address of the found "node", not mime-type.
  * FIXME: 1. Should be optimized with binary search
- *        2. Should consider weight of suffix nodes
  */
 static const char* lookup_reverse_suffix_nodes( const char* buf, const char* nodes, guint32 n, const char* name, const char* suffix, const char** suffix_pos )
 {
@@ -341,6 +340,7 @@ static const char* lookup_reverse_suffix_nodes( const char* buf, const char* nod
     const char *_suffix_pos = NULL, *cur_suffix_pos = (const char*)suffix + 1;
     const char* leaf_node = NULL;
     gunichar uchar;
+    guint32 last_weight = 0;
 
     uchar = suffix ? g_unichar_tolower( g_utf8_get_char( suffix ) ) : 0;
     /* g_debug("%s: suffix= '%s'", name, suffix); */
@@ -372,13 +372,15 @@ static const char* lookup_reverse_suffix_nodes( const char* buf, const char* nod
         }
         else /* ch == 0 */
         {
-            /* guint32 weight = VAL32(node, 8); */
+            guint32 weight = (VAL32(node, 8) & 0xff); /* weight in lower 8 bits */
+
             /* suffix is found in the tree! */
 
-            if( suffix < cur_suffix_pos )
+            if( suffix <= cur_suffix_pos && weight > last_weight)
             {
                 ret = node;
                 cur_suffix_pos = suffix;
+                last_weight = weight;
             }
         }
     }
