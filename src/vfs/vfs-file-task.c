@@ -260,6 +260,16 @@ vfs_file_task_do_copy( VFSFileTask* task,
     {
         if ( ( rfd = readlink( src_file, buffer, sizeof( buffer ) ) ) > 0 )
         {
+            if ( rfd < sizeof( buffer ) )
+                buffer[rfd] = 0;
+            else
+            {
+                task->error = ENAMETOOLONG;
+                call_state_callback( task, VFS_FILE_TASK_ERROR );
+                if ( should_abort( task ) )
+                    goto _return_;
+            }
+
             if ( ! check_overwrite( task, dest_file,
                                     &dest_exists, &new_dest_file ) )
                 goto _return_;
